@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,351 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/lib/slide/slide.css">
 </head>
+
 <body>
-    
+    <!-- 广告 -->
+    <!-- <div class="advert">
+        <div class="advert-container clearfix">
+            <img src="./images/static/advertClose.png" alt="关闭广告" id="close_advert">
+        </div>
+    </div> -->
+    <!-- 广告end -->
+    <!-- 导航 -->
+    <div class="headerpage"></div>
+    <!-- 导航end -->
+    <!-- 右侧面板 -->
+    <div class="fuli-toolbar">
+        <div class="fuli-toolbar-tabs">
+            <div class="fuli-toolbar-tab">
+                <img src="./images/static/sideMsg.png" alt="">
+            </div>
+            <div class="fuli-toolbar-tab" id="tab-cart">
+                <img src="./images/static/sideCar.png" alt="">
+            </div>
+            <div class="fuli-toolbar-tab">
+                <img src="./images/static/sideFoot.png" alt="">
+            </div>
+            <div class="fuli-toolbar-tab">
+                <img src="./images/static/sideCustomer.png" alt="">
+            </div>
+            <div class="fuli-toolbar-tab">
+                <img src="./images/static/sideBack.png" alt="">
+            </div>
+        </div>
+        <div class="fuli-toolbar-panels"></div>
+    </div>
+    <!-- 右侧面板end -->
+    <!-- 搜索 -->
+    <div class="search-wraper">
+        <div class="search-content">
+            <div class="fuli-u-sm-2 search-content-left">
+                <img src="./images/static/uligou.png" alt="">
+            </div>
+            <div class="fuli-u-sm-8 search-content-center clearfix">
+                <div class="fuli-u-sm-9 search-all">
+                    <div class="search-input">
+                        <input type="text" placeholder="国际大牌母婴用品" id="searchGoods" />
+                    </div>
+                    <div class="search-btn pointer">
+                        <img src="./images/static/search.png" alt="">
+                    </div>
+                    <ul class="clearfix small-nav">
+                        <li>
+                            <a href="#">
+                                厨房用纸
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                清洁纸巾
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                米面粮油
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                家居用品
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                厨房用品
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                母婴
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fuli-u-sm-3 search-cart">
+                    <div class="search-cart-bg pointer">
+                        <img src="" alt="">
+                        <span>购物车</span>
+                        <div class="cart-count">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fuli-u-sm-2 search-content-right">
+                <img src="./images/static/code.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 搜索end -->
+    <!-- 全部分类 -->
+    <div class="ification-wraper">
+        <div class="fuli-w">
+            <div class="fuli-u-sm-2 classification pointer">
+                <img src="./images/static/shrink.png" alt="">
+                全部分类
+            </div>
+            <div class="fuli-u-sm-10">
+                <ul class="clearfix classification-nav">
+                    <li>
+                        <a href="#">
+                            厨房用纸
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            清洁纸巾
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            米面粮油
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            家居用品
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            厨房用品
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            母婴
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 全部分类end -->
+    <!-- 全屏轮播 -->
+    <div id="fullSlide">
+        <div class="box2">
+            <div class="list2">
+                <ul>
+                    <li><a href="#"><img src="./images/static/banner.png" alt="" /></a></li>
+                    <li><a href="#"><img src="./images/static/banner.png" alt="" /></a></li>
+                    <li><a href="#"><img src="./images/static/banner.png" alt="" /></a></li>
+                    <li><a href="#"><img src="./images/static/banner.png" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="btn2 prev">&lt;</div>
+            <div class="btn2 next">&gt;</div>
+            <div class="ico2"></div>
+        </div>
+    </div>
+    <!-- 全屏轮播end -->
+    <!-- 内容 -->
+    <div class="fuli-container">
+        <!-- <div id="floor" class="fuli-g fuli-floor"></div>
+        <div class="fuli-g clearfix">
+            <div class="fuli-floor-info-left">
+                <div class="fuli-floor-wrapper clearfix">
+                    <a href="#" class="fuli-floor-watch" title="">
+                        <div class="fuli-floor-img lazyimg">
+                            <img src="./images/static/feeding.png" alt="" class="fuli-floor-img">
+                        </div>
+                    </a>
+                    <a href="#" class="fuli-floor-watch" title="">
+                        <div class="fuli-floor-img">
+                            <img src="./images/static/feeding.png" alt="" class="fuli-floor-img">
+                        </div>
+                    </a>
+                    <div class="floor-small-wrapper clearfix">
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img lazyimg">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="floor-small">
+                            <div class="floor-small-img">
+                                <img src="./images/static/squareditem.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fuli-floor-info-right clearfix">
+                <div class="fuli-floor-wares"></div>
+                <div class="fuli-floor-wares"></div>
+                <div class="fuli-floor-wares"></div>
+                <div class="fuli-floor-wares"></div>
+                <div class="fuli-floor-wares"></div>
+                <div class="fuli-floor-wares"></div>
+                <div class="fuli-floor-wares"></div>
+                <div class="fuli-floor-wares"></div>
+            </div>
+        </div> -->
+        <!-- 有广告位 -->
+        <div id="adsense">
+            <div class="adsense-menu"></div>
+            <div class="adsense-slide">
+                <div class="adsense-planting"></div>
+                <div class="adsense-advert clearfix">
+                    <div class="adsense-advert-left"></div>
+                    <div class="adsense-advert-right"></div>
+                </div>
+            </div>
+            <div class="adsense-core">
+                <div class="adsense-core-item"></div>
+                <div class="adsense-core-item"></div>
+                <div class="adsense-core-item"></div>
+            </div>
+        </div>
+        <!-- 有广告位end -->
+        <!-- 有个人中心 -->
+        <div id="personal" class="clearfix fuli-g">
+            <div class="personal-menu"></div>
+            <div class="personal-slide">
+                <div class="box">
+                    <div class="list">
+                        <ul>
+                            <li><a href="#"><img src="./images/static/bannerimg.png" alt="" /></a></li>
+                            <li><a href="#"><img src="./images/static/bannerimg.png" alt="" /></a></li>
+                            <li><a href="#"><img src="./images/static/bannerimg.png" alt="" /></a></li>
+                            <li><a href="#"><img src="./images/static/bannerimg.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="btn prev">&lt;</div>
+                    <div class="btn next">&gt;</div>
+                    <div class="ico"></div>
+                </div>
+            </div>
+            <div class="personal-core"></div>
+        </div>
+        <!-- 有个人中心end -->
+    </div>
+    <div class="fuli-container">
+        <div class="fuli-g">
+            <!-- 赞助 -->
+            <div class="sponsor">
+                <div class="sponsor-s clearfix">
+                    <div class="sponsor-item"></div>
+                    <div class="sponsor-item"></div>
+                    <div class="sponsor-item"></div>
+                    <div class="sponsor-item"></div>
+                </div>
+                <div class="sponsor-small clearfix">
+                    <div class="sponsor-small-item"></div>
+                    <div class="sponsor-small-item"></div>
+                    <div class="sponsor-small-item"></div>
+                    <div class="sponsor-small-item"></div>
+                    <div class="sponsor-small-item"></div>
+                    <div class="sponsor-small-item"></div>
+                    <div class="sponsor-small-item"></div>
+                </div>
+            </div>
+            <!-- 赞助end -->
+        </div>
+        <div class="fuli-g fuli-box clearfix">
+            <div class="fuli-box-item">
+                <div class="fuli-box-head">
+                    <a href="#" class="fuli-box-hk">
+                        <h3 class="fuli-box-tit">单品热卖</h3>
+                        <i class="fuli-box-arrow"></i>
+                        <span class="fuli-box-subtit">专属你的购物指南</span>
+                    </a>
+                </div>
+                <div class="fuli-box-bd">
+                    <div class="fuli-sort-wrapper clearfix">
+                        <a href="#" class="fuli-sort-large">
+                            <div class="fuli-sort-img">
+                                <img src="./images/static/bestimg.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="fuli-sort-middle">
+                            <div class="fuli-sort-img">
+                                <img src="./images/static/sellers.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="fuli-sort-middle">
+                            <div class="fuli-sort-img">
+                                <img src="./images/static/sellers.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fuli-box-item"></div>
+            <div class="fuli-box-item"></div>
+        </div>
+    </div>
+    <!-- 内容end -->
+
+
+    <script src="./lib/jq/jquery.min.js"></script>
+    <script src="./lib/slide/slide.js"></script>
+    <script src="./js/index/index.js"></script>
+    <script>
+        $(function () {
+            /*公共部分
+             * 导航栏
+             * footer CopyRight
+             */
+            $(".headerpage").load("./pages/header/header.html");
+            // $(".footerpage").load("footer.html");
+        });
+    </script>
 </body>
+
 </html>
