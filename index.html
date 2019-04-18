@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/lib/slide/slide.css">
+    <link rel="stylesheet" href="./css/header/header.css">
 </head>
 
 <body>
@@ -28,18 +29,27 @@
         <div class="fuli-toolbar-tabs">
             <div class="fuli-toolbar-tab">
                 <img src="./images/static/sideMsg.png" alt="">
+                <div class="fuli-toolbar-text">我的消息</div>
             </div>
             <div class="fuli-toolbar-tab" id="tab-cart">
                 <img src="./images/static/sideCar.png" alt="">
+                <div class="fuli-toolbar-text">购物车</div>
             </div>
             <div class="fuli-toolbar-tab">
                 <img src="./images/static/sideFoot.png" alt="">
+                <div class="fuli-toolbar-text">浏览足迹</div>
             </div>
             <div class="fuli-toolbar-tab">
                 <img src="./images/static/sideCustomer.png" alt="">
+                <div class="fuli-toolbar-text">联系客服</div>
             </div>
             <div class="fuli-toolbar-tab">
                 <img src="./images/static/sideBack.png" alt="">
+                <div class="fuli-toolbar-text">反馈问题</div>
+            </div>
+            <div class="fuli-toolbar-tab2" id="toTop">
+                <img src="./images/static/updown.png" alt="">
+                <div class="fuli-toolbar-text">返回顶部</div>
             </div>
         </div>
         <div class="fuli-toolbar-panels"></div>
@@ -91,6 +101,9 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="fuli-shelper">
+                        123
+                    </div>
                 </div>
                 <div class="fuli-u-sm-3 search-cart">
                     <div class="search-cart-bg pointer">
@@ -98,6 +111,8 @@
                         <span>购物车</span>
                         <div class="cart-count">0</div>
                     </div>
+                    <div class="search-select-small"></div>
+                    <div class="search-cart-select"></div>
                 </div>
             </div>
             <div class="fuli-u-sm-2 search-content-right">
@@ -155,10 +170,10 @@
         <div class="box2">
             <div class="list2">
                 <ul>
-                    <li><a href="#"><img src="./images/static/banner.png" alt="" /></a></li>
-                    <li><a href="#"><img src="./images/static/banner.png" alt="" /></a></li>
-                    <li><a href="#"><img src="./images/static/banner.png" alt="" /></a></li>
-                    <li><a href="#"><img src="./images/static/banner.png" alt="" /></a></li>
+                    <li><a href="#"><img data-src="./images/static/banner.png" src="" alt="" /></a></li>
+                    <li><a href="#"><img data-src="./images/static/banner.png" src="" alt="" /></a></li>
+                    <li><a href="#"><img data-src="./images/static/banner.png" src="" alt="" /></a></li>
+                    <li><a href="#"><img data-src="./images/static/banner.png" src="" alt="" /></a></li>
                 </ul>
             </div>
             <div class="btn2 prev">&lt;</div>
@@ -168,6 +183,7 @@
     </div>
     <!-- 全屏轮播end -->
     <!-- 内容 -->
+    <!-- 三种样式 -->
     <div class="fuli-container">
         <!-- <div id="floor" class="fuli-g fuli-floor"></div>
         <div class="fuli-g clearfix">
@@ -267,10 +283,10 @@
                 <div class="box">
                     <div class="list">
                         <ul>
-                            <li><a href="#"><img src="./images/static/bannerimg.png" alt="" /></a></li>
-                            <li><a href="#"><img src="./images/static/bannerimg.png" alt="" /></a></li>
-                            <li><a href="#"><img src="./images/static/bannerimg.png" alt="" /></a></li>
-                            <li><a href="#"><img src="./images/static/bannerimg.png" alt="" /></a></li>
+                            <li><a href="#"><img data-src="./images/static/bannerimg.png" src="" src="" alt="" /></a></li>
+                            <li><a href="#"><img data-src="./images/static/bannerimg.png" src="" alt="" /></a></li>
+                            <li><a href="#"><img data-src="./images/static/bannerimg.png" src="" alt="" /></a></li>
+                            <li><a href="#"><img data-src="./images/static/bannerimg.png" src="" alt="" /></a></li>
                         </ul>
                     </div>
                     <div class="btn prev">&lt;</div>
@@ -282,6 +298,8 @@
         </div>
         <!-- 有个人中心end -->
     </div>
+    <!-- 三种样式end -->
+    <!-- 推荐 -->
     <div class="fuli-container">
         <div class="fuli-g">
             <!-- 赞助 -->
@@ -317,31 +335,470 @@
                     <div class="fuli-sort-wrapper clearfix">
                         <a href="#" class="fuli-sort-large">
                             <div class="fuli-sort-img">
-                                <img src="./images/static/bestimg.png" alt="">
+                                <img data-src="./images/static/bestimg.png" src="" alt="">
                             </div>
                         </a>
                         <a href="#" class="fuli-sort-middle">
                             <div class="fuli-sort-img">
-                                <img src="./images/static/sellers.png" alt="">
+                                <img data-src="./images/static/sellers.png" src="" alt="">
                             </div>
                         </a>
                         <a href="#" class="fuli-sort-middle">
                             <div class="fuli-sort-img">
-                                <img src="./images/static/sellers.png" alt="">
+                                <img data-src="./images/static/sellers.png" src="" alt="">
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="fuli-box-item"></div>
-            <div class="fuli-box-item"></div>
+            <div class="fuli-box-item-2">
+                <div class="fuli-box-head">
+                    <a href="#" class="fuli-box-hk">
+                        <h3 class="fuli-box-tit">办公优选</h3>
+                        <i class="fuli-box-arrow"></i>
+                        <span class="fuli-box-subtit">专属你的购物指南</span>
+                    </a>
+                </div>
+            </div>
+            <div class="fuli-box-item-3">
+                <div class="fuli-box-head">
+                    <a href="#" class="fuli-box-hk">
+                        <h3 class="fuli-box-tit">买手推荐</h3>
+                        <i class="fuli-box-arrow"></i>
+                        <span class="fuli-box-subtit">专属你的购物指南</span>
+                    </a>
+                </div>
+                <div class="fuli-box-bd">
+                    <div class="fuli-sort-wrapper-2 clearfix">
+                        <a href="#" class="fuli-sort-large-2">
+                            <div class="fuli-sort-img">
+                                <img data-src="./images/static/watch.png" src="" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="fuli-sort-large-2">
+                            <div class="fuli-sort-img">
+                                <img data-src="./images/static/watch.png" src="" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- 推荐 -->
+    <!-- 楼层 -->
+    <div class="fuli-new-floor">
+        <div class="fuli-new-wrapper">
+            <div class="fuli-brain clearfix">
+                <div class="fuli-vertical"></div>
+                <h3 class="fuli-box-tit2">办公用品</h3>
+                <ul class="clearfix fuli-floor-list">
+                    <li>
+                        <a href="#">电脑</a>
+                    </li>
+                    <li>
+                        <a href="#">手机</a>
+                    </li>
+                    <li>
+                        <a href="#">文具</a>
+                    </li>
+                    <li>
+                        <a href="#">笔记本</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fuli-floor-body clearfix">
+                <a href="#" class="fuli-floor-image">
+                    <div class="fuli-floor-pictures"></div>
+                </a>
+                <div class="fuli-floor-goods">
+                    <div class="floor-goods-wrapper clearfix">
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fuli-floor-brand">
+                    <div class="floor-brand-head">
+                        精选品牌
+                    </div>
+                    <div class="floor-brand-wrapper">
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fuli-new-floor-2">
+        <div class="fuli-new-wrapper">
+            <div class="fuli-brain clearfix">
+                <div class="fuli-vertical"></div>
+                <h3 class="fuli-box-tit2">数码电器</h3>
+                <ul class="clearfix fuli-floor-list">
+                    <li>
+                        <a href="#">电脑</a>
+                    </li>
+                    <li>
+                        <a href="#">手机</a>
+                    </li>
+                    <li>
+                        <a href="#">文具</a>
+                    </li>
+                    <li>
+                        <a href="#">笔记本</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fuli-floor-body clearfix">
+                <a href="#" class="fuli-floor-image">
+                    <div class="fuli-floor-pictures"></div>
+                </a>
+                <div class="fuli-floor-goods">
+                    <div class="floor-goods-wrapper clearfix">
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fuli-floor-brand">
+                    <div class="floor-brand-head">
+                        精选品牌
+                    </div>
+                    <div class="floor-brand-wrapper">
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fuli-new-floor-3">
+        <div class="fuli-new-wrapper">
+            <div class="fuli-brain clearfix">
+                <div class="fuli-vertical"></div>
+                <h3 class="fuli-box-tit2">家居用品</h3>
+                <ul class="clearfix fuli-floor-list">
+                    <li>
+                        <a href="#">电脑</a>
+                    </li>
+                    <li>
+                        <a href="#">手机</a>
+                    </li>
+                    <li>
+                        <a href="#">文具</a>
+                    </li>
+                    <li>
+                        <a href="#">笔记本</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fuli-floor-body clearfix">
+                <a href="#" class="fuli-floor-image">
+                    <div class="fuli-floor-pictures"></div>
+                </a>
+                <div class="fuli-floor-goods">
+                    <div class="floor-goods-wrapper clearfix">
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                        <div class="floor-goods-item">
+                            <a href="#" class="floor-goods-large">
+                                <div class="floor-goods-image"></div>
+                            </a>
+                            <div class="floor-goods-introduce">
+                                <p class="floor-goods-name">
+                                    <a href="#" title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">哈哈哈哈哈哈哈哈哈</a>
+                                </p>
+                            </div>
+                            <div class="floor-goods-price">
+                                ￥ 288
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fuli-floor-brand">
+                    <div class="floor-brand-head">
+                        精选品牌
+                    </div>
+                    <div class="floor-brand-wrapper">
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                        <a href="#" class="floor-brand-item">
+                            <div class="floor-brand-img"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fuli-clearance"></div>
+    <!-- 楼层 -->
     <!-- 内容end -->
-
+    <!-- 底部 -->
+    <div class="footerpage"></div>
+    <!-- 底部end -->
 
     <script src="./lib/jq/jquery.min.js"></script>
     <script src="./lib/slide/slide.js"></script>
+    <script src="./lib/lazyload/lazyload.js"></script>
     <script src="./js/index/index.js"></script>
     <script>
         $(function () {
@@ -350,7 +807,7 @@
              * footer CopyRight
              */
             $(".headerpage").load("./pages/header/header.html");
-            // $(".footerpage").load("footer.html");
+            $(".footerpage").load("./pages/footer/footer.html");
         });
     </script>
 </body>

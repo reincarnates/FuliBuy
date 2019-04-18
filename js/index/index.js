@@ -7,14 +7,14 @@ $(function () {
   var Bg = 1;
 
   //判断显示哪一种banner
-  if(Bg == 1) {
+  if (Bg == 1) {
     $('#adsense').css('display', 'block');
-  }else if(Bg == 2) {
+  } else if (Bg == 2) {
     $('#personal').css('display', 'block');
-  }else if(Bg == 3) {
+  } else if (Bg == 3) {
     $('#fullSlide').css('display', 'block');
   }
-  
+
   //关闭顶部广告
   $('#close_advert').click(function () {
     $('.advert').remove();
@@ -31,6 +31,11 @@ $(function () {
     }
   });
 
+  //搜索框发生改变
+  $('#searchGoods').keyup(function() {
+    $('.fuli-shelper').css('display', 'block');
+  });
+
   //右侧面板购物车点击加背景
   $("#tab-cart").click(function () {
     if (tabCount == 0) {
@@ -43,6 +48,46 @@ $(function () {
       tabCount = 0;
     }
   });
+
+  //右侧面板鼠标移入显示简介  
+  $(".fuli-toolbar-tab,.fuli-toolbar-tab2").each(function(){
+    $(this).mouseover(function(){
+        $(this).children(".fuli-toolbar-text").addClass('toolbar-text-left'); 
+        $(this).addClass("toolbar-text-bg");
+    })
+    $(this).mouseout(function(){
+        $(this).children(".fuli-toolbar-text").removeClass("toolbar-text-left");
+        $(this).removeClass("toolbar-text-bg");
+    })
+  })
+  
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#toTop').fadeIn();
+    } else {
+      $('#toTop').fadeOut();
+    }
+  });
+
+  //当点击跳转链接后，回到页面顶部位置
+  $("#toTop").click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 500);
+    // return false;
+  });
+
+  //购物车hover下拉
+  $('.search-cart-bg,.search-cart-select,.search-select-small').mouseover(function() {
+    $('.search-cart-bg').addClass("select-bg");
+    $('.search-cart-select').addClass("select-border");
+    $('.search-select-small').addClass("select-border2");
+  }).mouseout(function() {
+    $('.search-cart-bg').removeClass("select-bg");
+    $('.search-cart-select').removeClass("select-border");
+    $('.search-select-small').removeClass("select-border2");
+  });
+
+  var adsHeight = $(".adsense-slide").height();
+  $(".adsense-menu").css('height', adsHeight);
 
   createFloor();
 
@@ -208,151 +253,151 @@ function createFloor() {
         ]
       }
     },
-        {
-    "type": 2,
+    {
+      "type": 2,
       "title": "美妆达人",
-        "word_key": [
+      "word_key": [
+        {
+          "name": "运动套装",
+          "url": "http://www.helibuy.cn/mall/s-408-0-0-0-0-0-0-0-0.html"
+        },
+        {
+          "name": "运动裤",
+          "url": "http://www.helibuy.cn/mall/s-409-0-0-0-0-0-0-0-0.html"
+        },
+        {
+          "name": "运动背心",
+          "url": "http://www.helibuy.cn/mall/s-410-0-0-0-0-0-0-0-0.html"
+        },
+        {
+          "name": "训练服",
+          "url": "http://www.helibuy.cn/mall/s-411-0-0-0-0-0-0-0-0.html"
+        }
+      ],
+      "data_list": {
+        "right": [
           {
-            "name": "运动套装",
-            "url": "http://www.helibuy.cn/mall/s-408-0-0-0-0-0-0-0-0.html"
+            "title": "",
+            "smtitle": "",
+            "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083979731396265.png",
+            "url": "http://www.helibuy.cn/mall/topic-4.html"
           },
           {
-            "name": "运动裤",
-            "url": "http://www.helibuy.cn/mall/s-409-0-0-0-0-0-0-0-0.html"
+            "title": "",
+            "smtitle": "",
+            "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083980160456612.png",
+            "url": "http://www.helibuy.cn/mall/topic-2.html"
           },
           {
-            "name": "运动背心",
-            "url": "http://www.helibuy.cn/mall/s-410-0-0-0-0-0-0-0-0.html"
+            "title": "",
+            "smtitle": "",
+            "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083979748260343.png",
+            "url": "http://www.helibuy.cn/mall/topic-3.html"
           },
           {
-            "name": "训练服",
-            "url": "http://www.helibuy.cn/mall/s-411-0-0-0-0-0-0-0-0.html"
+            "title": "",
+            "smtitle": "",
+            "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083978485458869.png",
+            "url": "http://www.helibuy.cn/mall/topic-5.html"
           }
         ],
-          "data_list": {
-      "right": [
-        {
+        "left": {
           "title": "",
           "smtitle": "",
-          "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083979731396265.png",
-          "url": "http://www.helibuy.cn/mall/topic-4.html"
-        },
-        {
-          "title": "",
-          "smtitle": "",
-          "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083980160456612.png",
-          "url": "http://www.helibuy.cn/mall/topic-2.html"
-        },
-        {
-          "title": "",
-          "smtitle": "",
-          "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083979748260343.png",
-          "url": "http://www.helibuy.cn/mall/topic-3.html"
-        },
-        {
-          "title": "",
-          "smtitle": "",
-          "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083978485458869.png",
+          "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083978668261766.png",
           "url": "http://www.helibuy.cn/mall/topic-5.html"
         }
-      ],
-        "left": {
-        "title": "",
-          "smtitle": "",
-            "img_url": "http://www.helibuy.cn/data/upload/mall/article/06083978668261766.png",
-              "url": "http://www.helibuy.cn/mall/topic-5.html"
       }
-    }
-  },
-  {
-    "type": 4,
+    },
+    {
+      "type": 4,
       "title": "办公用品",
-        "word_key": [
-          {
-            "name": "婚庆饰品",
-            "url": "http://www.helibuy.cn/mall/s-586-0-0-0-0-0-0-0-0.html"
-          },
-          {
-            "name": "装饰挂件",
-            "url": "http://www.helibuy.cn/mall/s-587-0-0-0-0-0-0-0-0.html"
-          },
-          {
-            "name": "时尚饰品",
-            "url": "http://www.helibuy.cn/mall/s-588-0-0-0-0-0-0-0-0.html"
-          },
-          {
-            "name": "钻石",
-            "url": "http://www.helibuy.cn/mall/s-589-0-0-0-0-0-0-0-0.html"
-          }
-        ],
-          "data_list": {
-      "right": [
+      "word_key": [
         {
-          "goods_id": "16236",
-          "market_price": "9.90",
-          "goods_name": "齐心（COMIX）时尚办公订书机文具套装12#(订书机+起钉器+订书钉) 颜色随机 办公文具 ED46",
-          "goods_jingle": "齐心（COMIX）时尚办公订书机文具套装12#(订书机+起钉器+订书钉) 颜色随机 办公文具 ED46",
-          "goods_price": "9.90",
-          "goods_pic": "http://img11.360buyimg.com/n1/jfs/t3307/252/1418311063/187332/43fb20a6/57cd2a01N7ae84baa.jpg",
-          "url": "http://www.helibuy.cn/mall/c-16236.html"
+          "name": "婚庆饰品",
+          "url": "http://www.helibuy.cn/mall/s-586-0-0-0-0-0-0-0-0.html"
         },
         {
-          "goods_id": "16052",
-          "market_price": "49.00",
-          "goods_name": "得力(deli)6卷45mm宽透明封箱胶带打包胶带 150m/卷33194",
-          "goods_jingle": "得力(deli)6卷45mm宽透明封箱胶带打包胶带 150m/卷33194",
-          "goods_price": "42.72",
-          "goods_pic": "http://img11.360buyimg.com/n1/jfs/t14389/74/1404513161/190252/a73b6a63/5a4f1633Na7fb3d99.jpg",
-          "url": "http://www.helibuy.cn/mall/c-16052.html"
+          "name": "装饰挂件",
+          "url": "http://www.helibuy.cn/mall/s-587-0-0-0-0-0-0-0-0.html"
         },
         {
-          "goods_id": "16004",
-          "market_price": "14.80",
-          "goods_name": "齐心（COMIX）金属网纹多功能办公笔筒 颜色随机 办公文具B2061",
-          "goods_jingle": "齐心（COMIX）金属网纹多功能办公笔筒 颜色随机 办公文具B2061",
-          "goods_price": "14.80",
-          "goods_pic": "http://img11.360buyimg.com/n1/jfs/t3796/166/102316066/160927/14eafa48/57ff0377N95127406.jpg",
-          "url": "http://www.helibuy.cn/mall/c-16004.html"
+          "name": "时尚饰品",
+          "url": "http://www.helibuy.cn/mall/s-588-0-0-0-0-0-0-0-0.html"
         },
         {
-          "goods_id": "16042",
-          "market_price": "6.00",
-          "goods_name": "广博(GuangBo)170mm护手办公型剪刀剪子颜色随机JD8238",
-          "goods_jingle": "广博(GuangBo)170mm护手办公型剪刀剪子颜色随机JD8238",
-          "goods_price": "6.00",
-          "goods_pic": "http://img11.360buyimg.com/n1/jfs/t6598/228/2472496934/192802/a8652ec/5963285cN13bc58a4.jpg",
-          "url": "http://www.helibuy.cn/mall/c-16042.html"
-        },
-        {
-          "goods_id": "16169",
-          "market_price": "1.00",
-          "goods_name": "三木(SUNWOOD) 6606 9g固体胶/胶棒 办公文具",
-          "goods_jingle": "三木(SUNWOOD) 6606 9g固体胶/胶棒 办公文具",
-          "goods_price": "0.71",
-          "goods_pic": "http://img11.360buyimg.com/n1/g14/M02/11/01/rBEhV1I5ZCUIAAAAAADPR1NiWGIAADVIgGLQdAAAM9f195.jpg",
-          "url": "http://www.helibuy.cn/mall/c-16169.html"
-        },
-        {
-          "goods_id": "15889",
-          "market_price": "11.90",
-          "goods_name": "金隆兴（Glosen）A4透明书写板夹文件夹 PS材质带标尺 透明蓝 C1079",
-          "goods_jingle": "金隆兴（Glosen）A4透明书写板夹文件夹 PS材质带标尺 透明蓝 C1079",
-          "goods_price": "10.34",
-          "goods_pic": "http://img11.360buyimg.com/n1/jfs/t16945/74/583775611/200474/a0b35760/5a98b65dNccd29eea.jpg",
-          "url": "http://www.helibuy.cn/mall/c-15889.html"
-        },
-        {
-          "goods_id": "16498",
-          "market_price": "18.00",
-          "goods_name": "麦克赛尔（maxell）CD-R MQ系列 48速700M 5片盒装 空白光盘/刻录盘碟片",
-          "goods_jingle": "麦克赛尔（maxell）CD-R MQ系列 48速700M 5片盒装 空白光盘/刻录盘碟片",
-          "goods_price": "17.33",
-          "goods_pic": "http://img11.360buyimg.com/n1/jfs/t997/283/1138375639/119444/c8a0a643/557a5836Nf78122e8.jpg",
-          "url": "http://www.helibuy.cn/mall/c-16498.html"
+          "name": "钻石",
+          "url": "http://www.helibuy.cn/mall/s-589-0-0-0-0-0-0-0-0.html"
         }
       ],
+      "data_list": {
+        "right": [
+          {
+            "goods_id": "16236",
+            "market_price": "9.90",
+            "goods_name": "齐心（COMIX）时尚办公订书机文具套装12#(订书机+起钉器+订书钉) 颜色随机 办公文具 ED46",
+            "goods_jingle": "齐心（COMIX）时尚办公订书机文具套装12#(订书机+起钉器+订书钉) 颜色随机 办公文具 ED46",
+            "goods_price": "9.90",
+            "goods_pic": "http://img11.360buyimg.com/n1/jfs/t3307/252/1418311063/187332/43fb20a6/57cd2a01N7ae84baa.jpg",
+            "url": "http://www.helibuy.cn/mall/c-16236.html"
+          },
+          {
+            "goods_id": "16052",
+            "market_price": "49.00",
+            "goods_name": "得力(deli)6卷45mm宽透明封箱胶带打包胶带 150m/卷33194",
+            "goods_jingle": "得力(deli)6卷45mm宽透明封箱胶带打包胶带 150m/卷33194",
+            "goods_price": "42.72",
+            "goods_pic": "http://img11.360buyimg.com/n1/jfs/t14389/74/1404513161/190252/a73b6a63/5a4f1633Na7fb3d99.jpg",
+            "url": "http://www.helibuy.cn/mall/c-16052.html"
+          },
+          {
+            "goods_id": "16004",
+            "market_price": "14.80",
+            "goods_name": "齐心（COMIX）金属网纹多功能办公笔筒 颜色随机 办公文具B2061",
+            "goods_jingle": "齐心（COMIX）金属网纹多功能办公笔筒 颜色随机 办公文具B2061",
+            "goods_price": "14.80",
+            "goods_pic": "http://img11.360buyimg.com/n1/jfs/t3796/166/102316066/160927/14eafa48/57ff0377N95127406.jpg",
+            "url": "http://www.helibuy.cn/mall/c-16004.html"
+          },
+          {
+            "goods_id": "16042",
+            "market_price": "6.00",
+            "goods_name": "广博(GuangBo)170mm护手办公型剪刀剪子颜色随机JD8238",
+            "goods_jingle": "广博(GuangBo)170mm护手办公型剪刀剪子颜色随机JD8238",
+            "goods_price": "6.00",
+            "goods_pic": "http://img11.360buyimg.com/n1/jfs/t6598/228/2472496934/192802/a8652ec/5963285cN13bc58a4.jpg",
+            "url": "http://www.helibuy.cn/mall/c-16042.html"
+          },
+          {
+            "goods_id": "16169",
+            "market_price": "1.00",
+            "goods_name": "三木(SUNWOOD) 6606 9g固体胶/胶棒 办公文具",
+            "goods_jingle": "三木(SUNWOOD) 6606 9g固体胶/胶棒 办公文具",
+            "goods_price": "0.71",
+            "goods_pic": "http://img11.360buyimg.com/n1/g14/M02/11/01/rBEhV1I5ZCUIAAAAAADPR1NiWGIAADVIgGLQdAAAM9f195.jpg",
+            "url": "http://www.helibuy.cn/mall/c-16169.html"
+          },
+          {
+            "goods_id": "15889",
+            "market_price": "11.90",
+            "goods_name": "金隆兴（Glosen）A4透明书写板夹文件夹 PS材质带标尺 透明蓝 C1079",
+            "goods_jingle": "金隆兴（Glosen）A4透明书写板夹文件夹 PS材质带标尺 透明蓝 C1079",
+            "goods_price": "10.34",
+            "goods_pic": "http://img11.360buyimg.com/n1/jfs/t16945/74/583775611/200474/a0b35760/5a98b65dNccd29eea.jpg",
+            "url": "http://www.helibuy.cn/mall/c-15889.html"
+          },
+          {
+            "goods_id": "16498",
+            "market_price": "18.00",
+            "goods_name": "麦克赛尔（maxell）CD-R MQ系列 48速700M 5片盒装 空白光盘/刻录盘碟片",
+            "goods_jingle": "麦克赛尔（maxell）CD-R MQ系列 48速700M 5片盒装 空白光盘/刻录盘碟片",
+            "goods_price": "17.33",
+            "goods_pic": "http://img11.360buyimg.com/n1/jfs/t997/283/1138375639/119444/c8a0a643/557a5836Nf78122e8.jpg",
+            "url": "http://www.helibuy.cn/mall/c-16498.html"
+          }
+        ],
         "left": {
-        "bg_img": "http://www.helibuy.cn/data/upload/mall/article/06083981345768676.jpg",
+          "bg_img": "http://www.helibuy.cn/data/upload/mall/article/06083981345768676.jpg",
           "cate_list": [
             {
               "text": "时尚羽绒服",
@@ -379,12 +424,12 @@ function createFloor() {
               "url": "http://www.helibuy.cn/mall/s-532-0-0-0-0-0-0-0-0.html"
             }
           ]
+        }
       }
-    }
-  },
-  {
-    "type": 3,
-    "title": "热卖品牌",
+    },
+    {
+      "type": 3,
+      "title": "热卖品牌",
       "word_key": [
         {
           "name": "婚庆饰品",
@@ -404,42 +449,42 @@ function createFloor() {
         }
       ],
       "data_list": [
-          {
-            "brand_id": "",
-            "brand_name": "",
-            "brand_pic": "https://img.chinapp.com/uploadfile/pinpai/original/20181207/42565b771932ce8538e97be43a23fffb.gif"
-          },
-          {
-            "brand_id": "",
-            "brand_name": "",
-            "brand_pic": "https://img.chinapp.com/uploadfile/pinpai/original/20181206/3a008e9c4f08f3dbf5909e76bead01d6.jpg"
-          },
-          {
-            "brand_id": "",
-            "brand_name": "",
-            "brand_pic": "https://img.chinapp.com/uploadfile/Pinpai/2017-05-08/14942163408975.gif"
-          },
-          {
-            "brand_id": "",
-            "brand_name": "",
-            "brand_pic": "https://img.chinapp.com/uploadfile/pinpai/original/20180930/e3bbda1f0b7ef2164cf31c7e86af70fc.jpg"
-          },
-          {
-            "brand_id": "",
-            "brand_name": "",
-            "brand_pic": "https://img.chinapp.com/uploadfile/pinpai/original/20180928/2b3bad94b9c445c4dfdaf91682603920.jpg"
-          }
-        ]
+        {
+          "brand_id": "",
+          "brand_name": "",
+          "brand_pic": "https://img.chinapp.com/uploadfile/pinpai/original/20181207/42565b771932ce8538e97be43a23fffb.gif"
+        },
+        {
+          "brand_id": "",
+          "brand_name": "",
+          "brand_pic": "https://img.chinapp.com/uploadfile/pinpai/original/20181206/3a008e9c4f08f3dbf5909e76bead01d6.jpg"
+        },
+        {
+          "brand_id": "",
+          "brand_name": "",
+          "brand_pic": "https://img.chinapp.com/uploadfile/Pinpai/2017-05-08/14942163408975.gif"
+        },
+        {
+          "brand_id": "",
+          "brand_name": "",
+          "brand_pic": "https://img.chinapp.com/uploadfile/pinpai/original/20180930/e3bbda1f0b7ef2164cf31c7e86af70fc.jpg"
+        },
+        {
+          "brand_id": "",
+          "brand_name": "",
+          "brand_pic": "https://img.chinapp.com/uploadfile/pinpai/original/20180928/2b3bad94b9c445c4dfdaf91682603920.jpg"
+        }
+      ]
+    }
+    ]
   }
-  ]
-}
   var floorOne = [];
-  $.each(list.jsonResult, function(index, element) {
-    if(element.type == 1) {
+  $.each(list.jsonResult, function (index, element) {
+    if (element.type == 1) {
       floorOne.push(element);
     }
   });
-  $.each(floorOne, function(index, item) {
+  $.each(floorOne, function (index, item) {
     var floor_title = `
       <div class="fuli-u-sm-1 fuli-floor-title">${item.title}</div>
       <div class="fuli-u-sm-11">
@@ -452,7 +497,7 @@ function createFloor() {
     `
     console.log(item);
     $('#floor').append(floor_title);
-    $.each(item.word_key, function(key, element) {
+    $.each(item.word_key, function (key, element) {
       var floor_nav = `
         <li>
             <a href="${element.url}">${element.name}</a>

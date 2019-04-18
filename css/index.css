@@ -33,6 +33,15 @@
   box-sizing: border-box;
   padding-left: 186px;
   padding-top: 43px;
+  position: relative;
+}
+
+.fuli-shelper{
+  width: 394px;
+  position: absolute;
+  border: 1px solid #ddd;
+  bottom: 13px;
+  display: none;
 }
 
 .search-content-left{
@@ -109,6 +118,31 @@
 .search-cart{
   padding-top: 41px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.search-select-small{
+  width: 125px;
+  height: 17px;
+  background-color: #fff;
+  z-index: 889;
+  position: absolute;
+  bottom: -14px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.search-cart-select{
+  width: 290px;
+  height: 273px;
+  background-color: #fff;
+  position: absolute;
+  right: 75px;
+  bottom: 10px;
+  top: 96px;
+  z-index: 888;
+  box-sizing: border-box;
+  display: none;
 }
 
 .search-cart-bg{
@@ -119,6 +153,22 @@
   display: flex;
   align-items: center;
   position: relative;
+  box-sizing: border-box;
+}
+
+.select-bg{
+  background-color: #fff;
+}
+
+.select-border{
+  border: 1px solid #ddd;
+  display: block;
+}
+
+.select-border2{
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  display: block;
 }
 
 .search-cart-bg img{
@@ -213,7 +263,7 @@
 .fuli-toolbar-tabs{
   position: absolute;
   top: 50%;
-  left: -29px;
+  left: -35px;
   width: 35px;
   margin-top: 50px;
 }
@@ -224,8 +274,8 @@
 
 .fuli-toolbar-tab{
   position: relative;
-  width: 31px;
-  height: 31px;
+  width: 35px;
+  height: 35px;
   margin-bottom: 2px;
   cursor: pointer;
   background-color: #7a6e6e;
@@ -235,11 +285,63 @@
   justify-content: center;
 }
 
+.fuli-toolbar-tab2{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  background-color: #7a6e6e;
+  border-radius: 3px 0 0 3px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  top: 150px;
+  display: none;
+}
+
+.fuli-toolbar-tab2 img{
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}
+
+.fuli-toolbar-tab img{
+  z-index: 2;
+}
+
+.fuli-toolbar-text{
+  width: 62px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  text-align: center;
+  font-family: 微软雅黑;
+  font-size: 14px;
+  position: absolute;
+  z-index: -1;
+  left: 35px;
+  top: 0;
+  background-color: #7a6e6e;
+  border-radius: 3px 0 0 3px;
+  transition: left .3s ease-in-out .1s;
+}
+
+.toolbar-text-left{
+  left: -60px;
+  background-color: #e23535;
+}
+
+.toolbar-text-bg{
+  background-color: #e23535;
+}
+
 .fuli-toolbar-panels{
   width: 264px;
   height: 100%;
   background-color: #fff;
   border-left: 6px solid #7a6e6e;
+  z-index: 2;
 }
 
 /* .fuli-floor{
@@ -504,8 +606,25 @@
   box-sizing: border-box;
 }
 
-.fuli-box-item:last-child{
-  margin: 0;
+.fuli-box-item-2{
+  width: 33%;
+  height: 451px;
+  background-color: #fff;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 3px 3px rgba(231,231,231,.5);
+  float: left;
+  box-sizing: border-box;
+}
+
+.fuli-box-item-3{
+  width: 33%;
+  height: 451px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 3px 3px rgba(231,231,231,.5);
+  float: left;
+  box-sizing: border-box;
 }
 
 .fuli-box-head{
@@ -554,11 +673,20 @@
   margin: 0 0 0 8px;
 }
 
+.fuli-sort-wrapper-2{
+  margin: 35px 0 0 10px;
+}
+
 .fuli-sort-large{
   display: block;
   width: 377px;
   height: 196px;
   margin-bottom: 13px;
+}
+
+.fuli-sort-large-2{
+  width: 374px;
+  height: 170px;
 }
 
 .fuli-sort-img{
@@ -585,4 +713,202 @@
 
 .fuli-sort-middle:last-child{
   margin: 0;
+}
+
+.fuli-new-floor{
+  width: 100%;
+  height: 810px;
+  background-color: #fff;
+  margin-top: 37px;
+}
+
+.fuli-new-wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 24px;
+  box-sizing: border-box;
+}
+
+.fuli-brain{
+  width: 100%;
+  height: 90px;
+  position: relative;
+}
+
+.fuli-vertical{
+  width: 10px;
+  height: 32px;
+  background-color: #b29e77;
+  position: absolute;
+  top: 32%;
+  float: left;
+}
+
+.fuli-box-tit2{
+  float: left;
+  font-weight: normal;
+  font-size: 22px;
+  color: #222;
+  line-height: 90px;
+  margin-left: 20px;
+}
+
+.fuli-floor-list{
+  width: 240px;
+  line-height: 90px;
+  float: right;
+}
+
+.fuli-floor-list li{
+  width: 60px;
+  text-align: right;
+  float: left;
+}
+
+.fuli-floor-list li a{
+  color: #333;
+  font-size: 16px;
+}
+
+.fuli-floor-image{
+  width: 233px;
+  height: 644px;
+  float: left;
+  background: #222;
+}
+
+.fuli-floor-pictures{
+  width: 100%;
+  height: 100%;
+}
+
+.fuli-floor-goods{
+  width: 783px;
+  height: 644px;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
+  margin: 0 5px;
+  padding: 20px 0 0 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.floor-goods-wrapper{
+  width: 100%;
+}
+
+.floor-goods-item{
+  width: 32%;
+  height: 299px;
+  margin-right: 10px;
+  margin-top: 10px;
+  float: left;
+}
+
+.floor-goods-item:nth-of-type(-n+3){
+  margin-top: 0;
+}
+
+.floor-goods-item:nth-of-type(3n){
+  margin-right: 0;
+}
+
+.floor-goods-large{
+  width: 236px;
+  height: 241px;
+  background-color: #f4f4f4;
+  display: block;
+}
+
+.floor-goods-image{
+  width: 100%;
+  height: 100%;
+}
+
+.floor-goods-name{
+  width: 236px;
+  line-height: 27px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.floor-goods-name a{
+  color: #333;
+}
+
+.floor-goods-price{
+  width: 236px;
+  line-height: 23px;
+  color: #f32d2d;
+  font-size: 14px;
+  text-align: center;
+}
+
+.fuli-floor-brand{
+  width: 168px;
+  height: 644px;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
+  box-sizing: border-box;
+  float: left;
+}
+
+.floor-brand-head{
+  height: 76px;
+  padding: 0 11px;
+  text-align: center;
+  line-height: 76px;
+  font-size: 18px;
+  color: #666;
+}
+
+.floor-brand-wrapper{
+  margin: 0 0 0 11px;
+}
+
+.floor-brand-item{
+  width: 147px;
+  height: 67px;
+  border: 1px solid #ededed;
+  box-sizing: border-box;
+  margin-bottom: 27px;
+  display: block;
+}
+
+.floor-brand-img{
+  width: 100%;
+  height: 100%;
+}
+
+img{
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;	/* Firefox 4 */
+  -webkit-transition: all 0.5s;	/* Safari 和 Chrome */
+  -o-transition: all 0.5s;	/* Opera */;
+}
+
+.fuli-new-floor-2{
+  width: 100%;
+  height: 810px;
+  background-color: #fffcf4;
+}
+
+.fuli-new-floor-3{
+  width: 100%;
+  height: 810px;
+  background-color: #fffbfa;
+}
+
+.fuli-clearance{
+  width: 100%;
+  height: 36px;
+  border-bottom: 1px solid #f4f4f4;
+  background-color: #fff;
 }
