@@ -37,9 +37,10 @@
 }
 
 .fuli-shelper{
-  width: 394px;
+  width: 390px;
   position: absolute;
   border: 1px solid #ddd;
+  background-color: #fff;
   bottom: 13px;
   display: none;
 }
@@ -69,7 +70,7 @@
 .search-input{
   width: 340px;
   height: 42px;
-  border: 1px solid #b29e77;
+  border: 1px solid #e98930;
   box-sizing: border-box;
   float: left;
 }
@@ -86,7 +87,7 @@
 .search-btn{
   width: 54px;
   height: 42px;
-  background-color: #b29e77;
+  background-color: #e98930;
   float: left;
   display: flex;
   align-items: center;
@@ -112,7 +113,7 @@
 
 .small-nav > li > a:hover,
 .small-nav > li > a:focus {
-  color: #ff3f40
+  color: #e98930
 }
 
 .search-cart{
@@ -177,7 +178,7 @@
 
 .search-cart-bg span{
   margin-left: 12px;
-  color: #b29e77;
+  color: #e98930;
   font-size: 14px;
 }
 
@@ -204,8 +205,8 @@
 
 .ification-wraper{
   width: 100%;
-  height: 42px;
-  background-color: #b29e77;
+  height: 32px;
+  background-color: #e98930;
 }
 
 .fuli-w{
@@ -214,7 +215,7 @@
 }
 
 .classification{
-  height: 41px;
+  height: 30px;
   color: #fff;
   font-size: 16px;
   display: flex;
@@ -228,8 +229,8 @@
 
 .classification-nav{
   width: 100%;
-  height: 42px;
-  line-height: 42px;
+  height: 32px;
+  line-height: 32px;
   padding-left: 18px;
 }
 
@@ -246,7 +247,7 @@
 
 .classification-nav > li > a:hover,
 .classification-nav > li > a:focus {
-  color: #ff3f40
+  color: #ffe6cf;
 }
 
 .fuli-toolbar{
@@ -528,6 +529,41 @@
   box-shadow: 0 3px 3px 3px rgba(231,231,231,.5);
   margin-right: 22px;
   float: left;
+  position: relative;
+}
+
+.adsense-menu ul li,
+.personal-menu ul li{
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.adsense-list-select{
+  width: 1000px;
+  height: 600px;
+  background: #fff;
+  position: absolute;
+  left: 205px;
+  top: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.adsense-menu ul li a,
+.personal-menu ul li a{
+  color: #626262;
+}
+
+.adsense-hover{
+  background-color: #ffe6cf;
+}
+
+.adsense-a-hover{
+  color: #e98930 !important;
 }
 
 .personal-slide{
@@ -545,6 +581,74 @@
   float: left;
 }
 
+.personal-core-head{
+  width: 100%;
+  height: 122px;
+  padding-top: 37px;
+  box-sizing: border-box;
+}
+
+.personal-core-head p{
+  line-height: 24px;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+
+.fuli-user-login{
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f1a35b;
+  text-align: center;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.fuli-tenants-login{
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #e98930;
+  background-color: #ffe4cb;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #e98930;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.personal-service-word{
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.personal-service{
+  width: 100%;
+  height: 47px;
+  margin-top: 31px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.personal-service-tit{
+  line-height: 24px;
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+.personal-service-text{
+  line-height: 24px;
+  color: #999;
+  font-size: 12px;
+}
+
 .sponsor{
   height: 338px;
   background-color: #fff;
@@ -552,6 +656,7 @@
   box-shadow: 0 3px 3px 3px rgba(231,231,231,.5);
   margin-top: 30px;
   padding: 36px 0;
+  box-sizing: border-box;
 }
 
 .sponsor-s{
@@ -568,13 +673,17 @@
   float: left;
 }
 
+.sponsor-item img{
+  width: 100%;
+}
+
 .sponsor-item:last-child{
   margin-right: 0;
 }
 
 .sponsor-small{
   margin-left: 8px;
-  margin-top: 90px;
+  margin-top: 16px;
 }
 
 .sponsor-small-item{
@@ -584,6 +693,9 @@
   border-width: 1px 1px 1px 0;
   float: left;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sponsor-small-item:last-child{
@@ -634,6 +746,22 @@
   line-height: 0;
 }
 
+.fuli-tactic-cover{
+  width: 365px;
+  height: 370px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.fuli-tactic-lk{
+  display: block;
+}
+
+.tactic-lk-img{
+  width: 100%;
+  height: 100%;
+}
+
 .fuli-box-hk{
   display: inline-block;
   position: relative;
@@ -670,23 +798,29 @@
 }
 
 .fuli-sort-wrapper{
-  margin: 0 0 0 8px;
+  /* margin: 0 0 0 20px; */
 }
 
 .fuli-sort-wrapper-2{
-  margin: 35px 0 0 10px;
+  margin: 0 0 0 10px;
 }
 
 .fuli-sort-large{
   display: block;
-  width: 377px;
+  width: 100%;
   height: 196px;
-  margin-bottom: 13px;
+  border-bottom: 1px solid #ddd;
 }
 
 .fuli-sort-large-2{
   width: 374px;
-  height: 170px;
+  height: 195px;
+  display: block;
+  border-bottom: 1px solid #d6dfe4;
+}
+
+.fuli-sort-large-2:last-child{
+  border-bottom: none;
 }
 
 .fuli-sort-img{
@@ -695,24 +829,43 @@
   transition: opacity ease 0.2s;
 }
 
+.fuli-sort-k{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-sort-m{
+  margin-left: 30px;
+}
+
 .fuli-sort-img:hover{
+  opacity: 0.8;
+}
+
+.fuli-sort-img2{
+  width: 100%;
+  height: 100%;
+  transition: opacity ease 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-sort-img2:hover{
   opacity: 0.8;
 }
 
 .fuli-sort-middle{
   float: left;
   display: block;
-  width: 183px;
-  height: 175px;
-  margin: 0 10px 10px 0;
-}
-
-.fuli-sort-middle img{
-  width: 100%;
+  width: 193px;
+  height: 192px;
+  border-right: 1px solid #ddd;
 }
 
 .fuli-sort-middle:last-child{
-  margin: 0;
+  border-right: none;
 }
 
 .fuli-new-floor{
@@ -824,6 +977,9 @@
 .floor-goods-image{
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .floor-goods-name{
@@ -885,6 +1041,9 @@
 .floor-brand-img{
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img{

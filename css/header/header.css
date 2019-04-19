@@ -123,7 +123,7 @@
 
 .help-list-nav > li > a:hover,
 .help-list-nav > li > a:focus {
-  color: #ff3f40
+  color: #e98930;
 }
 
 .footer-help-public{
@@ -169,6 +169,48 @@
 
 .fuli-copyright-icon:last-child{
   margin-right: 0;
+}
+
+.fuli-copyright-icon-1{
+  background-repeat: no-repeat;
+  /* background-position: ; */
+  background-image: url(../../images/static/bigimg.png)
+}
+
+.fuli-copyright-icon-2{
+  background-repeat: no-repeat;
+  background-position: 0 -43px;
+  background-image: url(../../images/static/bigimg.png)
+}
+
+.fuli-copyright-icon-3{
+  background-repeat: no-repeat;
+  background-position: 0 -88px;
+  background-image: url(../../images/static/bigimg.png)
+}
+
+.fuli-copyright-icon-4{
+  background-repeat: no-repeat;
+  background-position: 0 -133px;
+  background-image: url(../../images/static/bigimg.png)
+}
+
+.fuli-copyright-icon-5{
+  background-repeat: no-repeat;
+  background-position: 0 -178px;
+  background-image: url(../../images/static/bigimg.png)
+}
+
+.fuli-copyright-icon-6{
+  background-repeat: no-repeat;
+  background-position: 0 -223px;
+  background-image: url(../../images/static/bigimg.png)
+}
+
+.fuli-copyright-icon-7{
+  background-repeat: no-repeat;
+  background-position: 0 -269px;
+  background-image: url(../../images/static/bigimg.png)
 }
 
 .fuli-copyright-info{
