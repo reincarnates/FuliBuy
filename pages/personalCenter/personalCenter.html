@@ -190,70 +190,298 @@
 
   <!-- 内容 -->
   <div class="fuli-container fuli-wrapper">
-    <div class="menu">
-      <dl class="list_dl">
-        <dt class="list_dt">
-          <span class="_after"></span>
-          <p>选择器</p>
-          <i class="list_dt_icon"></i>
-        </dt>
-        <dd class="list_dd">
-          <ul>
-            <li class="list_li">#id</li>
-            <li class="list_li">element</li>
-            <li class="list_li">.class</li>
-            <li class="list_li">*</li>
+    <div class="clearfix personal">
+      <div class="menu">
+        <dl class="list_dl">
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <p>订单中心</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">我的订单</li>
+              <li class="list_li">订单回收站</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <p>我的福利袋</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">余额</li>
+              <li class="list_li">积分</li>
+              <li class="list_li">红包</li>
+              <li class="list_li">代金券</li>
+              <li class="list_li">更多</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <p>客户服务</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">退款或退换货</li>
+              <li class="list_li">发票服务</li>
+              <li class="list_li">投诉举报</li>
+              <li class="list_li">意见反馈</li>
+              <li class="list_li">在线咨询</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <p>关注中心</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">我的收藏</li>
+              <li class="list_li">我参与的</li>
+              <li class="list_li">预约提醒</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="fuli-personal-wrapper">
+        <div class="introduce-tab2 mar-tw clearfix">
+          <ul class="tab2">
+            <li class="cur2">
+              所有订单
+              <span class="tab-color">4</span>
+            </li>
+            <li>
+              待发货
+              <span class="tab-color">1</span>
+            </li>
+            <li>
+              待收货
+              <span class="tab-color">2</span>
+            </li>
+            <li>
+              待评价
+              <span class="tab-color">3</span>
+            </li>
+            <li>
+              <img src="../../images/static/garbage.png" alt="" class="mar-rn"> 订单回收站
+            </li>
           </ul>
-        </dd>
-        <dt class="list_dt">
-          <span class="_after"></span>
-          <p>属性</p>
-          <i class="list_dt_icon"></i>
-        </dt>
-        <dd class="list_dd">
-          <ul>
-            <li class="list_li">attr</li>
-            <li class="list_li">removeAttr</li>
-            <li class="list_li">prop</li>
-            <li class="list_li">removeProp</li>
-            <li class="list_li">addClass</li>
-            <li class="list_li">removeClass</li>
-          </ul>
-        </dd>
-        <dt class="list_dt">
-          <span class="_after"></span>
-          <p>文档处理</p>
-          <i class="list_dt_icon"></i>
-        </dt>
-        <dd class="list_dd">
-          <ul>
-            <li class="list_li">append</li>
-            <li class="list_li">appendTo</li>
-            <li class="list_li">prepend</li>
-            <li class="list_li">prependTo</li>
-            <li class="list_li">after</li>
-            <li class="list_li">before</li>
-          </ul>
-        </dd>
-        <dt class="list_dt">
-          <span class="_after"></span>
-          <p>事件</p>
-          <i class="list_dt_icon"></i>
-        </dt>
-        <dd class="list_dd">
-          <ul>
-            <li class="list_li">ready</li>
-            <li class="list_li">on</li>
-            <li class="list_li">off</li>
-            <li class="list_li">bind</li>
-            <li class="list_li">one</li>
-            <li class="list_li">trigger</li>
-            <li class="list_li">hover</li>
-            <li class="list_li">click</li>
-            <li class="list_li">focus</li>
-          </ul>
-        </dd>
-      </dl>
+          <div class="fuli-search-order clearfix">
+            <div class="fuli-search-input">
+              <input type="text" placeholder="输入商品名称或订单编号" class="int" />
+            </div>
+            <div class="fuli-search-orders">
+              搜索
+            </div>
+          </div>
+        </div>
+        <div class="ob2 on2">
+          <div class="fuli-order-head clearfix">
+            <div class="fuli-order-left">
+              近3个月订单
+              <img src="../../images/static/headdown.png" alt="">
+            </div>
+            <div class="fuli-order-right">
+              <ul class="clearfix fuli-order-list">
+                <li>商品数量</li>
+                <li>金额</li>
+                <li>全部状态</li>
+                <li>操作</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fuli-order-info">
+            <div class="order-info-heade clearfix">
+              <div class="order-info-left">
+                订单编号：56728272726266363
+              </div>
+              <div class="order-time">
+                下单时间：2019-04-09
+              </div>
+            </div>
+            <div class="order-info-content clearfix">
+              <div class="order-goods-info">
+                <div class="order-goods-img">
+                  <img src="../../images/static/order_goods.png" alt="">
+                </div>
+                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <div class="order-goods-price">
+                  <div class="order-goods-del">￥98</div>
+                  <div class="order-goods-present">￥78</div>
+                </div>
+                <div class="order-goods-number">
+                  1件
+                </div>
+              </div>
+              <div class="order-goodsPrice">
+                <div class="order-goodsPrice-top">
+                  78.00
+                </div>
+                <div class="order-goodsPrice-bottom">
+                  (含运费: 0.00)
+                </div>
+              </div>
+              <div class="order-goods-status">
+                <span class="status-color">等待买家付款</span>
+                <span class="pointer">订单详情</span>
+              </div>
+              <div class="order-goods-setting">
+                <p>请在1小时30分内付款</p>
+                <div class="order-operate pointer">
+                  立即付款
+                </div>
+                <div class="order-cancel pointer">
+                  取消订单
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fuli-order-info">
+            <div class="order-info-heade clearfix">
+              <div class="order-info-left">
+                订单编号：56728272726266363
+              </div>
+              <div class="order-time">
+                下单时间：2019-04-09
+              </div>
+            </div>
+            <div class="order-info-content clearfix">
+              <div class="order-goods-info">
+                <div class="order-goods-img">
+                  <img src="../../images/static/order_goods.png" alt="">
+                </div>
+                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <div class="order-goods-price">
+                  <div class="order-goods-del">￥98</div>
+                  <div class="order-goods-present">￥78</div>
+                </div>
+                <div class="order-goods-number">
+                  1件
+                </div>
+              </div>
+              <div class="order-goodsPrice">
+                <div class="order-goodsPrice-top">
+                  78.00
+                </div>
+                <div class="order-goodsPrice-bottom">
+                  (含运费: 0.00)
+                </div>
+              </div>
+              <div class="order-goods-status">
+                <span class="status-color2">已发货</span>
+                <span class="pointer">查看物流</span>
+                <span class="pointer">订单详情</span>
+              </div>
+              <div class="order-goods-setting">
+                <div class="order-operate operate-color pointer">
+                  立即付款
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fuli-order-info">
+            <div class="order-info-heade clearfix">
+              <div class="order-info-left">
+                订单编号：56728272726266363
+              </div>
+              <div class="order-time">
+                下单时间：2019-04-09
+              </div>
+            </div>
+            <div class="order-info-content clearfix">
+              <div class="order-goods-info">
+                <div class="order-goods-img">
+                  <img src="../../images/static/order_goods.png" alt="">
+                </div>
+                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <div class="order-goods-price">
+                  <div class="order-goods-del">￥98</div>
+                  <div class="order-goods-present">￥78</div>
+                </div>
+                <div class="order-goods-number">
+                  1件
+                </div>
+              </div>
+              <div class="order-goodsPrice">
+                <div class="order-goodsPrice-top">
+                  78.00
+                </div>
+                <div class="order-goodsPrice-bottom">
+                  (含运费: 0.00)
+                </div>
+              </div>
+              <div class="order-goods-status">
+                <span class="status-color2">交易成功</span>
+                <span class="pointer">查看物流</span>
+                <span class="pointer">订单详情</span>
+              </div>
+              <div class="order-goods-setting">
+                <div class="order-assess  pointer">
+                  评价
+                </div>
+                <div class="order-cancel pointer">
+                  再次购买
+                </div>
+                <div class="order-cancel pointer">
+                  申请售后
+                </div>
+                <div class="order-cancel pointer">
+                  删除订单
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fuli-order-info">
+            <div class="order-info-heade clearfix">
+              <div class="order-info-left">
+                订单编号：56728272726266363
+              </div>
+              <div class="order-time">
+                下单时间：2019-04-09
+              </div>
+            </div>
+            <div class="order-info-content clearfix">
+              <div class="order-goods-info">
+                <div class="order-goods-img">
+                  <img src="../../images/static/order_goods.png" alt="">
+                </div>
+                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <div class="order-goods-price">
+                  <div class="order-goods-del">￥98</div>
+                  <div class="order-goods-present">￥78</div>
+                </div>
+                <div class="order-goods-number">
+                  1件
+                </div>
+              </div>
+              <div class="order-goodsPrice">
+                <div class="order-goodsPrice-top">
+                  78.00
+                </div>
+                <div class="order-goodsPrice-bottom">
+                  (含运费: 0.00)
+                </div>
+              </div>
+              <div class="order-goods-status">
+                <span class="status-color2">订单关闭</span>
+                <span class="pointer">订单详情</span>
+              </div>
+              <div class="order-goods-setting">
+                <span class="order-cancel pointer">再次购买</span>
+                <span class="order-cancel pointer">删除订单</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ob2">2</div>
+        <div class="ob2">3</div>
+        <div class="ob2">4</div>
+        <div class="ob2">5</div>
+        <div class="ob2">6</div>
+      </div>
     </div>
   </div>
   <!-- 内容 -->
