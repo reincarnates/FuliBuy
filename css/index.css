@@ -95,7 +95,7 @@
 }
 
 .small-nav{
-  width: 394px;
+  /* width: 394px; */
   height: 36px;
   line-height: 36px;
   padding-left: 18px;
@@ -927,7 +927,6 @@
   width: 233px;
   height: 644px;
   float: left;
-  background: #222;
 }
 
 .fuli-floor-pictures{

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/header/header.css">
+  <link rel="stylesheet" href="../../css/CommodityDetails/CommodityDetails.css">
+</head>
+
+<body>
+  <!-- 导航 -->
+  <div class="header">
+    <div class="fuli-container">
+      <div class="fuli-g">
+        <div class="fuli-u-sm-2">
+          <div class="fuli-g">
+            <div class="fuli-u-sm-4 home">
+              <img src="../../images/static/home.png" alt="首页" class="pointer">首页
+            </div>
+            <div class="fuli-u-sm-8 home">
+              <img src="../../images/static/landmark.png" alt="首页" class="pointer">北京
+            </div>
+          </div>
+        </div>
+        <!-- <div class="fuli-u-sm-7"> -->
+        <ul class="clearfix fuli-nav">
+          <li>
+            <a href="#">
+              登录
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              免费注册
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              我的订单
+              <img src="../../images/static/headdown.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              个人中心
+              <img src="../../images/static/headdown.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              微信号
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              福利会员
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              商户工作台
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              服务中心
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              手机客户端
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 导航end -->
+
+  <!-- 右侧面板 -->
+  <div class="fuli-toolbar">
+    <div class="fuli-toolbar-tabs">
+      <div class="fuli-toolbar-tab">
+        <img src="../../images/static/sideMsg.png" alt="">
+        <div class="fuli-toolbar-text">我的消息</div>
+      </div>
+      <div class="fuli-toolbar-tab" id="tab-cart">
+        <img src="../../images/static/sideCar.png" alt="">
+        <div class="fuli-toolbar-text">购物车</div>
+      </div>
+      <div class="fuli-toolbar-tab">
+        <img src="../../images/static/sideFoot.png" alt="">
+        <div class="fuli-toolbar-text">浏览足迹</div>
+      </div>
+      <div class="fuli-toolbar-tab">
+        <img src="../../images/static/sideCustomer.png" alt="">
+        <div class="fuli-toolbar-text">联系客服</div>
+      </div>
+      <div class="fuli-toolbar-tab">
+        <img src="../../images/static/sideBack.png" alt="">
+        <div class="fuli-toolbar-text">反馈问题</div>
+      </div>
+      <div class="fuli-toolbar-tab2" id="toTop">
+        <img src="../../images/static/updown.png" alt="">
+        <div class="fuli-toolbar-text">返回顶部</div>
+      </div>
+    </div>
+    <div class="fuli-toolbar-panels"></div>
+  </div>
+  <!-- 右侧面板end -->
+
+  <!-- 搜索 -->
+  <div class="search-wraper">
+    <div class="search-content">
+      <div class="fuli-u-sm-2 search-content-left">
+        <img src="../../images/static/uligou.png" alt="">
+      </div>
+      <div class="fuli-u-sm-8 search-content-center clearfix">
+        <div class="fuli-u-sm-9 search-all">
+          <div class="search-input">
+            <input type="text" placeholder="国际大牌母婴用品" id="searchGoods" />
+          </div>
+          <div class="search-btn pointer">
+            <img src="../../images/static/search.png" alt="">
+          </div>
+          <ul class="clearfix small-nav">
+            <li>
+              <a href="#">
+                厨房用纸
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                清洁纸巾
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                米面粮油
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                家居用品
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                厨房用品
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                母婴
+              </a>
+            </li>
+          </ul>
+          <div class="fuli-shelper">
+            123
+          </div>
+        </div>
+        <div class="fuli-u-sm-3 search-cart">
+          <div class="search-cart-bg pointer">
+            <img src="../../images/static/cart.png" alt="">
+            <span>购物车</span>
+            <div class="cart-count">0</div>
+          </div>
+          <div class="search-select-small"></div>
+          <div class="search-cart-select"></div>
+        </div>
+      </div>
+      <div class="fuli-u-sm-2 search-content-right">
+        <img src="../../images/static/code.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- 搜索end -->
+
+  <!-- 全部分类 -->
+  <div class="ification-wraper">
+    <div class="fuli-w">
+      <div class="classification pointer">
+        <img src="../../images/static/shrink.png" alt="">
+        全部分类
+      </div>
+    </div>
+  </div>
+  <!-- 全部分类end -->
+
+  <!-- 小导航 -->
+  <div class="commodity-bg">
+    <div class="fuli-container smallMenu">
+      美妆护肤>香水彩妆>唇彩唇蜜>唇釉>迪奥
+    </div>
+  </div>
+  <!-- 小导航end -->
+
+  <!-- 商品信息 -->
+  <div class="commodity-bg">
+    <div class="fuli-container clearfix">
+      <div class="commodity-planting">
+        <div class="preview">
+              <div id="vertical" class="bigImg">
+                  <img src="../../images/static/01.jpg" width="400" height="400" alt="" id="midimg" />
+                  <div style="display:none;" id="winSelector"></div>
+                  <div class="commodity-video">
+                    <div class="commodity-triangle">
+                      <div class="triangle_border_right2">
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="commodity-word">
+                      视频
+                    </div>
+                  </div>
+              </div>
+              <div class="smallImg">
+                  <div class="scrollbutton smallImgUp disabled"></div>
+                  <div id="imageMenu">
+                      <ul>
+                          <li id="onlickImg"><img src="../../images/static/01.jpg" width="68" height="68"/></li>
+                          <li><img src="../../images/static/01.jpg" width="68" height="68"/></li>
+                          <li><img src="../../images/static/01.jpg" width="68" height="68"/></li>
+                          <li><img src="../../images/static/01.jpg" width="68" height="68"/></li>
+                          <li><img src="../../images/static/01.jpg" width="68" height="68"/></li>
+                          <li><img src="../../images/static/01.jpg" width="68" height="68"/></li>
+                          <li><img src="../../images/static/01.jpg" width="68" height="68"/></li>
+                      </ul>
+                  </div>
+                  <div class="scrollbutton smallImgDown"></div>
+              </div>
+              <div id="bigView" style="display:none;"><img width="800" height="800" alt="" src="" /></div>
+          </div>
+          
+        <!-- <div class="commodity-img">
+          
+        </div>
+        <div class="commodity-info-planting">
+
+        </div> -->
+        <div class="commodity-info-planting-word">
+          商品编号 615488 |<span><img src="../../images/static/love.jpg">加关注</span>
+        </div>
+      </div>
+      <div class="commodity-planting-right">
+        <div class="introduction">
+          <div class="introduction-head">
+            <div class="introduction-support">自营</div>
+            <span>迪奥 (Dior) 魅惑润唇001#3.5g(又名克里斯丁迪奥魅惑)润唇膏001)变色持久保湿</span>
+          </div>
+          <div class="introduction-price">
+            <div class="introduction-price-head">
+              <div class="Price_Move">价格</div>
+              <div class="MONEY_H">￥300</div>
+            </div>
+            <div class="introduction-price-bottom">
+              <div class="gives">
+                <img src="../../images/static/gives.png">
+              </div>
+              <div class="high-ranked">
+                好评率<span class="high-color">98%</span>[评论<span class="high-color">21万+</span>条]
+              </div>
+            </div>
+          </div>
+          <div class="giveaways">
+            <div class="giveaways-left">
+              促销
+            </div>
+            <div class="giveaways-reduction">
+              满减
+            </div>
+            <div class="giveaways-word">
+              满500元减50元，满100元减100元
+            </div>
+            <a href="#">立即参加</a>
+            <div class="giveaways-item">
+              共<span>1</span>项，
+            </div>
+            <div class="giveaways-item-word pointer">
+              展开查看
+              <img src="../../images/static/headdown.png">
+            </div>
+          </div>
+          <div class="select-target-focused">
+            <div class="select-color">
+              <div class="select-word">
+                <span>选择颜色：</span>
+                <div class="select-item pointer">
+                  红色
+                  <div class="select-item-img">
+                    <img src="../../images/static/rightmark.png">
+                  </div>
+                </div>
+                <div class="select-item pointer">
+                  <div class="select-item-img">
+                    <img src="../../images/static/rightmark.png">
+                  </div>
+                </div>
+                <div class="select-item pointer">
+                  <div class="select-item-img">
+                    <img src="../../images/static/rightmark.png">
+                  </div>
+                </div>
+                <div class="select-item pointer">
+                  <div class="select-item-img">
+                    <img src="../../images/static/rightmark.png">
+                  </div>
+                </div>
+                <div class="select-item pointer">
+                  <div class="select-item-img">
+                    <img src="../../images/static/rightmark.png">
+                  </div>
+                </div>
+              </div>
+              <div class="net-content">
+                <div class="net-content-word">选择净含量：</div>
+                <div class="net-content-item pointer">
+                  <div class="select-item-img2">
+                    <img src="../../images/static/rightmark.png">
+                  </div>
+                </div>
+                <div class="net-content-item pointer">
+                  <div class="select-item-img2">
+                    <img src="../../images/static/rightmark.png">
+                  </div>
+                </div>
+                <div class="net-content-item pointer">
+                  <div class="select-item-img2">
+                    <img src="../../images/static/rightmark.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="address">
+            <div class="address-word">
+              送货至：
+            </div>
+            <div class="address-select">
+              <div class="address-select-word">
+                北京朝阳区
+              </div>
+              <img src="../../images/static/adressDown.png">
+            </div>
+            <div class="inventory">有货</div>
+            <div class="placeOrder">
+              11:00之前下单预计明日(4月1日)送达
+            </div>
+          </div>
+          <div class="gdelivery">
+            <div class="gdelivery-word">
+              由福利购发货，并提供售后服务
+            </div>
+            <div class="gdelivery-word2">
+              支持<span>满100元免运费 &nbsp;&nbsp;准时达</span>
+            </div>
+          </div>
+          <div class="amount-commodity">
+            <div class="Calculator">
+              <input type="text" size="2" maxlength="6" class="Calculator-input">
+              <div class="amount-all">
+                <div class="amount-add pointer">
+                  <img src="../../images/static/amountPlus.png">
+                </div>
+                <div class="amount-reduce pointer">
+                  <img src="../../images/static/amountReduce.png">
+                </div>
+              </div>
+            </div>
+            <div class="addCar pointer">
+              <img src="../../images/static/addCart.png">
+              <span>加入购物车</span>
+            </div>
+          </div>
+        </div>
+        <div class="Barmore">
+          <div class="Barmore-head">
+            <div class="Barmore-head-left">
+              看了又看
+            </div>
+            <div class="Barmore-head-right pointer">
+              <img src="../../images/static/refresh.png">
+              <span>换一批</span>
+            </div>
+          </div>
+          <div class="Barmore-content">
+            <img src="../../images/static/goods.jpg">
+            <div class="Barmore-content-word">
+              迪奥 (DIOR) 烈焰兰金唇膏999 33333
+            </div>
+            <div class="Barmore-price">
+              ￥480.0
+            </div>
+          </div>
+          <div class="Barmore-content">
+            <img src="../../images/static/goods.jpg">
+            <div class="Barmore-content-word">
+              迪奥 (DIOR) 烈焰兰金唇膏999 33333
+            </div>
+            <div class="Barmore-price">
+              ￥470.0
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 二级标题 -->
+    <div class="secondary">
+      <div class="secondary-vertical"></div>
+      <span>顾客最喜爱商品排行榜</span>
+    </div>
+    <!-- 二级标题end -->
+    <!-- 推荐商品列表 -->
+    <div class="recommended">
+      <div class="recommended-item pointer">
+        <img src="../../images/static/firstitem.jpg">
+        <div class="recommended-item-word">
+          迪奥 (DIOR) 烈焰兰金唇膏999 迪奥 (DIOR) 烈焰兰金唇膏999
+        </div>
+        <div class="recommended-item-price">￥480.0</div>
+        <div class="recommended-item-button pointer">查看详情</div>
+      </div>
+      <div class="recommended-item pointer">
+        <img src="../../images/static/firstitem.jpg">
+        <div class="recommended-item-word">
+          迪奥 (DIOR) 烈焰兰金唇膏999 迪奥 (DIOR) 烈焰兰金唇膏999
+        </div>
+        <div class="recommended-item-price">￥480.0</div>
+        <div class="recommended-item-button pointer">查看详情</div>
+      </div>
+      <div class="recommended-item pointer">
+        <img src="../../images/static/firstitem.jpg">
+        <div class="recommended-item-word">
+          迪奥 (DIOR) 烈焰兰金唇膏999 迪奥 (DIOR) 烈焰兰金唇膏999
+        </div>
+        <div class="recommended-item-price">￥480.0</div>
+        <div class="recommended-item-button pointer">查看详情</div>
+      </div>
+      <div class="recommended-item pointer">
+        <img src="../../images/static/firstitem.jpg">
+        <div class="recommended-item-word">
+          迪奥 (DIOR) 烈焰兰金唇膏999 迪奥 (DIOR) 烈焰兰金唇膏999
+        </div>
+        <div class="recommended-item-price">￥480.0</div>
+        <div class="recommended-item-button pointer">查看详情</div>
+      </div>
+      <div class="recommended-item pointer">
+        <img src="../../images/static/firstitem.jpg">
+        <div class="recommended-item-word">
+          迪奥 (DIOR) 烈焰兰金唇膏999 迪奥 (DIOR) 烈焰兰金唇膏999
+        </div>
+        <div class="recommended-item-price">￥480.0</div>
+        <div class="recommended-item-button pointer">查看详情</div>
+      </div>
+    </div>
+    <!-- 推荐商品列表end -->
+  </div>
+  <!-- 商品信息end -->
+  <!-- 商品介绍 -->
+  <div class="commodity-bg">
+    <div class="fuli-container introduce-wrapper clearfix">
+      <div class="introduce-left">
+        <div class="introduce-left-header clearfix">
+          <div class="introduction-content">
+            迪奥 (DIOR) 烈焰兰金唇膏999
+          </div>
+          <div class="Proprietary">
+            自营
+          </div>
+        </div>
+        <div class="Welcome">
+          <div class="Welcome-word">
+            迪奥（Dior）美妆专区欢迎您
+          </div>
+          <div class="enterstep pointer">
+            进入店铺
+          </div>
+        </div>
+        <div class="Otherwise">
+          看了本商品的用户最终购买了
+        </div>
+        <div class="numbered-list">
+          <img src="../../images/static/Lipstick.jpg" class="mar-tm">
+          <div class="numbered-list-describe">
+            迪奥 (DIOR) 烈焰兰金唇膏999 333
+          </div>
+          <div class="numbered-list-price">
+            ￥499.0
+          </div>
+          <div class="recommended-item-button pointer">查看详情</div>
+        </div>
+        <div class="numbered-list">
+          <img src="../../images/static/Lipstick.jpg" class="mar-tm">
+          <div class="numbered-list-describe">
+            迪奥 (DIOR) 烈焰兰金唇膏999 333
+          </div>
+          <div class="numbered-list-price">
+            ￥499.0
+          </div>
+          <div class="recommended-item-button pointer">查看详情</div>
+        </div>
+        <div class="numbered-list">
+          <img src="../../images/static/Lipstick.jpg" class="mar-tm">
+          <div class="numbered-list-describe">
+            迪奥 (DIOR) 烈焰兰金唇膏999 333
+          </div>
+          <div class="numbered-list-price">
+            ￥499.0
+          </div>
+          <div class="recommended-item-button pointer">查看详情</div>
+        </div>
+      </div>
+      <div class="introduce-right">
+        <div class="introduce-tab">
+          <ul class="tab">
+            <li class="cur">商品介绍</li>
+            <li id="evaluate">评价<span class="evaluation">21万+</span></li>
+            <li id="specs">规格及包装</li>
+            <li id="service">售后服务</li>
+          </ul>
+        </div>
+        <!-- <div class="ob on"> -->
+          <div class="tab-con-head">
+            <div class="specifications">
+              规格参数
+            </div>
+            <div class="big-introduction">
+              <div class="introduction-two">
+                品牌：迪奥
+              </div>
+              <div class="introduction-two">
+                品牌：迪奥
+              </div>
+              <div class="introduction-two">
+                品牌：迪奥
+              </div>
+              <div class="introduction-two">
+                品牌：迪奥
+              </div>
+              <div class="introduction-two">
+                品牌：迪奥
+              </div>
+              <div class="introduction-two">
+                品牌：迪奥
+              </div>
+            </div>
+          </div>
+          <div class="tab-con-img">
+            <img src="../../images/static/Goods-one.jpg" class="mar-tm">
+            <img src="../../images/static/Goods-two.jpg">
+            <img src="../../images/static/Goods-three.jpg">
+            <!-- <div class="Characters"></div> -->
+          </div>
+          <div class="tab-table">
+            <div class="tab-table-head">主体</div>
+            <div class="tab-table-item">
+              <div class="tab-table-item-left">
+                保质期（年）
+              </div>
+              <div class="tab-table-item-right">
+                3年
+              </div>
+            </div>
+            <div class="tab-table-item">
+              <div class="tab-table-item-left">
+                产品产地
+              </div>
+              <div class="tab-table-item-right">
+                其他
+              </div>
+            </div>
+            <div class="tab-table-item">
+              <div class="tab-table-item-left">
+                净含量（ml/g）
+              </div>
+              <div class="tab-table-item-right">
+                3.5g
+              </div>
+            </div>
+            <div class="tab-table-item">
+              <div class="tab-table-item-left">
+                色号颜色
+              </div>
+              <div class="tab-table-item-right">
+                001
+              </div>
+            </div>
+            <div class="tab-table-item">
+              <div class="tab-table-item-left">
+                功效
+              </div>
+              <div class="tab-table-item-right">
+                丰唇/显色；修护/滋润/保湿；其他
+              </div>
+            </div>
+            <div class="tab-table-item">
+              <div class="tab-table-item-left">
+                妆效
+              </div>
+              <div class="tab-table-item-right">
+                润泽/镜面
+              </div>
+            </div>
+            <div class="Packing-list">
+              包装清单
+            </div>
+            <div class="Packing-number">
+              迪奥DIOR魅惑润唇蜜SPF10 × 1
+            </div>
+          </div>
+          <div class="paragraph">
+            <div>
+              <div class="paragraph-title">
+                福利购承诺
+              </div>
+              <div class="mar-tm">
+                <p class="paragraph-content">
+                  福利购平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务，请您放心购买！
+                </p>
+                <p class="paragraph-content">
+                  注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若没有及时更新，请大家谅解！
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="paragraph-title">
+                全国联保
+              </div>
+              <div class="mar-tm">
+                <p class="paragraph-content">
+                  福利购平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务，请您放心购买！
+                </p>
+                <p class="paragraph-content">
+                  注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若没有及时更新，请大家谅解！
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="paragraph-title">
+                权力声明
+              </div>
+              <div class="mar-tm">
+                <p class="paragraph-content">
+                  福利购平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务，请您放心购买！
+                </p>
+                <p class="paragraph-content">
+                  注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若没有及时更新，请大家谅解！
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="paragraph-title">
+                价格说明
+              </div>
+              <div class="mar-tm">
+                <p class="paragraph-content">
+                  福利购平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务，请您放心购买！
+                </p>
+                <p class="paragraph-content">
+                  注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若没有及时更新，请大家谅解！
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="highest">
+            <div class="highest-left">
+              <div class="rate_n">
+                <div class="rate_word">好评率</div>
+                <div class="Percentage">
+                  99<span>%</span>
+                </div>
+                <div class="rate_word_bottom">
+                  共21万人评论
+                </div>
+              </div>
+              <div class="everyone-feels">
+                <div class="triangle_border_right">
+                  <span></span>
+                </div>
+                大<br />家<br />觉<br />得
+              </div>
+            </div>
+            <div class="highest-right">
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+              <a href="#">
+                <div class="highest-right-item pointer">
+                  颜色漂亮(23)
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="introduce-tab2 mar-tw clearfix">
+            <ul class="tab2">
+              <li class="cur2">
+                <label class="checkRadio pointer">
+                  <input name="Fruit" type="radio" checked value="" class="mar-rn"/>
+                  全部(21万+)
+                </label>
+              </li>
+              <li>
+                <label class="checkRadio pointer">
+                  <input name="Fruit" type="radio" value="" class="mar-rn"/>
+                  有图(1.2万+)
+                </label>
+              </li>
+              <li>
+                <label class="checkRadio pointer">
+                  <input name="Fruit" type="radio" value="" class="mar-rn"/>
+                  追评(700+)
+                </label>
+              </li>
+              <li>
+                <label class="checkRadio pointer">
+                  <input name="Fruit" type="radio" value="" class="mar-rn"/>
+                  好评(20万+)
+                </label>
+              </li>
+            </ul>
+            <div class="current">
+              <form>
+                <label>
+                  <input name="Fruit" type="checkbox" value=""/>
+                  只看当前评价
+                </label> 
+              </form>
+            </div>
+          </div>
+          <div class="ob2 on2">
+            <div class="Category-content">
+              <div class="mastheader">
+                <div class="redheads"></div>
+                <div class="mastheader-word">
+                  哈***哈
+                </div>
+              </div>
+              <div class="page-content">
+                <div class="page-content-head">
+                  评分：
+                </div>
+                <div class="page-content-test">
+                  内容：&nbsp;&nbsp;&nbsp;本来想买本来想买本来想买本来想买本来想买本来想买本来想买本来想买本来想买
+                </div>
+                <div class="page-content-img">
+                  <span>
+                    晒单：
+                  </span>
+                  <div class="contentImg">
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                    <div class="contentImg-item"></div>
+                  </div>
+                </div>
+                <div class="modelTypes">
+                  <span>粉色001</span>
+                  <span>2017-11-29 21:12:13</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ob2">2</div>
+          <div class="ob2">3</div>
+          <div class="ob2">4</div>
+          <div class="ob2">5</div>
+          <div class="ob2">6</div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 商品介绍end -->
+
+
+  <script src="../../lib/jq/jquery.min.js"></script>
+  <!-- <script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script> -->
+  <script src="../../js/CommodityDetails/CommodityDetails.js"></script>
+
+  <script>
+    
+  </script>
+</body>
+
+</html>

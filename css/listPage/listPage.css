@@ -1,0 +1,529 @@
+.fuli-crumbs-bg{
+  width: 100%;
+  background-color: #e9e9e9;
+}
+
+.fuli-crumbs-nav{
+  height: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.fuli-crumbs-nav img{
+  margin-right: 11px;
+}
+
+.fuli-crumbs-nav span{
+  font-size: 12px;
+  color: #000;
+  font-weight: normal;
+}
+
+.fuli-selector{
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.fuli-selectorLine{
+  width: auto;
+  height: auto;
+}
+
+.fuli-selectorLine-left{
+  width: 124px;
+  height: 35px;
+  line-height: 36px;
+  background-color: #f8f8f8;
+  border-right: 1px dotted #e6e6e6;
+  border-bottom: 1px dotted #e6e6e6;
+  padding-left: 8px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #666;
+  float: left;
+}
+
+.fuli-selectorLine-right{
+  width: 1075px;
+  height: 35px;
+  border-bottom: 1px dotted #e6e6e6;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.fuli-selectorLine-item{
+  width: 157px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 45px;
+  font-size: 12px;
+  color: #333;
+}
+
+.fuli-brand-wrapper{
+  height: 130px;
+  line-height: 130px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.fuli-brand-left{
+  width: 124px;
+  height: 128px;
+  line-height: 46px;
+  border-right: 1px dotted #e6e6e6;
+  padding-left: 8px;
+  font-size: 12px;
+  color: #666;
+  background-color: #f8f8f8;
+  float: left;
+}
+
+.fuli-brand-center{
+  width: 944px;
+  height: 130px;
+  padding: 21px;
+  float: left;
+}
+
+.fuli-brand{
+  width: 100%;
+  height: 89px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fuli-brand-item{
+  width: 100px;
+  height: 43px;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.fuli-brand-item2{
+  width: 100px;
+  height: 43px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.fuli-brand-right{
+  width: 132px;
+  height: 130px;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.fuli-brand-multiple{
+  width: 57px;
+  height: 27px;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  line-height: 27px;
+  color: #666;
+  font-size: 12px;
+}
+
+.fuli-brand-more{
+  width: 77px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.fuli-producer-wrapper{
+  line-height: 35px;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+.fuli-producer-left{
+  width: 124px;
+  color: #666;
+  font-size: 12px;
+  padding-left: 8px;
+  border-right: 1px dotted #e5e5e5;
+  background-color: #f8f8f8;
+  float: left;
+}
+
+.fuli-producer-center{
+  /* width: 492px; */
+  height: 35px;
+  float: left;
+}
+
+.fuli-producer-right{
+  width: 150px;
+  height: 35px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-producer-list{
+  height: 35px;
+}
+
+.fuli-producer-list li{
+  width: 70px;
+  font-size: 12px;
+  text-align: center;
+  float: left;
+}
+
+.fuli-producer-list li a{
+  color: #666;
+}
+
+.fuli-producer-list li a:hover{
+  color: #e98930;
+}
+
+.fuli-producer-multiple{
+  width: 50px;
+  height: 24px;
+  background-color: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  color: #666;
+  line-height: 22px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.fuli-producer-list2{
+  height: 35px;
+}
+
+.fuli-producer-list2 li{
+  width: 95px;
+  font-size: 12px;
+  text-align: center;
+  float: left;
+}
+
+.fuli-producer-list2 li a{
+  color: #666;
+}
+
+.fuli-filter{
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+.fuli-filter-top{
+  height: 39px;
+  border-bottom: 1px dotted #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+.fuli-filter-sort{
+  width: 338px;
+  float: left;
+}
+
+.fuli-filter-sort li{
+  float: left;
+  width: 67px;
+  height: 38px;
+  color: #333;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sort-active{
+  color: #ff4600 !important;
+  background-color: #fff;
+  border-right: 1px solid #e5e5e5;
+}
+
+.fuli-filter-price{
+  width: 130px;
+  height: 39px;
+  line-height: 35px;
+  border-right: 1px solid #e5e5e5;
+  float: left;
+}
+
+.fuli-filter-int{
+  float: left;
+}
+
+.fuli-filter-int em{
+  width: 27px;
+  line-height: 18px;
+  color: #999;
+  text-align: center;    
+  margin-top: 8px;
+  float: left;
+}
+
+.fuli-input-txt{
+  width: 43px;
+  height: 18px;
+  border: 1px solid #999;
+  background-color: #f3f3f3;
+  outline: none;
+}
+
+.fuli-store-wrapper{
+  width: 170px;
+  height: 39px;
+  line-height: 39px;
+  color: #333;
+  font-size: 12px;
+  border-right: 1px solid #e5e5e5;
+  float: left;
+}
+
+.fuli-store-left{
+  width: 50px;
+  height: 39px;
+  text-align: center;
+  float: left;
+}
+
+.fuli-store-right{
+  position: relative;
+  width: 118px;
+  height: 39px;
+  text-align: center;
+  float: left;
+}
+
+.fuli-store-right img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.fuli-search-wrapper{
+  width: 564px;
+  height: 39px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.fuli-search{
+  width: 108px;
+  height: 25px;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+}
+
+.fuli-search-input{
+  width: 87px;
+  height: 20px;
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+}
+
+.fuli-filter-bottom{
+  height: 39px;
+  background-color: #fff;
+  padding-left: 24px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.fuli-filter-form{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.fuli-goods-list{
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+.fuli-goods-item{
+  width: 20%;
+  height: 434px;
+  border: 1px solid #fff;
+  float: left;
+}
+
+.fuli-goods-item:hover{
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 0 2px 2px #f8f8f8;
+}
+
+.fuli-goods-img{
+  width: 236px;
+  height: 236px;
+  margin-top: 25px;
+}
+
+.fuli-goods-img img{
+  width: 100%;
+}
+
+.fuli-goods-price{
+  line-height: 22px;
+  color: #ff4600;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.fuli-goods-present{
+  width: 200px;
+  line-height: 23px;
+  padding-left: 10px;
+  color: #333;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.fuli-goods-present:hover{
+  color: #e98930;
+}
+
+.fuli-goods-plus{
+  display: flex;
+  margin-top: 16px;
+}
+
+.Calculator2{
+  width: 52px;
+  height: 34px;
+  border: 1px solid #d5d5d5;
+  margin-left: 10px;
+  display: flex;
+}
+
+.Calculator-input{
+  width: 32px;
+  height: 32px;
+  outline: none;
+  background-color: #ffffff;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+}
+
+.amount-all{
+  width: 21px;
+  height: 32px;
+  border-left: 1px solid #d5d5d5;
+}
+
+.amount-add{
+  width: 19px;
+  height: 16px;
+  border-bottom: 1px solid #d5d5d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.amount-reduce{
+  width: 19px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.addCar{
+  width: 112px;
+  height: 34px;
+  background-color: #ff4600;
+  border-radius: 3px;
+  margin-left: 18px;
+  border: 1px solid #ef3333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addCar span{
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.fuli-goods-comment{
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 12px;
+  box-sizing: border-box;
+}
+
+.fuli-goods-comment img{
+  margin-right: 2px;
+}
+
+.praise{
+  margin-left: 14px;
+}
+
+.praise-color{
+  color: #ff4600;
+}
+
+.fuli-goods-shop{
+  padding-left: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.fuli-goods-also{
+  width: 38px;
+  height: 16px;
+  border: 1px solid #ff4600;
+  text-align: center;
+  line-height: 14px;
+  color: #ff4600;
+  font-size: 12px;
+  float: left;
+}
+
+.fuli-shop-word{
+  width: 100px;
+  line-height: 16px;
+  color: #999;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  margin-left: 3px;
+  float: left;
+}
+
+.fuli-goods-shop{
+  line-height: 16px;
+  color: #999;
+  font-size: 12px;
+}
