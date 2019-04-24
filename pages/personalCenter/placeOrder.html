@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/header/header.css">
+  <link rel="stylesheet" href="../../css/personalCenter/placeOrder.css">
+</head>
+
+<body>
+  <!-- 导航 -->
+  <div class="header">
+    <div class="fuli-container">
+      <div class="fuli-g">
+        <div class="fuli-u-sm-2">
+          <div class="fuli-g">
+            <div class="fuli-u-sm-4 home">
+              <img src="../../images/static/home.png" alt="首页" class="pointer">首页
+            </div>
+            <div class="fuli-u-sm-8 home">
+              <img src="../../images/static/landmark.png" alt="首页" class="pointer">北京
+            </div>
+          </div>
+        </div>
+        <!-- <div class="fuli-u-sm-7"> -->
+        <ul class="clearfix fuli-nav">
+          <li>
+            <a href="#">
+              登录
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              免费注册
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              我的订单
+              <img src="../../images/static/headdown.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              个人中心
+              <img src="../../images/static/headdown.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              微信号
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              福利会员
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              商户工作台
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              服务中心
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              手机客户端
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 导航end -->
+
+  <!-- logo -->
+  <div class="fuli-bg">
+    <div class="fuli-container">
+      <div class="fuli-logo">
+        <img src="../../images/static/uligou.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- logo end -->
+
+  <!-- 内容 -->
+  <div class="fuli-bg">
+    <div class="fuli-container">
+      <div class="fuli-select-goods">
+        <h4>选择收货地址</h4>
+      </div>
+      <div class="fuli-select-content">
+        <form class="fuli-form">
+          <div class="fuli-form-item clearfix">
+            <div class="fuli-form-item-label">
+              <label class="fuli-form-item-required">所在地区</label>
+            </div>
+            <div class="fuli-form-item-contorl">
+              <div class="fuli-form-select-region pointer"></div>
+            </div>
+          </div>
+          <div class="fuli-form-item clearfix">
+            <div class="fuli-form-item-label">
+              <label class="fuli-form-item-required">详细地址</label>
+            </div>
+            <div class="fuli-form-item-contorl">
+              <textarea class="fuli-form-textarea" placeholder="请具体到门牌号"></textarea>
+            </div>
+          </div>
+          <div class="fuli-form-item clearfix">
+            <div class="fuli-form-item-label">
+              <label class="fuli-form-item-required">收货人姓名</label>
+            </div>
+            <div class="fuli-form-item-contorl">
+              <input type="text" class="fuli-form-input" placeholder="请填写收货人姓名" />
+            </div>
+          </div>
+          <div class="fuli-form-item clearfix">
+            <div class="fuli-form-item-label">
+              <label class="fuli-form-item-required">手机号码</label>
+            </div>
+            <div class="fuli-form-item-contorl">
+              <input type="text" class="fuli-form-input" placeholder="请填写联系人手机号" />
+            </div>
+          </div>
+          <div class="fuli-form-item clearfix">
+            <div class="fuli-form-item-label">
+              <label>电话号码</label>
+            </div>
+            <div class="fuli-form-item-contorl clearfix">
+              <div class="fuli-areacode">
+                <input type="text" class="fuli-form-input" placeholder="区号" />
+              </div>
+              <em class="fuli-em">-</em>
+              <div class="fuli-phonecode">
+                <input type="text" class="fuli-form-input" placeholder="电话号码" />
+              </div>
+              <em class="fuli-em">-</em>
+              <div class="fuli-extension">
+                <input type="text" class="fuli-form-input" placeholder="分机号（可选）" />
+              </div>
+            </div>
+          </div>
+          <div class="fuli-form-item clearfix">
+            <div class="fuli-form-item-label">
+              <label>邮箱</label>
+            </div>
+            <div class="fuli-form-item-contorl">
+              <input type="text" class="fuli-form-input" placeholder="接收订单提醒邮件，便于您即使了解订单详情" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="fuli-select-goods">
+        <h4>确认商品信息</h4>
+      </div>
+      <div class="fuli-submit-goods-info">
+        <div class="fuli-submit-goods-head">
+          <table class="fuli-submit-table">
+            <tr>
+              <td class="fuli-submit-news">商品信息</td>
+              <td class="fuli-submit-weight">重量（kg）</td>
+              <td class="fuli-submit-weight">单价（元）</td>
+              <td class="fuli-submit-weight">数量</td>
+              <td class="fuli-submit-weight">金额（元）</td>
+            </tr>
+          </table>
+        </div>
+        <div class="fuli-submit-service-time">
+          <img src="../../images/static/watch_time.png" class="mar-rn" alt="">
+          以下商品预计送达时间：2019-04-24
+        </div>
+        <div class="fuli-submit-goods-head2">
+          <table class="fuli-submit-table2">
+            <tr>
+              <td class="fuli-submit-news clearfix">
+                <div class="fuli-news-img">
+                  <img src="../../images/static/myphone.png" alt="">
+                </div>
+                <div class="fuli-news-word">
+                  <p>【保护视力 脑聪明】华为手机话u艾活动年啊就是</p>
+                </div>
+                <div class="fuli-return-goods">
+                  <span class="fuli-goods-seven">7</span>
+                  <span class="return-color">不支持天无理由退货</span>
+                </div>
+              </td>
+              <td class="fuli-submit-weight">0.13</td>
+              <td class="fuli-submit-weight">1850.00</td>
+              <td class="fuli-submit-weight">1</td>
+              <td class="fuli-submit-weight">185.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="fuli-discount-wrapper">
+        <form class="fuli-form-discount clearfix">
+          <div class="fuli-form-discount-item clearfix">
+            <div class="fuli-form-discount-item-label">
+              <label>优惠券</label>
+            </div>
+            <div class="fuli-form-item-discount-contorl">
+              <select id='s1' class='selector'>
+                <option>暂无可用优惠券</option>
+              </select>
+            </div>
+          </div>
+          <div class="fuli-form-discount-item clearfix">
+            <div class="fuli-form-discount-item-label">
+              <label>积分</label>
+            </div>
+            <div class="fuli-form-item-discount-contorl">
+              <select id='s1' class='selector'>
+                <option>暂无可用积分</option>
+              </select>
+            </div>
+          </div>
+          <div class="fuli-form-discount-item clearfix">
+            <div class="fuli-form-discount-item-label">
+              <label>红包</label>
+            </div>
+            <div class="fuli-form-item-discount-contorl">
+              <select id='s1' class='selector'>
+                <option>暂无可用红包</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="fuli-invoice-wrapper">
+        <div class="fuli-invoice-head clearfix">
+          <div class="fuli-invoice-info">
+            <span>发票信息：</span>
+            <label>
+              <input type="checkbox" />
+              需要发票
+            </label>
+          </div>
+          <div class="fuli-invoice-info">
+            <span class="mar-rw">电子发票</span>
+            <span>发票抬头：个人</span>
+          </div>
+          <div class="fuli-invoice-info2">
+            <span>明细：商品明细</span>
+          </div>
+          <div class="fuli-invoice-info2 pointer">
+            <span class="invoice-color">修改</span>
+          </div>
+        </div>
+        <div class="fuli-invoice-rule clearfix">
+          <div class="fuli-invoice-rule-left">
+            <div class="fuli-rule-title">
+              发票须知：
+            </div>
+            <div class="fuli-rule-item">
+              1.渐渐爱上姐姐大姐大姐夫经济法解放军解放解决方法见附件见附件
+            </div>
+            <div class="fuli-rule-item">
+              2.渐渐爱上姐姐大姐大姐夫经济法解放军解放解决方法见附件见附件
+            </div>
+            <div class="fuli-rule-item">
+              3.渐渐爱上姐姐大姐大姐夫经济法解放军解放解决方法见附件见附件
+            </div>
+          </div>
+          <div class="fuli-invoice-rule-right">
+            <div class="fuli-invoice-rule-word clearfix">
+              <div class="fuli-rule-goods-acount">
+                商品应付总计：
+              </div>
+              <div class="fuli-rule-goods-number">
+                ￥267.00
+              </div>
+            </div>
+            <div class="fuli-invoice-rule-word clearfix">
+              <div class="fuli-rule-goods-acount">
+                运费：
+              </div>
+              <div class="fuli-rule-goods-number">
+                ￥0.00
+              </div>
+            </div>
+            <div class="fuli-invoice-rule-word clearfix">
+              <div class="fuli-rule-goods-acount">
+                应付金额：
+              </div>
+              <div class="fuli-rule-goods-number acount-color">
+                ￥267.00
+              </div>
+            </div>
+            <div class="fuli-sub-order pointer">
+              提交订单
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 内容 -->
+
+    <script src="../../lib/jq/jquery.old.js"></script>
+</body>
+
+</html>
