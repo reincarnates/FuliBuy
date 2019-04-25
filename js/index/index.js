@@ -31,24 +31,37 @@ $(function () {
   });
 
   //搜索框发生改变
-  $('#searchGoods').keyup(function() {
+  $('#searchGoods').focus(function() {
     $('.fuli-shelper').css('display', 'block');
-    if($(this).val() == '') {
-      $('.fuli-shelper').css('display', 'none');
-    }
+  }).blur(function() {
+    $('.fuli-shelper').css('display', 'none');
   });
 
   //右侧面板购物车点击加背景
   $("#tab-cart").click(function () {
     if (tabCount == 0) {
       $(this).addClass('fuli-toolbar-tabs-selected');
-      $('.fuli-toolbar').css('right', '-25px');
+      $('.fuli-toolbar').css('right', '-31px');
       tabCount++;
     } else {
       $(this).removeClass('fuli-toolbar-tabs-selected');
       $('.fuli-toolbar').css('right', '-289px');
       tabCount = 0;
     }
+  });
+
+  //关闭购物车
+  $('.closeSideCart').click(function() {
+    $('#tab-cart').removeClass('fuli-toolbar-tabs-selected');
+    $('.fuli-toolbar').css('right', '-289px');
+    tabCount = 0;
+  });
+
+  //显示右侧购物车删除按钮
+  $('.fuli-toolbar-panels-goods').mouseover(function() {
+    $(this).find('.toolbar-panels-goods-right .priceAndDel .panels-goods-del').show();
+  }).mouseout(function() {
+    $(this).find('.toolbar-panels-goods-right .priceAndDel .panels-goods-del').hide();
   });
 
   //右侧面板鼠标移入显示简介  
@@ -78,13 +91,15 @@ $(function () {
   });
 
   //购物车hover下拉
-  $('.search-cart-bg,.search-cart-select,.search-select-small').mouseover(function() {
+  $('.search-cart-bg,.search-cart-select,.search-select-small,.search-not-cart').mouseover(function() {
     $('.search-cart-bg').addClass("select-bg");
     $('.search-cart-select').addClass("select-border");
+    $('.search-not-cart').addClass("select-border");
     $('.search-select-small').addClass("select-border2");
   }).mouseout(function() {
     $('.search-cart-bg').removeClass("select-bg");
     $('.search-cart-select').removeClass("select-border");
+    $('.search-not-cart').removeClass("select-border");
     $('.search-select-small').removeClass("select-border2");
   });
 
@@ -123,7 +138,162 @@ $(function () {
   var adsHeight = $(".adsense-slide").height();
   $(".adsense-menu").css('height', adsHeight);
 
-  // createFloor();
+  //选择省份
+  $('.select-city').mouseover(function() {
+    $(this).css({'background':'#fff','borderColor':'#d1d1d1'});
+    $('.cover').show();
+    $('.home-city').show();
+  }).mouseout(function() {
+    $(this).css({'background':'none','borderColor':'#f5f5f5'});
+    $('.cover').hide();
+    $('.home-city').hide();
+  });
+
+  $('.city-select dl dd a').click(function() {
+    $('.check-city').text($(this).text());
+  });
+
+  //我的订单
+  $('.myOrder,.myOrder2').mouseover(function() {
+    $(this).css({'background':'#fff','borderColor':'#d1d1d1'});
+    $(this).find('.myOrder-item').show();
+  }).mouseout(function() {
+    $(this).css({'background':'none','borderColor':'#f5f5f5'});
+    $(this).find('.myOrder-item').hide();
+  });
+
+  //APP
+  $('.App').mouseover(function() {
+    $(this).find('.App-item').show();
+  }).mouseout(function() {
+    $(this).find('.App-item').hide();
+  });
+
+  //搜索完成显示的列表
+  $('.goods-list li').mouseover(function() {
+    $(this).css('background','#eee');
+    $(this).find('.history').text('删除').css('color','#2c7bb4');
+  }).mouseout(function() {
+    $(this).css('background','none');
+    $(this).find('.history').text('历史记录').css('color','#b7b7b7');
+  });
+
+
+
+  $('.tbar-cart-item').hover(function (){ $(this).find('.p-del').show(); },function(){ $(this).find('.p-del').hide(); });
+	$('.jth-item').hover(function (){ $(this).find('.add-cart-button').show(); },function(){ $(this).find('.add-cart-button').hide(); });
+	$('.toolbar-tab').hover(function (){ $(this).find('.tab-text').addClass("tbar-tab-hover"); $(this).find('.footer-tab-text').addClass("tbar-tab-footer-hover"); $(this).addClass("tbar-tab-selected");},function(){ $(this).find('.tab-text').removeClass("tbar-tab-hover"); $(this).find('.footer-tab-text').removeClass("tbar-tab-footer-hover"); $(this).removeClass("tbar-tab-selected"); });
+	$('.tbar-tab-cart').click(function (){ 
+		if($('.toolbar-wrap').hasClass('toolbar-open')){
+			if($(this).find('.tab-text').length > 0){
+				if(! $('.tbar-tab-follow').find('.tab-text').length > 0){
+					var info = "<em class='tab-text '>联系客服</em>";
+					$('.tbar-tab-follow').append(info);
+					$('.tbar-tab-follow').removeClass('tbar-tab-click-selected'); 
+					$('.tbar-panel-follow').css({'visibility':"hidden","z-index":"-1"});
+				}
+				if(! $('.tbar-tab-history').find('.tab-text').length > 0){
+					var info = "<em class='tab-text '>我的足迹</em>";
+					$('.tbar-tab-history').append(info);
+					$('.tbar-tab-history').removeClass('tbar-tab-click-selected'); 
+					$('.tbar-panel-history').css({'visibility':"hidden","z-index":"-1"});
+				}
+				$(this).addClass('tbar-tab-click-selected'); 
+				$(this).find('.tab-text').remove();
+				$('.tbar-panel-cart').css({'visibility':"visible","z-index":"1"});
+				
+			}else{
+				var info = "<em class='tab-text '>联系客服</em>";
+				$('.toolbar-wrap').removeClass('toolbar-open');
+				$(this).append(info);
+				$(this).removeClass('tbar-tab-click-selected');
+				$('.tbar-panel-cart').css({'visibility':"hidden","z-index":"-1"});
+			}
+			 
+			
+		}else{ 
+			$(this).addClass('tbar-tab-click-selected'); 
+			$(this).find('.tab-text').remove();
+			$('.tbar-panel-cart').css({'visibility':"visible","z-index":"1"});
+			$('.tbar-panel-follow').css('visibility','hidden');
+			$('.tbar-panel-history').css('visibility','hidden');
+			$('.toolbar-wrap').addClass('toolbar-open'); 
+		}
+	});
+	$('.tbar-tab-follow').click(function (){ 
+		// if($('.toolbar-wrap').hasClass('toolbar-open')){
+		// 	if($(this).find('.tab-text').length > 0){
+		// 		if(! $('.tbar-tab-cart').find('.tab-text').length > 0){
+		// 			var info = "<em class='tab-text '>购物车</em>";
+		// 			$('.tbar-tab-cart').append(info);
+		// 			$('.tbar-tab-cart').removeClass('tbar-tab-click-selected'); 
+		// 			$('.tbar-panel-cart').css({'visibility':"hidden","z-index":"-1"});
+		// 		}
+		// 		if(! $('.tbar-tab-history').find('.tab-text').length > 0){
+		// 			var info = "<em class='tab-text '>我的足迹</em>";
+		// 			$('.tbar-tab-history').append(info);
+		// 			$('.tbar-tab-history').removeClass('tbar-tab-click-selected'); 
+		// 			$('.tbar-panel-history').css({'visibility':"hidden","z-index":"-1"});
+		// 		}
+		// 		$(this).addClass('tbar-tab-click-selected'); 
+		// 		$(this).find('.tab-text').remove();
+		// 		$('.tbar-panel-follow').css({'visibility':"visible","z-index":"1"});
+				
+		// 	}else{
+		// 		var info = "<em class='tab-text '>联系客服</em>";
+		// 		$('.toolbar-wrap').removeClass('toolbar-open');
+		// 		$(this).append(info);
+		// 		$(this).removeClass('tbar-tab-click-selected');
+		// 		$('.tbar-panel-follow').css({'visibility':"hidden","z-index":"-1"});
+		// 	}
+			 
+			
+		// }else{ 
+		// 	$(this).addClass('tbar-tab-click-selected'); 
+		// 	$(this).find('.tab-text').remove();
+		// 	$('.tbar-panel-cart').css('visibility','hidden');
+		// 	$('.tbar-panel-follow').css({'visibility':"visible","z-index":"1"});
+		// 	$('.tbar-panel-history').css('visibility','hidden');
+		// 	$('.toolbar-wrap').addClass('toolbar-open'); 
+		// }
+	});
+	$('.tbar-tab-history').click(function (){ 
+		if($('.toolbar-wrap').hasClass('toolbar-open')){
+			if($(this).find('.tab-text').length > 0){
+				if(! $('.tbar-tab-follow').find('.tab-text').length > 0){
+					var info = "<em class='tab-text '>我的关注</em>";
+					$('.tbar-tab-follow').append(info);
+					$('.tbar-tab-follow').removeClass('tbar-tab-click-selected'); 
+					$('.tbar-panel-follow').css({'visibility':"hidden","z-index":"-1"});
+				}
+				if(! $('.tbar-tab-cart').find('.tab-text').length > 0){
+					var info = "<em class='tab-text '>购物车</em>";
+					$('.tbar-tab-cart').append(info);
+					$('.tbar-tab-cart').removeClass('tbar-tab-click-selected'); 
+					$('.tbar-panel-cart').css({'visibility':"hidden","z-index":"-1"});
+				}
+				$(this).addClass('tbar-tab-click-selected'); 
+				$(this).find('.tab-text').remove();
+				$('.tbar-panel-history').css({'visibility':"visible","z-index":"1"});
+				
+			}else{
+				var info = "<em class='tab-text '>我的足迹</em>";
+				$('.toolbar-wrap').removeClass('toolbar-open');
+				$(this).append(info);
+				$(this).removeClass('tbar-tab-click-selected');
+				$('.tbar-panel-history').css({'visibility':"hidden","z-index":"-1"});
+			}
+			
+		}else{ 
+			$(this).addClass('tbar-tab-click-selected'); 
+			$(this).find('.tab-text').remove();
+			$('.tbar-panel-cart').css('visibility','hidden');
+			$('.tbar-panel-follow').css('visibility','hidden');
+			$('.tbar-panel-history').css({'visibility':"visible","z-index":"1"});
+			$('.toolbar-wrap').addClass('toolbar-open'); 
+		}
+	});
+	
 
 });
 

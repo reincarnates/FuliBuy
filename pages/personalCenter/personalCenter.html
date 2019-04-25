@@ -285,15 +285,40 @@
         <!-- 所有订单 -->
         <div class="ob2 on2">
           <div class="fuli-order-head clearfix">
-            <div class="fuli-order-left">
-              近3个月订单
-              <img src="../../images/static/headdown.png" alt="">
+            <div class="fuli-order-left pointer">
+              <span class="fuli-check-time">近3个月订单</span>
+              <!-- <img src="../../images/static/headdown.png" alt=""> -->
+              <i class="fuli-order-arrow"></i>
+              <div class="fuli-order-left-item">
+                <ul>
+                  <li>近三个月的订单</li>
+                  <li>今年订单</li>
+                  <li>2018年下半年订单</li>
+                  <li>2017年上半年订单</li>
+                  <li>2016年下半年订单</li>
+                  <li>2016年上半年订单</li>
+                </ul>
+              </div>
             </div>
             <div class="fuli-order-right">
               <ul class="clearfix fuli-order-list">
                 <li>商品数量</li>
                 <li>金额</li>
-                <li>全部状态 <img src="../../images/static/headdown.png" alt="" class="mar-rn"></li>
+                <li class="all-status pointer">
+                  <span class="check-list">全部状态</span>
+                  <i class="fuli-order-list-arrow"></i>
+                  <div class="fuli-order-left-item2">
+                    <ul>
+                      <li>全部状态</li>
+                      <li>等待买家付款</li>
+                      <li>待发货</li>
+                      <li>已发货</li>
+                      <li>交易完成</li>
+                      <li>交易失败</li>
+                      <li>订单关闭</li>
+                    </ul>
+                  </div>
+                </li>
                 <li>操作</li>
               </ul>
             </div>
@@ -312,7 +337,7 @@
                 <div class="order-goods-img">
                   <img src="../../images/static/order_goods.png" alt="">
                 </div>
-                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <p class="order-goods-words"><a target="_black" href="./orderDetails.html">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                 <div class="order-goods-price">
                   <div class="order-goods-del">￥98</div>
                   <div class="order-goods-present">￥78</div>
@@ -331,7 +356,7 @@
               </div>
               <div class="order-goods-status">
                 <span class="status-color">等待买家付款</span>
-                <span class="pointer">订单详情</span>
+                <span class="pointer"><a href="#">订单详情</a></span>
               </div>
               <div class="order-goods-setting">
                 <p>请在1小时30分内付款</p>
@@ -339,7 +364,9 @@
                   立即付款
                 </div>
                 <div class="order-cancel pointer">
-                  取消订单
+                  <a href="#">
+                    取消订单
+                  </a>
                 </div>
               </div>
             </div>
@@ -358,7 +385,7 @@
                 <div class="order-goods-img">
                   <img src="../../images/static/order_goods.png" alt="">
                 </div>
-                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                 <div class="order-goods-price">
                   <div class="order-goods-del">￥98</div>
                   <div class="order-goods-present">￥78</div>
@@ -377,11 +404,19 @@
               </div>
               <div class="order-goods-status">
                 <span class="status-color2">订单关闭</span>
-                <span class="pointer">订单详情</span>
+                <span class="pointer"><a href="#">订单详情</a></span>
               </div>
               <div class="order-goods-setting">
-                <span class="order-cancel pointer">再次购买</span>
-                <span class="order-cancel pointer">删除订单</span>
+                <span class="order-cancel pointer">
+                  <a href="#">
+                    再次购买
+                  </a>
+                </span>
+                <span class="order-cancel pointer">
+                  <a href="#">
+                    删除订单
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -400,7 +435,7 @@
                   <div class="order-goods-img">
                     <img src="../../images/static/order_goods.png" alt="">
                   </div>
-                  <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                  <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                   <div class="order-goods-price">
                     <div class="order-goods-del">￥98</div>
                     <div class="order-goods-present">￥78</div>
@@ -413,7 +448,7 @@
                   <div class="order-goods-img">
                     <img src="../../images/static/order_goods.png" alt="">
                   </div>
-                  <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                  <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                   <div class="order-goods-price">
                     <div class="order-goods-del">￥98</div>
                     <div class="order-goods-present">￥78</div>
@@ -443,11 +478,17 @@
               </div>
               <div class="order-goods-status2">
                 <span class="status-color2">待发货</span>
-                <span class="pointer">订单详情</span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
               </div>
               <div class="order-goods-setting2">
                 <div class="order-cancel pointer">
-                  申请退款
+                  <a href="#">
+                    申请退款
+                  </a>
                 </div>
               </div>
             </div>
@@ -466,7 +507,7 @@
                 <div class="order-goods-img">
                   <img src="../../images/static/order_goods.png" alt="">
                 </div>
-                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                 <div class="order-goods-price">
                   <div class="order-goods-del">￥98</div>
                   <div class="order-goods-present">￥78</div>
@@ -485,8 +526,16 @@
               </div>
               <div class="order-goods-status">
                 <span class="status-color2">已发货</span>
-                <span class="pointer">查看物流</span>
-                <span class="pointer">订单详情</span>
+                <span class="pointer">
+                  <a href="#">
+                    查看物流
+                  </a>
+                </span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
               </div>
               <div class="order-goods-setting">
                 <div class="order-operate operate-color pointer">
@@ -509,7 +558,7 @@
                 <div class="order-goods-img">
                   <img src="../../images/static/order_goods.png" alt="">
                 </div>
-                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                 <div class="order-goods-price">
                   <div class="order-goods-del">￥98</div>
                   <div class="order-goods-present">￥78</div>
@@ -528,21 +577,33 @@
               </div>
               <div class="order-goods-status">
                 <span class="status-color2">交易成功</span>
-                <span class="pointer">查看物流</span>
-                <span class="pointer">订单详情</span>
+                <span class="pointer">
+                  <a href="#">
+                    查看物流
+                  </a>
+                </span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
               </div>
               <div class="order-goods-setting">
-                <div class="order-assess  pointer">
-                  评价
+                <div class="order-assess  pointer">评价</div>
+                <div class="order-cancel pointer">
+                  <a href="#">
+                    再次购买
+                  </a>
                 </div>
                 <div class="order-cancel pointer">
-                  再次购买
+                  <a href="#">
+                    申请售后
+                  </a>
                 </div>
                 <div class="order-cancel pointer">
-                  申请售后
-                </div>
-                <div class="order-cancel pointer">
-                  删除订单
+                  <a href="#">
+                    删除订单
+                  </a>
                 </div>
               </div>
             </div>
@@ -565,7 +626,7 @@
                   <div class="order-goods-img">
                     <img src="../../images/static/order_goods.png" alt="">
                   </div>
-                  <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                  <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                   <div class="order-goods-price">
                     <div class="order-goods-del">￥98</div>
                     <div class="order-goods-present">￥78</div>
@@ -578,7 +639,7 @@
                   <div class="order-goods-img">
                     <img src="../../images/static/order_goods.png" alt="">
                   </div>
-                  <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                  <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                   <div class="order-goods-price">
                     <div class="order-goods-del">￥98</div>
                     <div class="order-goods-present">￥78</div>
@@ -608,11 +669,17 @@
               </div>
               <div class="order-goods-status2">
                 <span class="status-color2">待发货</span>
-                <span class="pointer">订单详情</span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
               </div>
               <div class="order-goods-setting2">
                 <div class="order-cancel pointer">
-                  申请退款
+                  <a href="#">
+                    申请退款
+                  </a>
                 </div>
               </div>
             </div>
@@ -634,7 +701,7 @@
                 <div class="order-goods-img">
                   <img src="../../images/static/order_goods.png" alt="">
                 </div>
-                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                 <div class="order-goods-price">
                   <div class="order-goods-del">￥98</div>
                   <div class="order-goods-present">￥78</div>
@@ -653,8 +720,16 @@
               </div>
               <div class="order-goods-status">
                 <span class="status-color2">已发货</span>
-                <span class="pointer">查看物流</span>
-                <span class="pointer">订单详情</span>
+                <span class="pointer">
+                  <a href="#">
+                    查看物流
+                  </a>
+                </span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
               </div>
               <div class="order-goods-setting">
                 <div class="order-operate operate-color pointer">
@@ -680,7 +755,7 @@
                 <div class="order-goods-img">
                   <img src="../../images/static/order_goods.png" alt="">
                 </div>
-                <p class="order-goods-words">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</p>
+                <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
                 <div class="order-goods-price">
                   <div class="order-goods-del">￥98</div>
                   <div class="order-goods-present">￥78</div>
@@ -699,21 +774,35 @@
               </div>
               <div class="order-goods-status">
                 <span class="status-color2">交易成功</span>
-                <span class="pointer">查看物流</span>
-                <span class="pointer">订单详情</span>
+                <span class="pointer">
+                  <a href="#">
+                    查看物流
+                  </a>
+                </span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
               </div>
               <div class="order-goods-setting">
                 <div class="order-assess  pointer">
                   评价
                 </div>
                 <div class="order-cancel pointer">
-                  再次购买
+                  <a href="#">
+                    再次购买
+                  </a>
                 </div>
                 <div class="order-cancel pointer">
-                  申请售后
+                  <a href="#">
+                    申请售后
+                  </a>
                 </div>
                 <div class="order-cancel pointer">
-                  删除订单
+                  <a href="#">
+                    删除订单
+                  </a>
                 </div>
               </div>
             </div>

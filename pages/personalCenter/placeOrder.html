@@ -106,7 +106,9 @@
               <label class="fuli-form-item-required">所在地区</label>
             </div>
             <div class="fuli-form-item-contorl">
-              <div class="fuli-form-select-region pointer"></div>
+              <div class="fuli-form-select-region pointer">
+                <input readonly type="text" data-toggle="city-picker" placeholder="请选择">
+              </div>
             </div>
           </div>
           <div class="fuli-form-item clearfix">
@@ -188,7 +190,7 @@
                   <img src="../../images/static/myphone.png" alt="">
                 </div>
                 <div class="fuli-news-word">
-                  <p>【保护视力 脑聪明】华为手机话u艾活动年啊就是</p>
+                  <p><a href="#">【保护视力 脑聪明】华为手机话u艾活动年啊就是</a></p>
                 </div>
                 <div class="fuli-return-goods">
                   <span class="fuli-goods-seven">7</span>
@@ -210,7 +212,7 @@
               <label>优惠券</label>
             </div>
             <div class="fuli-form-item-discount-contorl">
-              <select id='s1' class='selector'>
+              <select id='s1' class='selector pointer'>
                 <option>暂无可用优惠券</option>
               </select>
             </div>
@@ -220,7 +222,7 @@
               <label>积分</label>
             </div>
             <div class="fuli-form-item-discount-contorl">
-              <select id='s1' class='selector'>
+              <select id='s1' class='selector pointer'>
                 <option>暂无可用积分</option>
               </select>
             </div>
@@ -230,7 +232,7 @@
               <label>红包</label>
             </div>
             <div class="fuli-form-item-discount-contorl">
-              <select id='s1' class='selector'>
+              <select id='s1' class='selector pointer'>
                 <option>暂无可用红包</option>
               </select>
             </div>
@@ -307,6 +309,8 @@
     <!-- 内容 -->
 
     <script src="../../lib/jq/jquery.old.js"></script>
+    <script src="../../lib/city-picker/city-picker.data.js"></script>
+    <script src="../../lib/city-picker/city-picker.js"></script>
 </body>
 
 </html>

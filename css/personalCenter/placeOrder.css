@@ -65,9 +65,16 @@
 }
 
 .fuli-form-select-region{
-  width: 146px;
+  width: 217px;
   height: 35px;
   border: 1px solid #e2e2e2;
+  position: relative;
+}
+
+.fuli-form-select-region input{
+  width: 100%;
+  height: 33px;
+  outline: none;
 }
 
 .fuli-form-textarea{
@@ -149,6 +156,14 @@
   width: 550px;
   font-size: 14px;
   color: #666;
+}
+
+.fuli-news-word p a{
+  color: #666;
+}
+
+.fuli-news-word p a:hover{
+  color: #e98930;
 }
 
 .fuli-news-word2{
@@ -365,6 +380,10 @@
   margin-top: 10px;
 }
 
+.fuli-sub-order:hover{
+  opacity: 0.9;
+}
+
 .fuli-take-goods-wrapper{
   width: 346px;
   height: 160px;
@@ -387,6 +406,11 @@
   line-height: 34px;
   margin-bottom: 30px;
   margin-left: 20px;
+}
+
+.fuli-new-address:hover{
+  color: #e98930;
+  border-color: #e98930;
 }
 
 .fuli-take-goods-head{
@@ -494,7 +518,14 @@
   padding-top: 25px;
   box-sizing: border-box;
   font-size: 14px;
+}
+
+.fuli-myorder span a{
   color: #999;
+}
+
+.fuli-myorder span a:hover{
+  text-decoration: underline;
 }
 
 .fuli-payment-content{
@@ -561,6 +592,10 @@
   text-align: center;
   line-height: 47px;
   margin-top: 50px;
+}
+
+.to-pay:hover{
+  opacity: 0.9;
 }
 
 .sub-nav{
@@ -664,6 +699,11 @@
   margin: 20px 0;
 }
 
+.pay-other-mode:hover{
+  color: #e98930;
+  border-color: #e98930;
+}
+
 .pay-rule{
   width: 283px;
   height: 248px;
@@ -725,6 +765,10 @@
   line-height: 32px;
   font-size: 16px;
   margin-top: 15px;
+}
+
+.confirm-payment:hover{
+  opacity: 0.9;
 }
 
 .payment-success-wrapper{
@@ -790,7 +834,6 @@
 }
 
 .order-success-btn-left:hover{
-  background: #ffe6cf;
   color: #e98930;
   border-color: #e98930;
 }
@@ -988,4 +1031,163 @@
 .statements{
   width: 210px;
   float: right;
+}
+
+.city-picker-input {
+  opacity: 0 !important;
+  top: -9999px;
+  left: -9999px;
+  position: absolute;
+}
+
+.city-picker-span {
+  position: relative;
+  display: block;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.city-picker-span>.placeholder {
+  color: #aaa;
+  margin-left: 10px;
+}
+
+.city-picker-span>.arrow {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 10px;
+  margin-top: -3px;
+  height: 5px;
+  background: url(../../images/static/drop-arrow.png) -10px -25px no-repeat;
+}
+
+.city-picker-span.open>.arrow {
+  background-position: -10px -10px;
+}
+
+.city-picker-span>.title>span {
+  color: #333;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.city-picker-span>.title>span:hover {
+  background-color: #f1f8ff;
+}
+
+.city-picker-dropdown {
+  position: absolute;
+  width: 315px;
+  left: -9999px;
+  top: -9999px;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 999999;
+  display: none;
+  min-width: 330px;
+  margin-bottom: 20px;
+}
+
+.city-select-wrap {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.city-select-tab {
+  border-bottom: 1px solid #ccc;
+  background: #f0f0f0;
+  font-size: 13px;
+}
+
+.city-select-tab>a {
+  display: inline-block;
+  padding: 8px 22px;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid transparent;
+  color: #4D4D4D;
+  text-align: center;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: -1px;
+}
+
+.city-select-tab>a.active {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  color: #e98930;
+}
+
+.city-select-tab>a:first-child {
+  border-left: none;
+}
+
+.city-select-tab>a:last-child.active {
+  border-right: 1px solid #ccc;
+}
+
+.city-select-content {
+  width: 100%;
+  min-height: 10px;
+  background-color: #fff;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.city-select {
+  font-size: 13px;
+}
+
+.city-select dl {
+  line-height: 2;
+  clear: both;
+  padding: 3px 0;
+  margin: 0;
+}
+
+.city-select dt {
+  position: absolute;
+  width: 2.5em;
+  font-weight: 500;
+  text-align: right;
+  line-height: 2;
+}
+
+.city-select dd {
+  margin-left: 0;
+  line-height: 2;
+}
+
+.city-select.province dd {
+  margin-left: 3em;
+}
+
+.city-select a {
+  display: inline-block;
+  padding: 0 10px;
+  outline: 0;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 2px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.city-select a:hover,
+.city-select a:focus {
+  background-color: #f1f8ff;
+  border-radius: 2px;
+  color: #e98930;
+}
+
+.city-select a.active {
+  background-color: #ffe6cf;
+  color: #e98930;
+  border-radius: 2px;
 }

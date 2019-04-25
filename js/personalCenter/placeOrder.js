@@ -21,7 +21,7 @@ function focusNextInput(thisInput) {
   for(var i = 0;i<inputs.length;i++){   
     // 如果是最后一个，则焦点回到第一个(如果想实现按顺序可以登陆，可以写入登陆方法)   
     if(i==(inputs.length-1)){   
-        inputs[0].focus(); break;   
+        inputs[i].blur(); break;   
     }else if(thisInput == inputs[i]){   
         inputs[i+1].focus(); break;   
     }   

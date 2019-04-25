@@ -205,17 +205,59 @@
 }
 
 .fuli-order-left{
-  width: 140px;
+  width: 160px;
   height: 36px;
   line-height: 36px;
   text-align: center;
   font-size: 14px;
   color: #666;
+  position: relative;
   float: left;
 }
 
+.fuli-order-left>.fuli-order-arrow{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 10px;
+  margin-top: -3px;
+  height: 5px;
+  background: url(../../images/static/drop-arrow.png) no-repeat -10px -10px;
+}
+
+.fuli-hover-order-arrow{
+  background: url(../../images/static/drop-arrow.png) no-repeat -10px -25px !important;
+}
+
+.fuli-order-bg{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(213,203,203,.5);
+}
+
+.fuli-order-left-item{
+  width: 160px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 10px 10px rgba(213,203,203,.5);
+  padding-top: 15px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.fuli-order-left-item ul li{
+  line-height: 18px;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.fuli-order-left-item ul li:hover{
+  background-color: #eee;
+  color: #ff4600
+}
+
 .fuli-order-right{
-  width: 478px;
+  width: 530px;
   height: 36px;
   float: right;
 }
@@ -226,10 +268,44 @@
 
 .fuli-order-list li{
   float: left;
-  width: 119px;
+  width: 120px;
   line-height: 36px;
   color: #666;
   font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+.fuli-order-list-arrow{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 10px;
+  margin-top: -3px;
+  height: 5px;
+  background: url(../../images/static/drop-arrow.png) no-repeat -10px -10px;
+}
+
+.fuli-order-left-item2{
+  width: 120px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0 10px 10px rgba(213,203,203,.5);
+  padding-top: 15px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.fuli-order-left-item2 ul li{
+  line-height: 18px;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.fuli-order-left-item2 ul li:hover{
+  background-color: #eee;
+  color: #ff4600
 }
 
 .fuli-order-info{
@@ -294,8 +370,15 @@
   width: 228px;
   line-height: 22px;
   font-size: 12px;
-  color: #333;
   margin-left: 10px;
+}
+
+.order-goods-words a{
+  color: #333;
+}
+
+.order-goods-words a:hover{
+  color: #e98930;
 }
 
 .order-goods-price{
@@ -374,6 +457,14 @@
   float: left;
 }
 
+.order-goods-status span a{
+  color: #333;
+}
+
+.order-goods-status span a:hover{
+  text-decoration: underline;
+}
+
 .order-goods-status2{
   width: 120px;
   height: 240px;
@@ -383,8 +474,15 @@
   justify-content: center;
   flex-direction: column;
   font-size: 14px;
-  color: #333;
   float: left;
+}
+
+.order-goods-status2 span a{
+  color: #333;
+}
+
+.order-goods-status2 span a:hover{
+  text-decoration: underline;
 }
 
 .status-color{
@@ -453,9 +551,21 @@
   margin: 10px 0;
 }
 
+.order-operate:hover{
+  opacity: 0.9;
+}
+
 .order-cancel{
   font-size: 14px;
   color: #666;
+}
+
+.order-cancel a{
+  color: #666;
+}
+
+.order-cancel a:hover{
+  text-decoration: underline;
 }
 
 .status-color2{
@@ -475,4 +585,9 @@
   font-size: 14px;
   color: #333;
   margin-bottom: 5px;
+}
+
+.order-assess:hover{
+  color: #e98930;
+  border-color: #e98930;
 }
