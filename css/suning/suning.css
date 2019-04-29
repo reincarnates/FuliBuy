@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+.fuli-suning-bg{
+  width: 100%;
+  background-color: #fff;
+}
+
+.fuli-suning-wrapper{
+  width: 100%;
+  height: 138px;
+  background-color: #fff;
+}
+
+.fuli-suning-content{
+  display: flex;
+  align-items: center;
+}
+
+.fuli-suning-logo{
+  height: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-suning-logo img{
+  width: 80%;
+}
+
+.fuli-suning-goods{
+  width: 438px;
+  height: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-suning-goods-img{
+  width: 106px;
+  height: 106px;
+  background-color: #ffaa00;
+}
+
+.fuli-suning-goods-words{
+  width: 282px;
+  height: 106px;
+  padding-left: 11px;
+  box-sizing: border-box;
+}
+
+.fuli-suning-goods-name{
+  font-size: 16px;
+  color: #333;
+  line-height: 36px;
+}
+
+.fuli-suning-goods-price{
+  font-size: 22px;
+  color: #ff0000;
+  line-height: 36px;
+}
+
+.fuli-suning-goods-go{
+  height: 26px;
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  box-sizing: border-box;
+}
+
+.fuli-suning-goods-go-icon{
+  width: 26px;
+  height: 26px;
+  background-color: #ffaa00;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-suning-goods-go-icon img{
+  width: 17px;
+  height: 18px;
+}
+
+.fuli-suning-goods-go span{
+  font-size: 20px;
+  color: #ffaa00;
+  margin-left: 5px;
+}
+
+.fuli-suning-collect{
+  width: 96px;
+  height: 32px;
+  background-color: #ff0000;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.ification-wraper-suning{
+  width: 100%;
+  height: 32px;
+  background-color: #ffaa00;
+}
+
+.classification-nav2{
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 18px;
+  box-sizing: border-box;
+}
+
+.classification-nav2 li {
+  width: 135px;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+}
+
+.classification-nav2 li a{
+  color: #fff;
+}
+
+/* .classification-nav2 li:hover{
+  background-color: #e98930;
+} */
+
+.fuli-suning-banner{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 12px;
+}
+
+.fuli-suning-banner img{
+  width: 100%;
+}
+
+.fuli-filter2{
+  border-top: 1px solid #e5e5e5;
+}
+
+.fuli-filter-top2{
+  height: 39px;
+  border: 1px dotted #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+.fuli-suning-wares{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.fuli-suning-wares-item{
+  width: 24.3%;
+  height: 416px;
+  border: 1px solid #e2e2e2;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.fuli-suning-wares-item:nth-child(4n+4){
+  margin-right: 0;
+}
+
+.fuli-suning-wares-item-img{
+  width: 100%;
+  height: 288px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.fuli-suning-wares-item-words{
+  width: 100%;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.fuli-suning-wares-item-p{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 36px;
+}
+
+.fuli-suning-wares-item-price{
+  font-size: 16px;
+  color: #ff4600;
+}
+
+.fuli-suning-wares-item-sales{
+  font-size: 14px;
+  color: #333;
+}
+
+.fuli-suning-wares-item-name{
+  font-size: 14px;
+  color: #333;
+  line-height: 28px;
+}
+
+.fuli-suning-wares-item-company{
+  font-size: 12px;
+  color: #333;
+  line-height: 53px;
+  margin-top: 4px;
+}

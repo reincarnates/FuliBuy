@@ -55,7 +55,7 @@ $(function () {
   });
 
   //当点击跳转链接后，回到页面顶部位置
-  $("#toTop").click(function () {
+  $(".toolbar-tab .tbar-tab-top").click(function () {
     $('body,html').animate({ scrollTop: 0 }, 500);
     // return false;
   });
@@ -406,26 +406,26 @@ $(function () {
    }
 
    //点击跳转到对应的位置
-   $('#evaluate').click(function() {
-    $("html,body").animate(
-      {scrollTop:3500},500 /*scroll实现定位滚动*/
-      );/*让整个页面可以滚动*/
-      return false; 
-   });
+  //  $('#evaluate').click(function() {
+  //   $("html,body").animate(
+  //     {scrollTop:3500},500 /*scroll实现定位滚动*/
+  //     );/*让整个页面可以滚动*/
+  //     return false; 
+  //  });
 
-   $('#specs').click(function() {
-    $("html,body").animate(
-      {scrollTop:2420},500 /*scroll实现定位滚动*/
-      );/*让整个页面可以滚动*/
-      return false; 
-   });
+  //  $('#specs').click(function() {
+  //   $("html,body").animate(
+  //     {scrollTop:2420},500 /*scroll实现定位滚动*/
+  //     );/*让整个页面可以滚动*/
+  //     return false; 
+  //  });
 
-   $('#service').click(function() {
-    $("html,body").animate(
-      {scrollTop:2950},500 /*scroll实现定位滚动*/
-      );/*让整个页面可以滚动*/
-      return false; 
-   });
+  //  $('#service').click(function() {
+  //   $("html,body").animate(
+  //     {scrollTop:2950},500 /*scroll实现定位滚动*/
+  //     );/*让整个页面可以滚动*/
+  //     return false; 
+  //  });
 
 
 });

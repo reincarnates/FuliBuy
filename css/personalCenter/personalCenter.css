@@ -116,10 +116,17 @@
 }
 
 .fuli-personal-wrapper{
-  width: 983px;
+  width: 980px;
   background-color: #fff;
   margin-left: 19px;
   padding: 27px 20px;
+  float: left;
+}
+
+.fuli-personal-wrapper2{
+  width: 980px;
+  background-color: #fff;
+  margin-left: 19px;
   float: left;
 }
 
@@ -151,6 +158,14 @@
 }
 
 .on2 {
+	display: block;
+}
+
+.ob3{
+  display: none;
+}
+
+.on3 {
 	display: block;
 }
 
@@ -343,7 +358,7 @@
 }
 
 .order-info-content2{
-  height: 240px;
+  /* height: 240px; */
 }
 
 .order-goods-info{
@@ -490,7 +505,7 @@
 }
 
 .order-goods-setting{
-  width: 154px;
+  width: 152px;
   height: 120px;
   display: flex;
   align-items: center;
@@ -532,11 +547,11 @@
   flex-direction: column;
 }
 
-.order-goodsPrice-one:first-child{
+.order-goodsPrice-one{
   border-bottom: 1px solid #eee;
 }
 
-.order-goods-info:first-child{
+.order-goods-info{
   border-bottom: 1px solid #eee;
 }
 
@@ -590,4 +605,349 @@
 .order-assess:hover{
   color: #e98930;
   border-color: #e98930;
+}
+
+.fuli-personal-home-head{
+  width: 100%;
+  height: 207px;
+  display: flex;
+}
+
+.fuli-personal-home-head-left{
+  width: 332px;
+  height: 207px;
+  background: url(../../images/static/person_home_bg_03.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+}
+
+.fuli-personal-home-head-avatr-cont{
+  width: 138px;
+  height: 207px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fuli-personal-home-head-avatr{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.5);
+}
+
+.fuli-personal-home-head-userInfo{
+  width: 193px;
+  height: 207px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.fuli-personal-home-head-userInfo-name{
+  width: 100%;
+  line-height: 38px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fuli-personal-home-head-userInfo-vip{
+  width: 100%;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.userInfo-vip{
+  display: inline-block;
+  width: 46px;
+  height: 20px;
+  color: #fff;
+  background-color: #fab942;
+  text-align: center;
+  line-height: 20px;
+}
+
+.fuli-personal-home-head-userInfo-vip2{
+  width: 100%;
+  line-height: 30px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-personal-home-head-anquan{
+  width: 68px;
+  height: 12px;
+  color: #fff;
+  display: flex;
+}
+
+.fuli-personal-home-head-anquan-bg{
+  width: 36px;
+  height: 12px;
+  background-color: #5ba6db;
+}
+
+.fuli-personal-home-head-anquan-word{
+  width: 32px;
+  height: 12px;
+  background-color: #f8cfa9;
+  text-align: center;
+  line-height: 12px;
+}
+
+.fuli-personal-home-head-right{
+  width: 650px;
+  height: 207px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #eee;
+  box-sizing: border-box;
+}
+
+.fuli-personal-home-head-right-item{
+  width: 25%;
+}
+
+.fuli-personal-home-head-right-item-number{
+  width: 100%;
+  height: 49px;
+  font-size: 24px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-personal-home-head-right-item-word{
+  width: 100%;
+  height: 49px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 49px;
+}
+
+.fuli-peronal-home-tit-wrapper{
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.fuli-peronal-home-tit{
+  width: 100%;
+  height: 38px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.fuli-peronal-home-tit-ver{
+  width: 5px;
+  height: 18px;
+  background-color: #e98930;
+}
+
+.fuli-peronal-home-tit-word{
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.fuli-peronal-home-tit-word2{
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+  margin-right: 20px;
+  line-height: 36px;
+  height: 36px;
+}
+
+.fuli-peronal-home-tit-word3{
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+  margin-right: 20px;
+  line-height: 36px;
+  height: 36px;
+}
+
+.fuli-peronal-home-tab-title{
+  width: 100%;
+  height: 108px;
+  padding: 0 35px;
+  box-sizing: border-box;
+}
+
+.fuli-peronal-home-tabs{
+  width: 100%;
+  height: 108px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+
+.cur5{
+  color: #e98930 !important;
+  border-bottom: 3px solid #e98930;
+}
+
+.cur6{
+  color: #e98930 !important;
+  border-bottom: 3px solid #e98930;
+}
+
+.fuli-peronal-home-tabs-item{
+  width: 16.6%;
+  height: 108px;
+}
+
+.fuli-peronal-home-tabs-item-img{
+  width: 100%;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.fuli-peronal-home-tabs-item-number{
+  width: 22px;
+  height: 22px;
+  background-color: #ff4600;
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+  font-size: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+
+.fuli-peronal-home-tabs-item-words{
+  width: 100%;
+  line-height: 36px;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+.warpper{
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.fuli-two-wrapper{
+  width: 100%;
+  height: 36px;
+}
+
+.fuli-two-wrapper2{
+  width: 100%;
+  height: 36px;
+  display: flex;
+}
+
+.fuli-two-wrapper3{
+  width: 100%;
+  height: 36px;
+  display: flex;
+}
+
+.fuli-two-wrapper-left{
+  width: 100%;
+}
+
+.content-bg{
+  width: 50%;
+  background-color: #fff;
+  padding: 0 22px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.content-bg2{
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  float: left;
+}
+
+.tab-float{
+  float: left;
+  width: 50%;
+  padding: 0 22px;
+  box-sizing: border-box;
+}
+
+.contant{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-peronal-home-tit-word2-content{
+  width: 100%;
+  height: 285px;
+}
+
+.fuli-peronal-home-tit-word2-content-item{
+  width: 33%;
+  height: 195px;
+}
+
+.fuli-peronal-home-tit-word2-content-item-img{
+  width: 100%;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-p{
+  width: 100%;
+  height: 38px;
+  font-size: 14px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.fuli-p-price{
+  width: 100%;
+  line-height: 30px;
+  color: #ff4600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.fuli-peronal-home-tit-word2-content2{
+  width: 50%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-btn{
+  width: 123px;
+  height: 38px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  line-height: 38px;
+  margin: 0 auto;
 }

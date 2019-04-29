@@ -32,9 +32,9 @@ $(function () {
 
   //搜索框发生改变
   $('#searchGoods').focus(function() {
-    $('.fuli-shelper').css('display', 'block');
+    $('.fuli-shelper,.fuli-shelper2').css('display', 'block');
   }).blur(function() {
-    $('.fuli-shelper').css('display', 'none');
+    $('.fuli-shelper,.fuli-shelper2').css('display', 'none');
   });
 
   //右侧面板购物车点击加背景
@@ -96,36 +96,49 @@ $(function () {
     $('.search-cart-select').addClass("select-border");
     $('.search-not-cart').addClass("select-border");
     $('.search-select-small').addClass("select-border2");
+    $('.search-cart-all-price').show();
   }).mouseout(function() {
     $('.search-cart-bg').removeClass("select-bg");
     $('.search-cart-select').removeClass("select-border");
     $('.search-not-cart').removeClass("select-border");
     $('.search-select-small').removeClass("select-border2");
+    $('.search-cart-all-price').hide();
+  });
+
+  $('.tbar-panel-header .close-panel').click(function() {
+    $('.toolbar-wrap').removeClass('toolbar-open')
+  });
+
+  //酒水生鲜
+  $('.fuli-fresh-goods-item').mouseover(function() {
+    $(this).css('borderColor','#ccc');
+  }).mouseout(function() {
+    $(this).css('borderColor','#fff');
   });
 
   //左侧菜单hover效果
-  $(".adsense-menu ul li, .personal-menu ul li").each(function(){
-    $(this).mouseover(function(){
-        $(this).children().addClass('adsense-a-hover'); 
-        $(this).addClass("adsense-hover");
-        $('.adsense-list-select').css('display', 'block');
-    })
+  // $(".adsense-menu ul li, .personal-menu ul li").each(function(){
+  //   $(this).mouseover(function(){
+  //       $(this).children().addClass('adsense-a-hover'); 
+  //       $(this).addClass("adsense-hover");
+  //       $('.adsense-list-select').css('display', 'block');
+  //   })
     
-    $(this).mouseout(function(){
-        $(this).children().removeClass("adsense-a-hover");
-        $(this).removeClass("adsense-hover");
-        $('.adsense-list-select').css('display', 'none');
-    })
+  //   $(this).mouseout(function(){
+  //       $(this).children().removeClass("adsense-a-hover");
+  //       $(this).removeClass("adsense-hover");
+  //       $('.adsense-list-select').css('display', 'none');
+  //   })
 
-    $('.adsense-list-select').mouseover(function(){
-      $(this).show();
-    })
+  //   $('.adsense-list-select').mouseover(function(){
+  //     $(this).show();
+  //   })
 
-    $('.adsense-list-select').mouseout(function(){
-      $(this).hide();
-    })
+  //   $('.adsense-list-select').mouseout(function(){
+  //     $(this).hide();
+  //   })
 
-  })
+  // })
   
 
   // $(document).on('mouseover', '.adsense-menu ul li', function() {
@@ -178,6 +191,31 @@ $(function () {
     $(this).find('.history').text('历史记录').css('color','#b7b7b7');
   });
 
+  //楼层商品
+  $('.floor-goods-item').mouseover(function() {
+    $(this).find('.floor-goods-all').css('bottom','10px');
+  }).mouseout(function() {
+    $(this).find('.floor-goods-all').css('bottom','-35px');
+  });
+
+  //点击收藏
+  $('.floor-goods-collect').click(function() {
+    $(this).addClass('floor-xing');
+    $(this).find('span').text('已收藏');
+  });
+
+  //点击加入购物车
+  $('.floor-addcart').click(function() {
+    $(this).find('span').text('已加购');
+    $(this).find('img').show();
+  });
+
+  //标题变颜色
+  $('.fuli-box-head').mouseover(function() {
+    $(this).find('.fuli-box-hk .fuli-box-tit').css('color','#e98930');
+  }).mouseout(function() {
+    $(this).find('.fuli-box-hk .fuli-box-tit').css('color','#222');
+  });
 
 
   $('.tbar-cart-item').hover(function (){ $(this).find('.p-del').show(); },function(){ $(this).find('.p-del').hide(); });

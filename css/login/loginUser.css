@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+.login-header-wrap{
+  width: 100%;
+  height: 111px;
+  background-color: #fff;
+}
+
+.login-head{
+  width: 1200px;
+  height: 111px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.login-head-left{
+  width: 198px;
+  height: 85px;
+}
+
+.login-head-right p{
+  font-size: 14px;
+  color: #e98930;
+  font-family: 'PingFangSC'
+}
+
+.login-content-bg{
+  width: 100%;
+  height: 651px;
+  background-image: url(../../images/static/userLoginBg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.login-content{
+  width: 1200px;
+  height: 651px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.login-information{
+  width: 355px;
+  height: 482px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 98px;
+}
+
+.login-information-head{
+  width: 100%;
+  height: 58px;
+  border-bottom: 1px solid #dddddd;
+  padding: 8px 0;
+  display: flex;
+}
+
+.login-information-head-item{
+  width: 50%;
+  height: 41px;
+  border-right: 1px solid #dddddd;
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  line-height: 41px;
+}
+
+.login-information-head-item2{
+  width: 50%;
+  height: 41px;
+  font-size: 18px;
+  color: #666666;
+  padding-left: 23px;
+  box-sizing: border-box;
+  line-height: 41px;
+}
+
+.login-information-head-item:last-child{
+  border: none;
+}
+
+.login-form-content{
+  width: 100%;
+  padding-top: 39px;
+  box-sizing: border-box;
+}
+
+.login-user-input{
+  width: 311px;
+  height: 46px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.login-user-name{
+  width: 42px;
+  height: 42px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-user-name-right input{
+  width: 265px;
+  height: 42px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+
+.login-user-btn{
+  width: 311px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'PingFangSC';
+  color: #ffffff;
+  background-color: #e98930;
+  border: 1px solid #cb7729;
+  margin: 0 auto;
+}
+
+.login-user-forgetPass{
+  width: 311px;
+  height: 31px;
+  line-height: 31px;
+  text-align: right;
+  font-size: 14px;
+  color: #0072fe;
+  margin: 0 auto;
+}
+
+.login-user-dynamicPass{
+  width: 175px;
+  height: 46px;
+}
+
+.login-user-dynamicPass input{
+  width: 175px;
+  height: 42px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.login-user-dynamicPass2{
+  width: 201px;
+  height: 46px;
+}
+
+.login-user-dynamicPass2 input{
+  width: 201px;
+  height: 42px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.login-send-code{
+  width: 132px;
+  height: 42px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  line-height: 42px;
+}
+
+.login-send-code2{
+  width: 109px;
+  height: 42px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  line-height: 42px;
+  border-left: 1px solid #bbb;
+}
+
+.login-send-code2 img{
+  width: 100%;
+  height: 100%;
+}
+
+.login-proving{
+  width: 311px;
+  height: 25px;
+  background-color: #ffebeb;
+  display: flex; 
+  position: absolute;    
+  left: 20px;
+  top: 65px;
+}
+
+.login-proving-left{
+  width: 42px;
+  height: 25px;
+}
+
+.login-proving-right{
+  width: 265px;
+  height: 25px;
+  color: #e4393c;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.cur2{
+  color: #fe6601;
+}
+
+.ob2{
+  display: none;
+}
+
+.on2 {
+	display: block;
+}
+
+.login-bottom{
+  width: 100%;
+  height: 88px;
+}
+
+.login-bottom-content{
+  width: 1200px;
+  height: 88px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.login-bottom-url{
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 5px;
+  border-right: 2px solid #7d7d7d;
+  color: #333;
+  font-size: 14px;
+}
+
+.login-bottom-url a:hover{
+  color: #e98930;
+}
+
+.login-bottom-url a{
+  color: #333;
+}
+
+.login-bottom-url2 a{
+  color: #333;
+}
+
+.login-bottom-url2{
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.login-bottom-url2 a:hover{
+  color: #e98930;
+}
+
+.copy-right{
+  line-height: 47px;
+  color: #666;
+  font-size: 12px;
+}

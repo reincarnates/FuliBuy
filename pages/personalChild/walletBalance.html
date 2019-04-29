@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=1200, initial-scale=1.0, minimum-scale=0, maximum-scale=2.0, user-scalable=yes" />     
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>余额</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/header/header.css">
+  <link rel="stylesheet" href="../../css/CommodityDetails/CommodityDetails.css">
+  <link rel="stylesheet" href="../../css/personalCenter/personalCenter.css">
+  <link rel="stylesheet" href="../../css/personalChild/personalChild.css">
+</head>
+
+<body>
+  <!-- 导航 -->
+  <div class="header">
+    <div class="fuli-container">
+      <div class="fuli-g">
+        <div class="fuli-u-sm-2">
+          <div class="fuli-g">
+            <div class="fuli-u-sm-4 home">
+              <img src="../../images/static/home.png" alt="首页" class="pointer">首页
+            </div>
+            <div class="fuli-u-sm-8 home">
+              <img src="../../images/static/landmark.png" alt="首页" class="pointer">北京
+            </div>
+          </div>
+        </div>
+        <!-- <div class="fuli-u-sm-7"> -->
+        <ul class="clearfix fuli-nav">
+          <li>
+            <a href="#">
+              登录
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              免费注册
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              我的订单
+              <img src="../../images/static/headdown.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              个人中心
+              <img src="../../images/static/headdown.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              微信号
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              福利会员
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              商户工作台
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              服务中心
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              手机客户端
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 导航end -->
+
+  <!-- 搜索 -->
+  <div class="search-wraper">
+    <div class="search-content">
+      <div class="fuli-u-sm-2 search-content-left">
+        <img src="../../images/static/uligou.png" alt="">
+      </div>
+      <div class="fuli-u-sm-8 search-content-center clearfix">
+        <div class="fuli-u-sm-9 search-all">
+          <div class="search-input">
+            <input type="text" placeholder="国际大牌母婴用品" id="searchGoods" />
+          </div>
+          <div class="search-btn pointer">
+            <img src="../../images/static/search.png" alt="">
+          </div>
+          <ul class="clearfix small-nav">
+            <li>
+              <a href="#">
+                厨房用纸
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                清洁纸巾
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                米面粮油
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                家居用品
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                厨房用品
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                母婴
+              </a>
+            </li>
+          </ul>
+          <div class="fuli-shelper">
+            123
+          </div>
+        </div>
+        <div class="fuli-u-sm-3 search-cart">
+          <div class="search-cart-bg pointer">
+            <img src="../../images/static/cart.png" alt="">
+            <span>购物车</span>
+            <div class="cart-count">0</div>
+          </div>
+          <div class="search-select-small"></div>
+          <div class="search-cart-select"></div>
+        </div>
+      </div>
+      <div class="fuli-u-sm-2 search-content-right">
+        <img src="../../images/static/code.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- 搜索end -->
+
+  <!-- 全部分类 -->
+  <div class="ification-wraper">
+  </div>
+  <!-- 全部分类end -->
+
+  <!-- 内容 -->
+  <div class="fuli-container fuli-wrapper">
+    <div class="clearfix personal">
+      <div class="menu">
+        <dl class="list_dl">
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <i class="list_dt_icon2"></i>
+            <p>订单中心</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">我的订单</li>
+              <li class="list_li">订单回收站</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <i class="list_dt_icon2"></i>
+            <p>我的福利袋</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">余额</li>
+              <li class="list_li">积分</li>
+              <li class="list_li">红包</li>
+              <li class="list_li">代金券</li>
+              <li class="list_li">更多</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <i class="list_dt_icon2"></i>
+            <p>客户服务</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">退款或退换货</li>
+              <li class="list_li">发票服务</li>
+              <li class="list_li">投诉举报</li>
+              <li class="list_li">意见反馈</li>
+              <li class="list_li">在线咨询</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <i class="list_dt_icon2"></i>
+            <p>关注中心</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">我的收藏</li>
+              <li class="list_li">我参与的</li>
+              <li class="list_li">预约提醒</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="fuli-personal-wrapper">
+        <div class="fuli-personal-balance">
+          我的余额
+        </div>
+        <div class="fuli-two-balance">
+          <div class="fuli-account-balance">
+            <div class="fuli-account-balance-word">账户余额</div>
+            <div class="fuli-account-balance-price">￥2866.00</div>
+            <div class="fuli-account-balance-frozen">冻结金额：￥0.00</div>
+            <div class="fuli-online-recharge pointer">在线充值</div>
+          </div>
+          <div class="fuli-account-balance2">
+            <div class="fuli-account-balance-word">账户余额</div>
+            <div class="fuli-account-balance-price">￥2866.00</div>
+            <div class="fuli-account-balance-frozen">冻结充值卡金额：￥0.00</div>
+            <div class="fuli-online-recharge2 pointer">充值卡充值</div>
+          </div>
+        </div>
+        <div class="introduce-tab2 mar-tw clearfix">
+          <ul class="tab2">
+            <li class="cur2">
+              账户余额
+            </li>
+            <li>
+              充值卡金额
+            </li>
+            <li>
+              充值明细
+            </li>
+          </ul>
+        </div>
+        <!-- 所有订单 -->
+        <div class="ob2 on2">
+          <div class="fuli-order-head clearfix">
+            <div class="fuli-order-left pointer">
+              <span class="fuli-check-time">近3个月订单</span>
+              <!-- <img src="../../images/static/headdown.png" alt=""> -->
+              <i class="fuli-order-arrow"></i>
+              <div class="fuli-order-left-item">
+                <ul>
+                  <li>近三个月的订单</li>
+                  <li>今年订单</li>
+                  <li>2018年下半年订单</li>
+                  <li>2017年上半年订单</li>
+                  <li>2016年下半年订单</li>
+                  <li>2016年上半年订单</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-order-right2">
+              <ul class="clearfix fuli-order-list2">
+                <li>收入</li>
+                <li>支出</li>
+                <li class="fuli-frozen-color">冻结</li>
+                <li>变更说明</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fuli-balance-wrapper">
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥666.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fuli-balance-content clearfix">
+              <div class="fuli-order-left2">
+                2019-01-07 16:07:42
+              </div>
+              <div class="fuli-order-right2">
+                <ul class="clearfix fuli-order-list2">
+                  <li>+1325.30</li>
+                  <li class="expenditure">-1325.20</li>
+                  <li class="fuli-frozen-color">￥0.00</li>
+                  <li title="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" class="change-notes">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fuli-balance-paging">
+            <div id="pageBox">
+                <span id="prev">上一页</span>
+                <ul id="pageNav"></ul>
+                <span id="next">下一页</span>
+            </div>
+          </div>
+        </div>
+        <!-- 待发货 -->
+        <div class="ob2">
+          <div class="fuli-order-info">
+            <div class="order-info-heade clearfix">
+              <div class="order-info-left">
+                订单编号：56728272726266363
+              </div>
+              <div class="order-time">
+                下单时间：2019-04-09
+              </div>
+            </div>
+            <div class="order-info-content2 clearfix">
+              <div class="order-goods-all">
+                <div class="order-goods-info">
+                  <div class="order-goods-img">
+                    <img src="../../images/static/order_goods.png" alt="">
+                  </div>
+                  <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
+                  <div class="order-goods-price">
+                    <div class="order-goods-del">￥98</div>
+                    <div class="order-goods-present">￥78</div>
+                  </div>
+                  <div class="order-goods-number">
+                    1件
+                  </div>
+                </div>
+                <div class="order-goods-info">
+                  <div class="order-goods-img">
+                    <img src="../../images/static/order_goods.png" alt="">
+                  </div>
+                  <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
+                  <div class="order-goods-price">
+                    <div class="order-goods-del">￥98</div>
+                    <div class="order-goods-present">￥78</div>
+                  </div>
+                  <div class="order-goods-number">
+                    1件
+                  </div>
+                </div>
+              </div>
+              <div class="order-goodsPrice2">
+                <div class="order-goodsPrice-one">
+                  <div class="order-goodsPrice-top">
+                    78.00
+                  </div>
+                  <div class="order-goodsPrice-bottom">
+                    (含运费: 0.00)
+                  </div>
+                </div>
+                <div class="order-goodsPrice-one">
+                  <div class="order-goodsPrice-top">
+                    78.00
+                  </div>
+                  <div class="order-goodsPrice-bottom">
+                    (含运费: 0.00)
+                  </div>
+                </div>
+              </div>
+              <div class="order-goods-status2">
+                <span class="status-color2">待发货</span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
+              </div>
+              <div class="order-goods-setting2">
+                <div class="order-cancel pointer">
+                  <a href="#">
+                    申请退款
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 待收货 -->
+        <div class="ob2">
+          <div class="fuli-order-info">
+            <div class="order-info-heade clearfix">
+              <div class="order-info-left">
+                订单编号：56728272726266363
+              </div>
+              <div class="order-time">
+                下单时间：2019-04-09
+              </div>
+            </div>
+            <div class="order-info-content clearfix">
+              <div class="order-goods-info">
+                <div class="order-goods-img">
+                  <img src="../../images/static/order_goods.png" alt="">
+                </div>
+                <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
+                <div class="order-goods-price">
+                  <div class="order-goods-del">￥98</div>
+                  <div class="order-goods-present">￥78</div>
+                </div>
+                <div class="order-goods-number">
+                  1件
+                </div>
+              </div>
+              <div class="order-goodsPrice">
+                <div class="order-goodsPrice-top">
+                  78.00
+                </div>
+                <div class="order-goodsPrice-bottom">
+                  (含运费: 0.00)
+                </div>
+              </div>
+              <div class="order-goods-status">
+                <span class="status-color2">已发货</span>
+                <span class="pointer">
+                  <a href="#">
+                    查看物流
+                  </a>
+                </span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
+              </div>
+              <div class="order-goods-setting">
+                <div class="order-operate operate-color pointer">
+                  确认收货
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 待评价 -->
+        <div class="ob2">
+          <div class="fuli-order-info">
+            <div class="order-info-heade clearfix">
+              <div class="order-info-left">
+                订单编号：56728272726266363
+              </div>
+              <div class="order-time">
+                下单时间：2019-04-09
+              </div>
+            </div>
+            <div class="order-info-content clearfix">
+              <div class="order-goods-info">
+                <div class="order-goods-img">
+                  <img src="../../images/static/order_goods.png" alt="">
+                </div>
+                <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
+                <div class="order-goods-price">
+                  <div class="order-goods-del">￥98</div>
+                  <div class="order-goods-present">￥78</div>
+                </div>
+                <div class="order-goods-number">
+                  1件
+                </div>
+              </div>
+              <div class="order-goodsPrice">
+                <div class="order-goodsPrice-top">
+                  78.00
+                </div>
+                <div class="order-goodsPrice-bottom">
+                  (含运费: 0.00)
+                </div>
+              </div>
+              <div class="order-goods-status">
+                <span class="status-color2">交易成功</span>
+                <span class="pointer">
+                  <a href="#">
+                    查看物流
+                  </a>
+                </span>
+                <span class="pointer">
+                  <a href="#">
+                    订单详情
+                  </a>
+                </span>
+              </div>
+              <div class="order-goods-setting">
+                <div class="order-assess  pointer">
+                  评价
+                </div>
+                <div class="order-cancel pointer">
+                  <a href="#">
+                    再次购买
+                  </a>
+                </div>
+                <div class="order-cancel pointer">
+                  <a href="#">
+                    申请售后
+                  </a>
+                </div>
+                <div class="order-cancel pointer">
+                  <a href="#">
+                    删除订单
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 订单回收站 -->
+        <div class="ob2">5</div>
+      </div>
+    </div>
+  </div>
+  <!-- 内容 -->
+
+  <script src="../../lib/jq/jquery.old.js"></script>
+  <script src="../../js/index/index.js"></script>
+  <script src="../../js/personalCenter/personalCenter.js"></script>
+</body>
+
+</html>

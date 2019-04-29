@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport"
+    content="width=1200, initial-scale=1.0, minimum-scale=0, maximum-scale=2.0, user-scalable=yes" />
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/header/header.css">
+  <link rel="stylesheet" href="../../css/CommodityDetails/CommodityDetails.css">
+  <link rel="stylesheet" href="../../css/personalCenter/personalCenter.css">
+</head>
+
+<body>
+  <!-- 导航 -->
+  <div class="header">
+    <div class="fuli-container">
+      <div class="fuli-g">
+        <div class="fuli-u-sm-2">
+          <div class="fuli-g">
+            <div class="fuli-u-sm-4 home">
+              <img src="../../images/static/home.png" alt="首页" class="pointer">首页
+            </div>
+            <div class="fuli-u-sm-8 home">
+              <img src="../../images/static/landmark.png" alt="首页" class="pointer">北京
+            </div>
+          </div>
+        </div>
+        <!-- <div class="fuli-u-sm-7"> -->
+        <ul class="clearfix fuli-nav">
+          <li>
+            <a href="#">
+              登录
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              免费注册
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              我的订单
+              <img src="../../images/static/headdown.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              个人中心
+              <img src="../../images/static/headdown.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              微信号
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              福利会员
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              商户工作台
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              服务中心
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              手机客户端
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 导航end -->
+
+  <!-- 右侧面板 -->
+  <div class="fuli-toolbar">
+    <div class="fuli-toolbar-tabs">
+      <div class="fuli-toolbar-tab">
+        <img src="../../images/static/sideMsg.png" alt="">
+        <div class="fuli-toolbar-text">我的消息</div>
+      </div>
+      <div class="fuli-toolbar-tab" id="tab-cart">
+        <img src="../../images/static/sideCar.png" alt="">
+        <div class="fuli-toolbar-text">购物车</div>
+      </div>
+      <div class="fuli-toolbar-tab">
+        <img src="../../images/static/sideFoot.png" alt="">
+        <div class="fuli-toolbar-text">浏览足迹</div>
+      </div>
+      <div class="fuli-toolbar-tab">
+        <img src="../../images/static/sideCustomer.png" alt="">
+        <div class="fuli-toolbar-text">联系客服</div>
+      </div>
+      <div class="fuli-toolbar-tab">
+        <img src="../../images/static/sideBack.png" alt="">
+        <div class="fuli-toolbar-text">反馈问题</div>
+      </div>
+      <div class="fuli-toolbar-tab2" id="toTop">
+        <img src="../../images/static/updown.png" alt="">
+        <div class="fuli-toolbar-text">返回顶部</div>
+      </div>
+    </div>
+    <div class="fuli-toolbar-panels"></div>
+  </div>
+  <!-- 右侧面板end -->
+
+  <!-- 搜索 -->
+  <div class="search-wraper">
+    <div class="search-content">
+      <div class="fuli-u-sm-2 search-content-left">
+        <img src="../../images/static/uligou.png" alt="">
+      </div>
+      <div class="fuli-u-sm-8 search-content-center clearfix">
+        <div class="fuli-u-sm-9 search-all">
+          <div class="search-input">
+            <input type="text" placeholder="国际大牌母婴用品" id="searchGoods" />
+          </div>
+          <div class="search-btn pointer">
+            <img src="../../images/static/search.png" alt="">
+          </div>
+          <ul class="clearfix small-nav">
+            <li>
+              <a href="#">
+                厨房用纸
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                清洁纸巾
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                米面粮油
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                家居用品
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                厨房用品
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                母婴
+              </a>
+            </li>
+          </ul>
+          <div class="fuli-shelper">
+            123
+          </div>
+        </div>
+        <div class="fuli-u-sm-3 search-cart">
+          <div class="search-cart-bg pointer">
+            <img src="../../images/static/cart.png" alt="">
+            <span>购物车</span>
+            <div class="cart-count">0</div>
+          </div>
+          <div class="search-select-small"></div>
+          <div class="search-cart-select"></div>
+        </div>
+      </div>
+      <div class="fuli-u-sm-2 search-content-right">
+        <img src="../../images/static/code.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- 搜索end -->
+
+  <!-- 全部分类 -->
+  <div class="ification-wraper">
+  </div>
+  <!-- 全部分类end -->
+
+  <!-- 内容 -->
+  <div class="fuli-container fuli-wrapper">
+    <div class="clearfix personal">
+      <div class="menu">
+        <dl class="list_dl">
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <i class="list_dt_icon2"></i>
+            <p>订单中心</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">我的订单</li>
+              <li class="list_li">订单回收站</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <i class="list_dt_icon2"></i>
+            <p>我的福利袋</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">余额</li>
+              <li class="list_li">积分</li>
+              <li class="list_li">红包</li>
+              <li class="list_li">代金券</li>
+              <li class="list_li">更多</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <i class="list_dt_icon2"></i>
+            <p>客户服务</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">退款或退换货</li>
+              <li class="list_li">发票服务</li>
+              <li class="list_li">投诉举报</li>
+              <li class="list_li">意见反馈</li>
+              <li class="list_li">在线咨询</li>
+            </ul>
+          </dd>
+          <dt class="list_dt">
+            <span class="_after"></span>
+            <i class="list_dt_icon2"></i>
+            <p>关注中心</p>
+            <i class="list_dt_icon"></i>
+          </dt>
+          <dd class="list_dd">
+            <ul>
+              <li class="list_li">我的收藏</li>
+              <li class="list_li">我参与的</li>
+              <li class="list_li">预约提醒</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="fuli-personal-wrapper2">
+        <div class="fuli-personal-home-head">
+          <div class="fuli-personal-home-head-left">
+            <div class="fuli-personal-home-head-avatr-cont">
+              <div class="fuli-personal-home-head-avatr"></div>
+            </div>
+            <div class="fuli-personal-home-head-userInfo">
+              <div class="fuli-personal-home-head-userInfo-name">
+                陈春茂
+              </div>
+              <div class="fuli-personal-home-head-userInfo-vip">
+                <span>会员等级：</span>
+                <span class="userInfo-vip">vip1</span>
+              </div>
+              <div class="fuli-personal-home-head-userInfo-vip2">
+                <span>账户安全：</span>
+                <div class="fuli-personal-home-head-anquan">
+                  <div class="fuli-personal-home-head-anquan-bg"></div>
+                  <div class="fuli-personal-home-head-anquan-word">中</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fuli-personal-home-head-right">
+            <div class="fuli-personal-home-head-right-item">
+              <div class="fuli-personal-home-head-right-item-number">
+                <img src="../../images/static/mony_06.jpg" alt="">
+                100
+              </div>
+              <div class="fuli-personal-home-head-right-item-word">
+                余额
+              </div>
+            </div>
+            <div class="fuli-personal-home-head-right-item">
+              <div class="fuli-personal-home-head-right-item-number">
+                <img src="../../images/static/mony_06.jpg" alt="">
+                100
+              </div>
+              <div class="fuli-personal-home-head-right-item-word">
+                余额
+              </div>
+            </div>
+            <div class="fuli-personal-home-head-right-item">
+              <div class="fuli-personal-home-head-right-item-number">
+                <img src="../../images/static/mony_06.jpg" alt="">
+                100
+              </div>
+              <div class="fuli-personal-home-head-right-item-word">
+                余额
+              </div>
+            </div>
+            <div class="fuli-personal-home-head-right-item">
+              <div class="fuli-personal-home-head-right-item-number">
+                <img src="../../images/static/mony_06.jpg" alt="">
+                100
+              </div>
+              <div class="fuli-personal-home-head-right-item-word">
+                余额
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fuli-peronal-home-tit-wrapper">
+          <div class="fuli-peronal-home-tit">
+            <div class="fuli-peronal-home-tit-ver"></div>
+            <div class="fuli-peronal-home-tit-word">
+              我的订单
+            </div>
+          </div>
+        </div>
+        <div class="fuli-peronal-home-tab-title">
+          <div class="fuli-peronal-home-tabs">
+            <div class="fuli-peronal-home-tabs-item cur5">
+              <div class="fuli-peronal-home-tabs-item-img">
+                <img src="../../images/static/daifukuang_03.png" alt="">
+                <div class="fuli-peronal-home-tabs-item-number">1</div>
+              </div>
+              <div class="fuli-peronal-home-tabs-item-words">
+                待付款
+              </div>
+            </div>
+            <div class="fuli-peronal-home-tabs-item">
+              <div class="fuli-peronal-home-tabs-item-img">
+                <img src="../../images/static/fahuo_11.jpg" alt="">
+                <div class="fuli-peronal-home-tabs-item-number">1</div>
+              </div>
+              <div class="fuli-peronal-home-tabs-item-words">
+                待发货
+              </div>
+            </div>
+            <div class="fuli-peronal-home-tabs-item">
+              <div class="fuli-peronal-home-tabs-item-img">
+                <img src="../../images/static/shouhuo_03.png" alt="">
+                <div class="fuli-peronal-home-tabs-item-number">1</div>
+              </div>
+              <div class="fuli-peronal-home-tabs-item-words">
+                待收货
+              </div>
+            </div>
+            <div class="fuli-peronal-home-tabs-item">
+              <div class="fuli-peronal-home-tabs-item-img">
+                <img src="../../images/static/wancheng_03.png" alt="">
+                <div class="fuli-peronal-home-tabs-item-number">1</div>
+              </div>
+              <div class="fuli-peronal-home-tabs-item-words">
+                已完成
+              </div>
+            </div>
+            <div class="fuli-peronal-home-tabs-item">
+              <div class="fuli-peronal-home-tabs-item-img">
+                <img src="../../images/static/pingjia_03.png" alt="">
+                <div class="fuli-peronal-home-tabs-item-number">1</div>
+              </div>
+              <div class="fuli-peronal-home-tabs-item-words">
+                待评价
+              </div>
+            </div>
+            <div class="fuli-peronal-home-tabs-item">
+              <div class="fuli-peronal-home-tabs-item-img">
+                <img src="../../images/static/tuikuan_03.png" alt="">
+                <div class="fuli-peronal-home-tabs-item-number">1</div>
+              </div>
+              <div class="fuli-peronal-home-tabs-item-words">
+                退款退货
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 所有订单 -->
+        <div class="ob2 on2 clearfix">
+          <div class="warpper">
+            <div class="fuli-order-info">
+              <div class="order-info-heade clearfix">
+                <div class="order-info-left">
+                  订单编号：56728272726266363
+                </div>
+                <div class="order-time">
+                  下单时间：2019-04-09
+                </div>
+              </div>
+              <div class="order-info-content clearfix">
+                <div class="order-goods-info">
+                  <div class="order-goods-img">
+                    <img src="../../images/static/order_goods.png" alt="">
+                  </div>
+                  <p class="order-goods-words"><a target="_black" href="./orderDetails.html">SHISEIDO 资生堂旗下HANDCREAM 美润
+                      药用美肌护手霜 100克/罐 2罐装</a></p>
+                  <div class="order-goods-price">
+                    <div class="order-goods-del">￥98</div>
+                    <div class="order-goods-present">￥78</div>
+                  </div>
+                  <div class="order-goods-number">
+                    1件
+                  </div>
+                </div>
+                <div class="order-goodsPrice">
+                  <div class="order-goodsPrice-top">
+                    78.00
+                  </div>
+                  <div class="order-goodsPrice-bottom">
+                    (含运费: 0.00)
+                  </div>
+                </div>
+                <div class="order-goods-status">
+                  <span class="status-color">等待买家付款</span>
+                  <span class="pointer"><a href="#">订单详情</a></span>
+                </div>
+                <div class="order-goods-setting">
+                  <p>请在1小时30分内付款</p>
+                  <div class="order-operate pointer">
+                    立即付款
+                  </div>
+                  <div class="order-cancel pointer">
+                    <a href="#">
+                      取消订单
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-float">
+            <div class="fuli-two-wrapper3">
+              <div class="fuli-two-wrapper-left">
+                <div class="fuli-peronal-home-tit">
+                  <div class="fuli-peronal-home-tit-ver"></div>
+                  <div class="fuli-peronal-home-tit-word2 cur6">
+                    商品收藏
+                  </div>
+                  <div class="fuli-peronal-home-tit-word2">
+                    店铺收藏
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ob3 content-bg2 on3">
+              <div class="fuli-peronal-home-tit-word2-content">
+                <div class="contant">
+                  <div class="fuli-peronal-home-tit-word2-content-item">
+                    <div class="fuli-peronal-home-tit-word2-content-item-img">
+                      <img src="../../images/static/shppingCartimg.jpg" alt="">
+                    </div>
+                    <p class="fuli-p">自营马来西亚进口 宜昌榛果味白自营马来西亚进口 宜昌榛果味白</p>
+                    <div class="fuli-p-price">￥100</div>
+                  </div>
+                  <div class="fuli-peronal-home-tit-word2-content-item">
+                    <div class="fuli-peronal-home-tit-word2-content-item-img">
+                      <img src="../../images/static/shppingCartimg.jpg" alt="">
+                    </div>
+                    <p class="fuli-p">自营马来西亚进口 宜昌榛果味白自营马来西亚进口 宜昌榛果味白</p>
+                    <div class="fuli-p-price">￥100</div>
+                  </div>
+                  <div class="fuli-peronal-home-tit-word2-content-item">
+                    <div class="fuli-peronal-home-tit-word2-content-item-img">
+                      <img src="../../images/static/shppingCartimg.jpg" alt="">
+                    </div>
+                    <p class="fuli-p">自营马来西亚进口 宜昌榛果味白自营马来西亚进口 宜昌榛果味白</p>
+                    <div class="fuli-p-price">￥100</div>
+                  </div>
+                </div>
+                <div class="fuli-btn">
+                  查看所有商品
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ob3">
+            2
+          </div>
+          <div class="content-bg">
+            <div class="fuli-two-wrapper-left">
+              <div class="fuli-peronal-home-tit">
+                <div class="fuli-peronal-home-tit-ver"></div>
+                <div class="fuli-peronal-home-tit-word3">
+                  我的足迹
+                </div>
+              </div>
+            </div>
+            <div class="fuli-peronal-home-tit-word2-content">
+              <div class="contant">
+                <div class="fuli-peronal-home-tit-word2-content-item">
+                  <div class="fuli-peronal-home-tit-word2-content-item-img">
+                    <img src="../../images/static/shppingCartimg.jpg" alt="">
+                  </div>
+                  <p class="fuli-p">自营马来西亚进口 宜昌榛果味白自营马来西亚进口 宜昌榛果味白</p>
+                  <div class="fuli-p-price">￥100</div>
+                </div>
+                <div class="fuli-peronal-home-tit-word2-content-item">
+                  <div class="fuli-peronal-home-tit-word2-content-item-img">
+                    <img src="../../images/static/shppingCartimg.jpg" alt="">
+                  </div>
+                  <p class="fuli-p">自营马来西亚进口 宜昌榛果味白自营马来西亚进口 宜昌榛果味白</p>
+                  <div class="fuli-p-price">￥100</div>
+                </div>
+                <div class="fuli-peronal-home-tit-word2-content-item">
+                  <div class="fuli-peronal-home-tit-word2-content-item-img">
+                    <img src="../../images/static/shppingCartimg.jpg" alt="">
+                  </div>
+                  <p class="fuli-p">自营马来西亚进口 宜昌榛果味白自营马来西亚进口 宜昌榛果味白</p>
+                  <div class="fuli-p-price">￥100</div>
+                </div>
+              </div>
+              <div class="fuli-btn">
+                查看所有商品
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 待发货 -->
+        <div class="ob2">
+
+        </div>
+        <!-- 待收货 -->
+        <div class="ob2">
+          <div class="wrapper">
+            <div class="fuli-order-info">
+              <div class="order-info-heade clearfix">
+                <div class="order-info-left">
+                  订单编号：56728272726266363
+                </div>
+                <div class="order-time">
+                  下单时间：2019-04-09
+                </div>
+              </div>
+              <div class="order-info-content clearfix">
+                <div class="order-goods-info">
+                  <div class="order-goods-img">
+                    <img src="../../images/static/order_goods.png" alt="">
+                  </div>
+                  <p class="order-goods-words"><a href="#">SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装</a></p>
+                  <div class="order-goods-price">
+                    <div class="order-goods-del">￥98</div>
+                    <div class="order-goods-present">￥78</div>
+                  </div>
+                  <div class="order-goods-number">
+                    1件
+                  </div>
+                </div>
+                <div class="order-goodsPrice">
+                  <div class="order-goodsPrice-top">
+                    78.00
+                  </div>
+                  <div class="order-goodsPrice-bottom">
+                    (含运费: 0.00)
+                  </div>
+                </div>
+                <div class="order-goods-status">
+                  <span class="status-color2">已发货</span>
+                  <span class="pointer">
+                    <a href="#">
+                      查看物流
+                    </a>
+                  </span>
+                  <span class="pointer">
+                    <a href="#">
+                      订单详情
+                    </a>
+                  </span>
+                </div>
+                <div class="order-goods-setting">
+                  <div class="order-operate operate-color pointer">
+                    确认收货
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 待评价 -->
+        <div class="ob2">
+          4
+        </div>
+        <!-- 订单回收站 -->
+        <div class="ob2">5</div>
+        <div class="ob2">6</div>
+      </div>
+    </div>
+  </div>
+  <!-- 内容 -->
+
+  <!-- 底部 -->
+  <div class="footer-bg">
+    <div class="fuli-container">
+      <div class="fuli-u-sm-12 fuli-footer clearfix">
+        <div class="fuli-footer-service">
+          <div class="footer-service-unit clearfix">
+            <div class="footer-service-img">
+              <img src="../../images/static/aftersale.png" alt="">
+            </div>
+            <div class="footer-service-word">
+              <h6 class="footer-service-tit">产品更齐全</h6>
+              <div class="footer-service-text">轻松购物畅选无忧</div>
+            </div>
+          </div>
+        </div>
+        <div class="fuli-footer-service">
+          <div class="footer-service-unit clearfix">
+            <div class="footer-service-img">
+              <img src="../../images/static/aftersale.png" alt="">
+            </div>
+            <div class="footer-service-word">
+              <h6 class="footer-service-tit">产品更齐全</h6>
+              <div class="footer-service-text">轻松购物畅选无忧</div>
+            </div>
+          </div>
+        </div>
+        <div class="fuli-footer-service">
+          <div class="footer-service-unit clearfix">
+            <div class="footer-service-img">
+              <img src="../../images/static/aftersale.png" alt="">
+            </div>
+            <div class="footer-service-word">
+              <h6 class="footer-service-tit">产品更齐全</h6>
+              <div class="footer-service-text">轻松购物畅选无忧</div>
+            </div>
+          </div>
+        </div>
+        <div class="fuli-footer-service">
+          <div class="footer-service-unit clearfix">
+            <div class="footer-service-img">
+              <img src="../../images/static/aftersale.png" alt="">
+            </div>
+            <div class="footer-service-word">
+              <h6 class="footer-service-tit">产品更齐全</h6>
+              <div class="footer-service-text">轻松购物畅选无忧</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fuli-u-sm-12 fuli-footer-help clearfix">
+        <div class="footer-help-list">
+          <div class="help-list-tit">新手指南</div>
+          <ul class="help-list-nav">
+            <li>
+              <a href="#">
+                积分细则
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                积分兑换说明
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                如何搜索
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                忘记密码
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                我要买
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-help-list">
+          <div class="help-list-tit">支付方式</div>
+          <ul class="help-list-nav">
+            <li>
+              <a href="#">
+                分期付款
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                邮局汇款
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                公司转账
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                如何注册支付宝
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                在线支付
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-help-list">
+          <div class="help-list-tit">售后服务</div>
+          <ul class="help-list-nav">
+            <li>
+              <a href="#">
+                联系卖家
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                退换货政策
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                退换货流程
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                返修/退换货
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                退款申请
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-help-list">
+          <div class="help-list-tit">购物指南</div>
+          <ul class="help-list-nav">
+            <li>
+              <a href="#">
+                会员修改密码
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                会员修改跟人资料
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                商品发布
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                修改收货地址
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-help-list">
+          <div class="help-list-tit">关于我们</div>
+          <ul class="help-list-nav">
+            <li>
+              <a href="#">
+                合作及洽谈
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                招聘英才
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                关于我们
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                联系我们
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-help-list">
+          <div class="footer-help-public">
+            <div class="footer-help-code"></div>
+            <div class="footer-help-word">
+              公众号
+            </div>
+          </div>
+        </div>
+        <div class="footer-help-list">
+          <div class="footer-help-public">
+            <div class="footer-help-code"></div>
+            <div class="footer-help-word">
+              官方微信
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fuli-u-sm-12 fuli-copyright-auth">
+        <div class="fuli-copyright-cont clearfix">
+          <a href="#">
+            <div class="fuli-copyright-icon fuli-copyright-icon-1 pointer"></div>
+          </a>
+          <a href="#">
+            <div class="fuli-copyright-icon fuli-copyright-icon-2 pointer"></div>
+          </a>
+          <a href="#">
+            <div class="fuli-copyright-icon fuli-copyright-icon-3 pointer"></div>
+          </a>
+          <a href="#">
+            <div class="fuli-copyright-icon fuli-copyright-icon-4 pointer"></div>
+          </a>
+          <a href="#">
+            <div class="fuli-copyright-icon fuli-copyright-icon-5 pointer"></div>
+          </a>
+          <a href="#">
+            <div class="fuli-copyright-icon fuli-copyright-icon-6 pointer"></div>
+          </a>
+          <a href="#">
+            <div class="fuli-copyright-icon fuli-copyright-icon-7 pointer"></div>
+          </a>
+        </div>
+      </div>
+      <div class="fuli-u-sm-12 fuli-copyright-info">
+        <p>
+          <a href="#" class="fuli-copyright-links">首页</a>
+          <span class="fuli-copyright-split">|</span>
+          <a href="#" class="fuli-copyright-links">招聘英才</a>
+          <span class="fuli-copyright-split">|</span>
+          <a href="#" class="fuli-copyright-links">合作及洽谈</a>
+          <span class="fuli-copyright-split">|</span>
+          <a href="#" class="fuli-copyright-links">联系我们</a>
+          <span class="fuli-copyright-split">|</span>
+          <a href="#" class="fuli-copyright-links">关于我们</a>
+          <span class="fuli-copyright-split">|</span>
+          <a href="#" class="fuli-copyright-links">商家管理</a>
+          <span class="fuli-copyright-split">|</span>
+          <a href="#" class="fuli-copyright-links">门店管理</a>
+          <span class="fuli-copyright-split">|</span>
+          <a href="#" class="fuli-copyright-links">自提站管理</a>
+          <span class="fuli-copyright-split">|</span>
+        </p>
+      </div>
+      <div class="fuli-u-sm-12 fuli-copyright-cert">
+        &copy;2016 athori.com 雷云智链 客户服务中心(7×24):101-88888888
+      </div>
+    </div>
+  </div>
+  <!-- 底部end -->
+
+  <script src="../../lib/jq/jquery.old.js"></script>
+  <script src="../../js/index/index.js"></script>
+  <script src="../../js/personalCenter/personalCenter.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
