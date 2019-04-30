@@ -39,6 +39,18 @@
   width: 106px;
   height: 106px;
   background-color: #ffaa00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-suning-goods-img2{
+  width: 106px;
+  height: 106px;
+  background-color: #faf7f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fuli-suning-goods-words{
@@ -60,7 +72,21 @@
   line-height: 36px;
 }
 
+.fuli-suning-goods-price2{
+  font-size: 22px;
+  color: #b29e77;
+  line-height: 36px;
+}
+
 .fuli-suning-goods-go{
+  height: 26px;
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  box-sizing: border-box;
+}
+
+.fuli-suning-goods-go2{
   height: 26px;
   display: flex;
   align-items: center;
@@ -89,6 +115,27 @@
   margin-left: 5px;
 }
 
+.fuli-suning-goods-go-icon2{
+  width: 26px;
+  height: 26px;
+  background-color: #b29e77;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-suning-goods-go-icon2 img{
+  width: 17px;
+  height: 18px;
+}
+
+.fuli-suning-goods-go2 span{
+  font-size: 20px;
+  color: #b29e77;
+  margin-left: 5px;
+}
+
 .fuli-suning-collect{
   width: 96px;
   height: 32px;
@@ -100,10 +147,28 @@
   font-size: 14px;
 }
 
+.fuli-suning-collect2{
+  width: 96px;
+  height: 32px;
+  background-color: #fff0e2;
+  border: 1px solid #e98930;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 32px;
+  color: #e98930;
+  font-size: 14px;
+}
+
 .ification-wraper-suning{
   width: 100%;
   height: 32px;
   background-color: #ffaa00;
+}
+
+.ification-wraper-suning2{
+  width: 100%;
+  height: 32px;
+  background-color: #b29e77;
 }
 
 .classification-nav2{
@@ -212,4 +277,211 @@
   color: #333;
   line-height: 53px;
   margin-top: 4px;
+}
+
+.fuli-filter-bottom2{
+  height: 39px;
+  background-color: #fff;
+  padding-left: 24px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+}
+
+.fuli-electrical-words{
+  width: 100%;
+}
+
+.fuli-electrical-goods-name{
+  width: 100%;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.fuli-electrical-goods-name a{
+  color: #333;
+}
+
+.fuli-electrical-goods-ming{
+  width: 100%;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+
+.fuli-electrical-goods-price{
+  width: 100%;
+  line-height: 36px;
+  text-align: center;
+}
+
+.fuli-electrical-goods-new-price{
+  font-size: 16px;
+  color: #fc3569;
+}
+
+.fuli-electrical-goods-new-price2{
+  font-size: 16px;
+  color: #fc3569;
+}
+
+.fuli-electrical-goods-old-price{
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.fuli-electrical-goods-setting{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-electrical-buy{
+  width: 101px;
+  height: 26px;
+  color: #fff;
+  background-color: #ed9b50;
+  font-size: 14px;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 3px;
+  margin-right: 21px;
+}
+
+.fuli-suning-wrapper2{
+  width: 100%;
+  height: 120px;
+  background: url(../../images/static/brand_head_bg_03.png);
+  background-size: 100% 100%;
+}
+
+.fuli-suning-logo2{
+  width: 243px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-brand-logon-bg{
+  width: 243px;
+  height: 83px;
+  background-color: #def0fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-suning-address{
+  width: 864px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 13px;
+  box-sizing: border-box;
+}
+
+.fuli-suning-company-name{
+  line-height: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.fuli-suning-company-phone{
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+}
+
+.fuli-suning-collect3{
+  width: 96px;
+  height: 32px;
+  border: 1px solid #a3a3a3;
+  color: #333;
+  font-size: 14px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 32px;
+}
+
+.fuli-shop-all-goods-wrapper{
+  width: 100%;
+  height: 39px;
+  background-color: #67aee1;
+}
+
+.fuli-shop-all-goods{
+  width: 151px;
+  height: 39px;
+  background-color: #1399f7;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuli-shop-all-goods-stroke{
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+.fuli-shop-all-goods-stroke-item{
+  width: 10px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+
+.fuli-shop-all-goods-stroke-item:last-child{
+  margin-bottom: 0;
+}
+
+.fuli-brand-small-nav-wrapper{
+  width: 100%;
+  height: 36px;
+}
+
+.fuli-brand-small-nav{
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fuli-brand-small-nav a{
+  color: #333;
+  font-size: 12px;
+}
+
+.fuli-brand-small-nav a:hover{
+  color: #e98930;
+}
+
+.fuli-brand-screening{
+  width: 93px;
+  height: 27px;
+  border: 1px solid #999;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  line-height: 27px;
+  background: url(../../images/static/drop-arrow.png) no-repeat;
+  background-position-x: 65px;
+  background-color: #fff;
+}
+
+.fuli-brand-service-wrapper{
+  width: 100%;
+  height: 168px;
+  border: 1px solid #e5e5e5;
 }

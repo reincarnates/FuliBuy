@@ -121,78 +121,125 @@
   </div>
   <!-- 右侧面板end -->
 
-  <!-- 搜索 -->
-  <div class="search-wraper">
-    <div class="search-content">
-      <div class="fuli-u-sm-2 search-content-left">
-        <img src="../../images/static/uligou.png" alt="">
-      </div>
-      <div class="fuli-u-sm-8 search-content-center clearfix">
-        <div class="fuli-u-sm-9 search-all">
-          <div class="search-input">
-            <input type="text" placeholder="国际大牌母婴用品" id="searchGoods" />
+  <div class="tiao">
+    <!-- 搜索 -->
+    <div class="search-wraper">
+      <div class="search-content">
+        <div class="fuli-u-sm-2 search-content-left">
+          <img src="../../images/static/uligou.png" alt="">
+        </div>
+        <div class="fuli-u-sm-8 search-content-center clearfix">
+          <div class="fuli-u-sm-9 search-all">
+            <div class="search-input">
+              <input type="text" placeholder="国际大牌母婴用品" id="searchGoods" />
+            </div>
+            <div class="search-btn pointer">
+              <img src="../../images/static/search.png" alt="">
+            </div>
+            <ul class="clearfix small-nav">
+              <li>
+                <a href="#">
+                  厨房用纸
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  清洁纸巾
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  米面粮油
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  家居用品
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  厨房用品
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  母婴
+                </a>
+              </li>
+            </ul>
+            <div class="fuli-shelper">
+              123
+            </div>
           </div>
-          <div class="search-btn pointer">
-            <img src="../../images/static/search.png" alt="">
-          </div>
-          <ul class="clearfix small-nav">
-            <li>
-              <a href="#">
-                厨房用纸
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                清洁纸巾
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                米面粮油
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                家居用品
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                厨房用品
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                母婴
-              </a>
-            </li>
-          </ul>
-          <div class="fuli-shelper">
-            123
+          <div class="fuli-u-sm-3 search-cart">
+            <div class="search-cart-bg pointer">
+              <img src="../../images/static/cart.png" alt="">
+              <span>购物车</span>
+              <div class="cart-count">0</div>
+            </div>
+            <div class="search-select-small"></div>
+            <div class="search-cart-select"></div>
           </div>
         </div>
-        <div class="fuli-u-sm-3 search-cart">
-          <div class="search-cart-bg pointer">
-            <img src="../../images/static/cart.png" alt="">
-            <span>购物车</span>
-            <div class="cart-count">0</div>
-          </div>
-          <div class="search-select-small"></div>
-          <div class="search-cart-select"></div>
-        </div>
-      </div>
-      <div class="fuli-u-sm-2 search-content-right">
-        <img src="../../images/static/code.png" alt="">
       </div>
     </div>
-  </div>
-  <!-- 搜索end -->
+    <!-- 搜索end -->
 
-  <!-- 全部分类 -->
-  <div class="ification-wraper">
+    <!-- 全部分类 -->
+    <div class="ification-wraper">
+      <div class="fuli-container">
+        <ul class="clearfix fuli-nav2">
+          <li>
+            <a href="#">
+              首页
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              个人中心
+            </a>
+          </li>
+          <li class="account">
+            <a href="#">
+              账户管理
+              <img src="../../images/static/headdown.png" alt="">
+              <div class="account-select">
+                <ul>
+                  <li><a href="#">我的信息</a></li>
+                  <li><a href="#">账户安全</a></li>
+                  <li><a href="#">地址管理</a></li>
+                </ul>
+              </div>
+              <div class="triangle_border_up2">
+                <span></span>
+              </div>
+            </a>
+          </li>
+          <li class="message">
+            <a href="#">
+              消息中心
+              <img src="../../images/static/headdown.png" alt="">
+              <div class="account-select">
+                <ul>
+                  <li><a href="#">福利活动中心</a></li>
+                  <li><a href="#">我的资产</a></li>
+                  <li><a href="#">通知消息</a></li>
+                  <li><a href="#">互动消息</a></li>
+                </ul>
+              </div>
+              <div class="triangle_border_up2">
+                <span></span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 全部分类end -->
   </div>
-  <!-- 全部分类end -->
 
+  <div class="remedy"></div>
   <!-- 内容 -->
   <div class="fuli-container fuli-wrapper">
     <div class="clearfix personal">
@@ -858,8 +905,26 @@
   <script src="../../js/index/index.js"></script>
   <script src="../../js/personalCenter/personalCenter.js"></script>
 
-  <script>
+  <script type="text/javascript">
+    var oTiao = document.querySelector('.tiao'),
+      remedy = document.querySelector('.remedy');
 
+    var tiaoTop = oTiao.offsetTop;  //获得吸顶标签的高度
+    window.onscroll = function () {
+      //获得滚动的距离
+      var scrollLength = document.documentElement.scrollTop || document.body.scrollTop;
+      //当滚动条滚动到吸顶标签的位置时，标签固定即吸顶
+      if (scrollLength >= tiaoTop) {
+        oTiao.style.cssText = 'position:fixed;top:0;left:0;width:100%';  //cssText添加css属性
+        console.log('1');
+        remedy.style.display = 'block';
+        //值得注意的是，当滚动条吸顶时.tiao标签变成了定位，该标签就为空了，使得下一个标签会跳上来，所以可以在.tiao标签下面设置一个display为none的标签，当事件发生时来弥补.tiao标签
+      } else {
+        remedy.style.display = 'none';
+        console.log('2')
+        oTiao.style.cssText = '';
+      }
+    }
   </script>
 </body>
 

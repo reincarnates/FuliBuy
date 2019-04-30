@@ -33,6 +33,10 @@
   background-color: #fff;
 }
 
+.fuli-fresh-container2{
+  width: 100%;
+}
+
 .fuli-fresh-classify{
   width: 100%;
   height: 138px;
@@ -120,10 +124,27 @@
   box-sizing: border-box;
 }
 
+.fuli-fresh-classify-left4{
+  width: 91px;
+  height: 60px;
+  font-size: 16px;
+  color: #333;
+  text-align: right;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
 .fuli-fresh-classify-right3{
   width: 1009px;
   height: 70px;
   padding-top: 25px;
+  box-sizing: border-box;
+}
+
+.fuli-fresh-classify-right4{
+  width: 1009px;
+  height: 60px;
+  padding-top: 20px;
   box-sizing: border-box;
 }
 
@@ -204,6 +225,17 @@
   flex-direction: column;
 }
 
+.fuli-fresh-goods-item-name2{
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #edddcc;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .fresh-goods-name{
   font-size: 14px;
   color: #333;
@@ -213,6 +245,12 @@
 .fresh-goods-price{
   font-size: 14px;
   color: #ff8417;
+  line-height: 26px;
+}
+
+.fresh-goods-price2{
+  font-size: 14px;
+  color: #c63a3a;
   line-height: 26px;
 }
 
@@ -286,11 +324,26 @@
   display: flex;
 }
 
+.fuli-fresh-city3{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px dashed #d9d9d9;
+  box-sizing: border-box;
+  display: flex;
+}
+
 .fuli-fresh-sort2{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px dashed #d9d9d9;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.fuli-fresh-sort3{
   width: 100%;
   height: 70px;
   border-bottom: 1px dashed #d9d9d9;
-  padding: 0 50px;
   box-sizing: border-box;
   display: flex;
 }
@@ -311,6 +364,7 @@
   width: 100%;
   padding: 0 30px;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .fuli-electrical-head{
@@ -337,6 +391,41 @@
   margin-right: 15px;
   margin-bottom: 23px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.fuli-episode-shelves{
+  position: absolute;
+  top: 202px;
+  width: 100%;
+  height: 32px;
+  background-color: #ed9b50;
+  display: flex;
+  align-items: center;
+}
+
+.fuli-episode-shelves-left{
+  width: 146px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.fuli-episode-shelves-right{
+  width: 99px;
+  height: 22px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.fuli-episode-shelves-right img{
+  margin-right: 5px;
 }
 
 .fuli-electrical-img{
@@ -563,3 +652,35 @@
 .fuli-mother-bottom-btn a{
   color: #f0184e;
 }
+
+.fuli-newFirst-head{
+  width: 100%;
+  line-height: 60px;
+  color: #2e2e2e;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 34px;
+  box-sizing: border-box;
+}
+
+.mar-tw{
+  margin-top: 28px;
+}
+
+.fuli-new-episode{
+  background-color: #fff;
+}
+
+/* .fuli-elastic-frame{
+  width: 100%;
+  height: 100%;
+  background-color: #313131;
+  filter: alpha(Opacity=20);
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+} */

@@ -13,6 +13,15 @@ $(function() {
     $(this).siblings().find(".payment-mode").removeClass('payment-active');
     $(this).find(".payment-mode").addClass('payment-active');
   });
+  
+  //订单首页导航hover显示
+  $('.account,.message').mouseover(function() {
+    $(this).find('.account-select').show();
+    $(this).find('.triangle_border_up2').show();
+  }).mouseout(function() {
+    $(this).find('.account-select').hide();
+    $(this).find('.triangle_border_up2').hide();
+  });
 
 });
 

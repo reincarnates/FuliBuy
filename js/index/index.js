@@ -32,9 +32,9 @@ $(function () {
 
   //搜索框发生改变
   $('#searchGoods').focus(function() {
-    $('.fuli-shelper,.fuli-shelper2').css('display', 'block');
+    $('.fuli-shelper,.fuli-shelper2,.fuli-shelper3').css('display', 'block');
   }).blur(function() {
-    $('.fuli-shelper,.fuli-shelper2').css('display', 'none');
+    $('.fuli-shelper,.fuli-shelper2,.fuli-shelper3').css('display', 'none');
   });
 
   //右侧面板购物车点击加背景
@@ -91,15 +91,17 @@ $(function () {
   });
 
   //购物车hover下拉
-  $('.search-cart-bg,.search-cart-select,.search-select-small,.search-not-cart').mouseover(function() {
+  $('.search-cart-bg,.search-cart-select,.search-cart-select2,.search-select-small,.search-not-cart').mouseover(function() {
     $('.search-cart-bg').addClass("select-bg");
     $('.search-cart-select').addClass("select-border");
+    $('.search-cart-select2').addClass("select-border");
     $('.search-not-cart').addClass("select-border");
     $('.search-select-small').addClass("select-border2");
     $('.search-cart-all-price').show();
   }).mouseout(function() {
     $('.search-cart-bg').removeClass("select-bg");
     $('.search-cart-select').removeClass("select-border");
+    $('.search-cart-select2').removeClass("select-border");
     $('.search-not-cart').removeClass("select-border");
     $('.search-select-small').removeClass("select-border2");
     $('.search-cart-all-price').hide();

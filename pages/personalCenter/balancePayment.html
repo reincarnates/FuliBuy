@@ -10,87 +10,213 @@
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/header/header.css">
   <link rel="stylesheet" href="../../css/personalCenter/placeOrder.css">
+  <link rel="stylesheet" href="../../css/personalCenter/personalCenter.css">
+  <link rel="stylesheet" href="../../css/CommodityDetails/CommodityDetails.css">
+  <link rel="stylesheet" href="../../css/index.css">
 </head>
 
 <body>
-  <!-- 导航 -->
-  <div class="header">
-    <div class="fuli-container">
-      <div class="fuli-g">
-        <div class="fuli-u-sm-2">
-          <div class="fuli-g">
-            <div class="fuli-u-sm-4 home">
-              <img src="../../images/static/home.png" alt="首页" class="pointer">首页
+  <!-- logo -->
+  <div class="fuli-bg">
+    <div class="fuli-container fuli-content">
+      <div class="tiao2">
+        <!-- 搜索 -->
+        <div class="search-wraper">
+          <div class="search-content2">
+            <div class="fuli-u-sm-2 search-content-left">
+              <img src="../../images/static/uligou.png" alt="">
             </div>
-            <div class="fuli-u-sm-8 home">
-              <img src="../../images/static/landmark.png" alt="首页" class="pointer">北京
+            <div class="search-content-center">
+              <!-- 全部分类 -->
+              <div class="ification-wraper3">
+                <div class="fuli-container">
+                  <ul class="clearfix fuli-nav2">
+                    <li>
+                      <a href="#">
+                        首页
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        个人中心
+                      </a>
+                    </li>
+                    <li class="account">
+                      <a href="#">
+                        账户管理
+                        <img src="../../images/static/headdown.png" alt="">
+                        <div class="account-select">
+                          <ul>
+                            <li><a href="#">我的信息</a></li>
+                            <li><a href="#">账户安全</a></li>
+                            <li><a href="#">地址管理</a></li>
+                          </ul>
+                        </div>
+                        <div class="triangle_border_up2">
+                          <span></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="message">
+                      <a href="#">
+                        消息中心
+                        <img src="../../images/static/headdown.png" alt="">
+                        <div class="account-select">
+                          <ul>
+                            <li><a href="#">福利活动中心</a></li>
+                            <li><a href="#">我的资产</a></li>
+                            <li><a href="#">通知消息</a></li>
+                            <li><a href="#">互动消息</a></li>
+                          </ul>
+                        </div>
+                        <div class="triangle_border_up2">
+                          <span></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 全部分类end -->
+            </div>
+            <div class="search-content-rigth">
+              <!-- <div class="search-content-rigth-input-wrapper">
+                <div class="search-content-rigth-input">
+                  <input type="text" placeholder="国际大牌母婴用品" />
+                </div>
+                <div class="search-content-rigth-word">搜索</div>
+              </div> -->
+              <div class="search-all2">
+                <div class="search-input">
+                  <input type="text" placeholder="国际大牌母婴用品" id="searchGoods" />
+                </div>
+                <div class="search-btn2 pointer">
+                  搜索
+                </div>
+                <div class="fuli-shelper3">
+                  <p class="fuli-shelper-words">
+                    <span>热门搜索</span>
+                    <span class="fuli-shelper-words-color">惠普i5内存条</span>
+                    <span class="fuli-shelper-words-color">惠普i5内存条</span>
+                    <span class="fuli-shelper-words-color">惠普i5内存条</span>
+                    <span class="fuli-shelper-words-color">惠普</span>
+                  </p>
+                  <ul class="goods-list">
+                    <li>
+                      <a href="#">
+                        <span class="goods-name">内存条8g</span>
+                        <span class="history">历史记录</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="goods-name">内存条8g</span>
+                        <span class="history">历史记录</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="goods-name">内存条8g</span>
+                        <span class="history">历史记录</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="goods-name">内存条8g</span>
+                        <span class="history">历史记录</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="all-delete">
+                    <span class="pointer">全部清除</span>
+                  </div>
+                </div>
+              </div>
+              <div class="fuli-u-sm-3 search-cart2">
+                <div class="search-cart-bg pointer">
+                  <img src="../../images/static/cart.png" alt="">
+                  <span>购物车</span>
+                  <div class="cart-count">0</div>
+                </div>
+                <div class="search-select-small"></div>
+                <!-- <div class="search-not-cart">
+                      <div class="search-not-cart-img">
+                          <img src="./images/static/not_cart.png" alt="">
+                          <span>购物车还没有商品赶快去选购吧！！！</span>
+                      </div>
+                  </div> -->
+                <div class="search-cart-select2">
+                  <div class="search-cart-select-head">
+                    最新加入商品
+                  </div>
+                  <div class="search-cart-goods-all">
+                    <div class="search-cart-goods-item">
+                      <div class="goods-img">
+                        <img src="./images/static/shppingCartimg.jpg" alt="">
+                      </div>
+                      <p class="goods-account"><a href="#">【买2送1】香水身体乳女全身美肤白净润肤露液体香乳去鸡皮肤</a></p>
+                      <div class="cart-price-del">
+                        <p class="cart-price">
+                          ￥88.00 × 1
+                        </p>
+                        <p class="cart-delete pointer">删除</p>
+                      </div>
+                    </div>
+                    <div class="search-cart-goods-item">
+                      <div class="goods-img">
+                        <img src="./images/static/shppingCartimg.jpg" alt="">
+                      </div>
+                      <p class="goods-account"><a href="#">【买2送1】香水身体乳女全身美肤白净润肤露液体香乳去鸡皮肤</a></p>
+                      <div class="cart-price-del">
+                        <p class="cart-price">
+                          ￥88.00 × 1
+                        </p>
+                        <p class="cart-delete pointer">删除</p>
+                      </div>
+                    </div>
+                    <div class="search-cart-goods-item">
+                      <div class="goods-img">
+                        <img src="./images/static/shppingCartimg.jpg" alt="">
+                      </div>
+                      <p class="goods-account"><a href="#">【买2送1】香水身体乳女全身美肤白净润肤露液体香乳去鸡皮肤</a></p>
+                      <div class="cart-price-del">
+                        <p class="cart-price">
+                          ￥88.00 × 1
+                        </p>
+                        <p class="cart-delete pointer">删除</p>
+                      </div>
+                    </div>
+                    <div class="search-cart-goods-item">
+                      <div class="goods-img">
+                        <img src="./images/static/shppingCartimg.jpg" alt="">
+                      </div>
+                      <p class="goods-account"><a href="#">【买2送1】香水身体乳女全身美肤白净润肤露液体香乳去鸡皮肤</a></p>
+                      <div class="cart-price-del">
+                        <p class="cart-price">
+                          ￥88.00 × 1
+                        </p>
+                        <p class="cart-delete pointer">删除</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-cart-all-price clearfix">
+                  <span>共3件商品 共计0.00元</span>
+                  <div class="go-cart pointer">
+                    去购物车
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- <div class="fuli-u-sm-7"> -->
-        <ul class="clearfix fuli-nav">
-          <li>
-            <a href="#">
-              登录
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              免费注册
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              我的订单
-              <img src="../../images/static/headdown.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              个人中心
-              <img src="../../images/static/headdown.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              微信号
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              福利会员
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              商户工作台
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              服务中心
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              手机客户端
-            </a>
-          </li>
-        </ul>
-        <!-- </div> -->
       </div>
-    </div>
-  </div>
-  <!-- 导航end -->
+      <!-- 搜索end -->
 
-  <!-- logo -->
-  <div class="fuli-bg">
-    <div class="fuli-container">
-      <div class="fuli-logo">
-        <img src="../../images/static/uligou.png" alt="">
-      </div>
+
     </div>
   </div>
+  <div class="seize"></div>
   <!-- logo end -->
 
   <div class="sub-nav fuli-container">
@@ -129,12 +255,12 @@
       </div>
       <div class="pay-password">
         <div class="pay-password-left">
-          <input type="password" maxlength=1 class="pay-input" onkeyup = "focusNextInput(this)" />
-          <input type="password" maxlength=1 class="pay-input" onkeyup = "focusNextInput(this)" />
-          <input type="password" maxlength=1 class="pay-input" onkeyup = "focusNextInput(this)" />
-          <input type="password" maxlength=1 class="pay-input" onkeyup = "focusNextInput(this)" />
-          <input type="password" maxlength=1 class="pay-input" onkeyup = "focusNextInput(this)" />
-          <input type="password" maxlength=1 class="pay-input" onkeyup = "focusNextInput(this)" />
+          <input type="password" maxlength=1 class="pay-input" onkeyup="focusNextInput(this)" />
+          <input type="password" maxlength=1 class="pay-input" onkeyup="focusNextInput(this)" />
+          <input type="password" maxlength=1 class="pay-input" onkeyup="focusNextInput(this)" />
+          <input type="password" maxlength=1 class="pay-input" onkeyup="focusNextInput(this)" />
+          <input type="password" maxlength=1 class="pay-input" onkeyup="focusNextInput(this)" />
+          <input type="password" maxlength=1 class="pay-input" onkeyup="focusNextInput(this)" />
         </div>
         <span class="pay-password-color mar-lm pointer">忘记密码？</span>
       </div>
@@ -409,6 +535,29 @@
 
   <script src="../../lib/jq/jquery.old.js"></script>
   <script src="../../js/personalCenter/placeOrder.js"></script>
+  <script src="../../js/index/index.js"></script>
+
+  <script type="text/javascript">
+    var oTiao = document.querySelector('.fuli-bg'),
+      remedy = document.querySelector('.seize');
+
+    var tiaoTop = oTiao.offsetTop;  //获得吸顶标签的高度
+    window.onscroll = function () {
+      //获得滚动的距离
+      var scrollLength = document.documentElement.scrollTop || document.body.scrollTop;
+      //当滚动条滚动到吸顶标签的位置时，标签固定即吸顶
+      if (scrollLength >= tiaoTop) {
+        oTiao.style.cssText = 'position:fixed;top:0;left:0;width:100%';  //cssText添加css属性
+        console.log('1');
+        remedy.style.display = 'block';
+        //值得注意的是，当滚动条吸顶时.tiao标签变成了定位，该标签就为空了，使得下一个标签会跳上来，所以可以在.tiao标签下面设置一个display为none的标签，当事件发生时来弥补.tiao标签
+      } else {
+        remedy.style.display = 'none';
+        console.log('2')
+        oTiao.style.cssText = '';
+      }
+    }
+  </script>
 </body>
 
 </html>

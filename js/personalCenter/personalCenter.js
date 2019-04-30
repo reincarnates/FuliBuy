@@ -26,9 +26,18 @@ $(function() {
     $(".ob2").eq($(".fuli-peronal-home-tabs-item").index(this)).addClass("on2").siblings().removeClass('on2'); 
   });
 
-  $(".fuli-peronal-home-tit .fuli-peronal-home-tit-word2").click(function() {
-    // $(".fuli-peronal-home-tit .fuli-peronal-home-tit-word2").eq($(this).index()).addClass("cur6").siblings().removeClass('cur6');
-    $(".ob3").eq($(".fuli-peronal-home-tit .fuli-peronal-home-tit-word2").index(this)).addClass("on3").siblings().removeClass('on3'); 
+  // $(".fuli-peronal-home-tit .fuli-peronal-home-tit-word2").click(function() {
+  //   $(".fuli-peronal-home-tit .fuli-peronal-home-tit-word2").eq($(this).index()).addClass("cur6").siblings().removeClass('cur6');
+  //   $(".ob3").eq($(".fuli-peronal-home-tit .fuli-peronal-home-tit-word2").index(this)).addClass("on3").siblings().removeClass('on3'); 
+  // });
+
+  //订单首页导航hover显示
+  $('.account,.message').mouseover(function() {
+    $(this).find('.account-select').show();
+    $(this).find('.triangle_border_up2').show();
+  }).mouseout(function() {
+    $(this).find('.account-select').hide();
+    $(this).find('.triangle_border_up2').hide();
   });
 
   //选择规定时间段的订单

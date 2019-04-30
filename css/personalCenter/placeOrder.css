@@ -1,11 +1,27 @@
 .fuli-bg{
   width: 100%;
   background-color: #fff;
+  z-index: 1000;
+}
+
+.ification-wraper2{
+  width: 100%;
+  height: 37px;
+  border-bottom: 3px solid #e98930;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.fuli-content{
+  width: 100%;
+  display: flex;
 }
 
 .fuli-logo{
   width: 200px;
   height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 .fuli-logo img{
@@ -1190,4 +1206,118 @@
   background-color: #ffe6cf;
   color: #e98930;
   border-radius: 2px;
+}
+
+.search-content2{
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.ification-wraper3{
+  width: 100%;
+  height: 37px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.search-content-center{
+  width: 517px;
+  display: flex;
+  align-items: center;
+}
+
+.search-content-rigth{
+  width: 478px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+}
+
+.search-content-rigth-input-wrapper{
+  width: 302px;
+  height: 43px;
+  display: flex;
+}
+
+.search-content-rigth-input{
+  width: 234px;
+  height: 43px;
+  border: 1px solid #e98930;
+}
+
+.search-content-rigth-input input{
+  width: 234px;
+  height: 41px;
+  outline: none;
+  padding-left: 20px;
+}
+
+.search-content-rigth-word{
+  width: 67px;
+  height: 43px;
+  background-color: #e98930;
+  color: #fff;
+  text-align: center;
+  line-height: 43px;
+  font-size: 14px;
+}
+
+.search-all2{
+  width: 340px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+}
+
+.search-btn2{
+  width: 54px;
+  height: 42px;
+  background-color: #e98930;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.fuli-shelper3{
+  width: 394px;
+  position: absolute;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  bottom: -175px;
+  display: none;
+  padding: 0 13px;
+  box-shadow: 0 10px 10px rgba(213,203,203,.5);
+  z-index: 6;
+}
+
+.search-cart2{
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 20px;
+}
+
+.search-cart-select2{
+  width: 290px;
+  height: 273px;
+  background-color: #fff;
+  position: absolute;
+  right: -6px;
+  bottom: 10px;
+  top: 43px;
+  z-index: 888;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: none;
+}
+
+.seize{
+  width: 100%;
+  height: 120px;
+  display: none
 }

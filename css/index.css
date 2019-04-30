@@ -36,6 +36,13 @@
   position: relative;
 }
 
+.search-all2{
+  box-sizing: border-box;
+  padding-left: 118px;
+  padding-top: 43px;
+  position: relative;
+}
+
 .fuli-shelper{
   width: 394px;
   position: fixed;
@@ -53,7 +60,7 @@
   position: absolute;
   border: 1px solid #ddd;
   background-color: #fff;
-  /* bottom: -3px; */
+  bottom: -174px;
   display: none;
   padding: 0 13px;
   box-shadow: 0 10px 10px rgba(213,203,203,.5);
@@ -130,6 +137,7 @@
   border: 1px solid #e98930;
   box-sizing: border-box;
   float: left;
+  position: relative;
 }
 
 .search-input input{
@@ -137,8 +145,14 @@
   height: 40px;
   border: none;
   outline: none;
-  padding-left: 18px;
+  padding-left: 25px;
   box-sizing: border-box;
+}
+
+.search-input-img{
+  position: absolute;
+  top: 15px;
+  left: 10px;
 }
 
 .search-btn{
@@ -149,6 +163,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.search-btn2{
+  width: 68px;
+  height: 42px;
+  background-color: #fff8f1;
+  float: left;
+  color: #e98930;
+  font-size: 14px;
+  border: 1px solid #e98930;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 10px;
 }
 
 .small-nav{
@@ -341,6 +370,16 @@
   background-color: #f4f4f4;
   display: flex;
   align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.search-cart-bg2{
+  width: 50px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   box-sizing: border-box;
 }
